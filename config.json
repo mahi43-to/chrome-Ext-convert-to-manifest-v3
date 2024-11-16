@@ -1,0 +1,22 @@
+{
+
+	"webx_id": "fike_offline_data_manager",
+	"mode": "prod",
+
+	"cache_max_age": 2,
+
+	"app_client_id": {
+
+		"dev": "3MVG90D5vR7UtjbpPj7iihHvrPIm55kw0M9NWwngPZZ.S3Yzj8Uf2rMJh5UBN.0_mC41QHbxAk5CF2grOFVgB",
+		"prod": "3MVG90D5vR7UtjbpPj7iihHvrPLzLcxNc128Zzg0Gr54624rh3.DI47hLmwTC6yxdhzUk1IWb95c2VduuYNbL"
+
+	},
+
+	"report_config": {
+
+		"active": false,
+		"max_log_item_arr_length": 500
+
+	}
+
+}

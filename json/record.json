@@ -1,0 +1,5511 @@
+{
+	"sections": [{
+		"title": "Work Order",
+		"records": [{
+			"relatedSections": [{
+				"title": "Zone Status",
+				"records": [{
+					"relatedSections": null,
+					"data": {
+						"Zone__r": {
+							"Status__c": "Running",
+							"Name": "01nesle0102",
+							"Id": "a1118000000II2JAAW",
+							"attributes": {
+								"url": "/services/data/v46.0/sobjects/Zone__c/a1118000000II2JAAW",
+								"type": "Zone__c"
+							}
+						},
+						"Zone__c": "a1118000000II2JAAW",
+						"Name": "ZS-0176",
+						"Id": "a1X18000000ZJIjEAO"
+					}
+				}, {
+					"relatedSections": null,
+					"data": {
+						"Zone__r": {
+							"Interlock_Status__c": "Fail",
+							"System_Status__c": "Armed",
+							"Service_Status__c": "Pass",
+							"Status__c": "Running",
+							"Name": "01nesle0103",
+							"Id": "a1118000000II2KAAW",
+							"attributes": {
+								"url": "/services/data/v46.0/sobjects/Zone__c/a1118000000II2KAAW",
+								"type": "Zone__c"
+							}
+						},
+						"Zone__c": "a1118000000II2KAAW",
+						"Name": "ZS-0177",
+						"Id": "a1X18000000ZJIkEAO"
+					}
+				}, {
+					"relatedSections": null,
+					"data": {
+						"Zone__r": {
+							"Interlock_Status__c": "Pass",
+							"System_Status__c": "Monitoring",
+							"Service_Status__c": "Fail",
+							"Status__c": "Running",
+							"Name": "01nesle0104",
+							"Id": "a1118000000II2LAAW",
+							"attributes": {
+								"url": "/services/data/v46.0/sobjects/Zone__c/a1118000000II2LAAW",
+								"type": "Zone__c"
+							}
+						},
+						"Zone__c": "a1118000000II2LAAW",
+						"Name": "ZS-0178",
+						"Id": "a1X18000000ZJIlEAO"
+					}
+				}, {
+					"relatedSections": null,
+					"data": {
+						"Zone__r": {
+							"Status__c": "Running",
+							"Name": "01nesle0201",
+							"Id": "a1118000000II2MAAW",
+							"attributes": {
+								"url": "/services/data/v46.0/sobjects/Zone__c/a1118000000II2MAAW",
+								"type": "Zone__c"
+							}
+						},
+						"Zone__c": "a1118000000II2MAAW",
+						"Name": "ZS-0179",
+						"Id": "a1X18000000ZJImEAO"
+					}
+				}, {
+					"relatedSections": null,
+					"data": {
+						"Zone__r": {
+							"Status__c": "Running",
+							"Name": "01nesle0202",
+							"Id": "a1118000000II2NAAW",
+							"attributes": {
+								"url": "/services/data/v46.0/sobjects/Zone__c/a1118000000II2NAAW",
+								"type": "Zone__c"
+							}
+						},
+						"Zone__c": "a1118000000II2NAAW",
+						"Name": "ZS-0180",
+						"Id": "a1X18000000ZJInEAO"
+					}
+				}, {
+					"relatedSections": null,
+					"data": {
+						"Zone__r": {
+							"Status__c": "Running",
+							"Name": "01nesle0203",
+							"Id": "a1118000000II2OAAW",
+							"attributes": {
+								"url": "/services/data/v46.0/sobjects/Zone__c/a1118000000II2OAAW",
+								"type": "Zone__c"
+							}
+						},
+						"Zone__c": "a1118000000II2OAAW",
+						"Name": "ZS-0181",
+						"Id": "a1X18000000ZJIoEAO"
+					}
+				}, {
+					"relatedSections": null,
+					"data": {
+						"Zone__r": {
+							"Status__c": "Running",
+							"Name": "01nesle0201",
+							"Id": "a1118000000t6ShAAI",
+							"attributes": {
+								"url": "/services/data/v46.0/sobjects/Zone__c/a1118000000t6ShAAI",
+								"type": "Zone__c"
+							}
+						},
+						"Zone__c": "a1118000000t6ShAAI",
+						"Name": "ZS-0182",
+						"Id": "a1X18000000ZJIpEAO"
+					}
+				}, {
+					"relatedSections": null,
+					"data": {
+						"Zone__r": {
+							"Status__c": "Running",
+							"Name": "01nesle0202",
+							"Id": "a1118000000t6SiAAI",
+							"attributes": {
+								"url": "/services/data/v46.0/sobjects/Zone__c/a1118000000t6SiAAI",
+								"type": "Zone__c"
+							}
+						},
+						"Zone__c": "a1118000000t6SiAAI",
+						"Name": "ZS-0183",
+						"Id": "a1X18000000ZJIqEAO"
+					}
+				}, {
+					"relatedSections": null,
+					"data": {
+						"Zone__r": {
+							"Status__c": "Running",
+							"Name": "01nesle0203",
+							"Id": "a1118000000t6SjAAI",
+							"attributes": {
+								"url": "/services/data/v46.0/sobjects/Zone__c/a1118000000t6SjAAI",
+								"type": "Zone__c"
+							}
+						},
+						"Zone__c": "a1118000000t6SjAAI",
+						"Name": "ZS-0184",
+						"Id": "a1X18000000ZJIrEAO"
+					}
+				}, {
+					"relatedSections": null,
+					"data": {
+						"Zone__r": {
+							"Status__c": "Running",
+							"Name": "01nesle0102",
+							"Id": "a1118000000t6SkAAI",
+							"attributes": {
+								"url": "/services/data/v46.0/sobjects/Zone__c/a1118000000t6SkAAI",
+								"type": "Zone__c"
+							}
+						},
+						"Zone__c": "a1118000000t6SkAAI",
+						"Name": "ZS-0185",
+						"Id": "a1X18000000ZJIsEAO"
+					}
+				}, {
+					"relatedSections": null,
+					"data": {
+						"Zone__r": {
+							"Status__c": "Running",
+							"Name": "01nesle0103",
+							"Id": "a1118000000t6SlAAI",
+							"attributes": {
+								"url": "/services/data/v46.0/sobjects/Zone__c/a1118000000t6SlAAI",
+								"type": "Zone__c"
+							}
+						},
+						"Zone__c": "a1118000000t6SlAAI",
+						"Name": "ZS-0186",
+						"Id": "a1X18000000ZJItEAO"
+					}
+				}, {
+					"relatedSections": null,
+					"data": {
+						"Zone__r": {
+							"Status__c": "Running",
+							"Name": "01nesle0104",
+							"Id": "a1118000000t6SmAAI",
+							"attributes": {
+								"url": "/services/data/v46.0/sobjects/Zone__c/a1118000000t6SmAAI",
+								"type": "Zone__c"
+							}
+						},
+						"Zone__c": "a1118000000t6SmAAI",
+						"Name": "ZS-0187",
+						"Id": "a1X18000000ZJIuEAO"
+					}
+				}],
+				"objectName": "Work_Order_Zone__c",
+				"fields": [{
+					"type": "STRING",
+					"name": "Name",
+					"label": "Zone Status",
+					"isEditable": false
+				}, {
+					"type": "PICKLIST",
+					"name": "Interlock_Status__c",
+					"label": "Interlock Status",
+					"isEditable": true
+				}, {
+					"type": "PICKLIST",
+					"name": "Service_Status__c",
+					"label": "Service Status",
+					"isEditable": true
+				}, {
+					"type": "PICKLIST",
+					"name": "System_Status__c",
+					"label": "System Status",
+					"isEditable": true
+				}, {
+					"type": "PICKLIST",
+					"name": "Remarks__c",
+					"label": "Remarks",
+					"isEditable": true
+				}, {
+					"type": "PICKLIST",
+					"name": "Zone_Status__c",
+					"label": "Zone Status",
+					"isEditable": true
+				}]
+			}, {
+				"title": "Service Time Entries",
+				"records": [{
+					"relatedSections": null,
+					"data": {
+						"Engineer__c": "0Hn1800000001NSCAY",
+						"Id": "a1W18000001JHsiEAG"
+					}
+				}, {
+					"relatedSections": null,
+					"data": {
+						"End_Travel__c": "00:45:00.000Z",
+						"End_Work__c": "04:15:00.000Z",
+						"Start_Work__c": "00:15:00.000Z",
+						"Start_Travel__c": "00:00:00.000Z",
+						"Engineer__c": "0Hn1800000001NSCAY",
+						"Id": "a1W18000001JHsdEAG"
+					}
+				}, {
+					"relatedSections": null,
+					"data": {
+						"Mileage__c": 20.00,
+						"End_Travel__c": "05:00:00.000Z",
+						"End_Work__c": "04:30:00.000Z",
+						"Break_Time__c": 15.00,
+						"Start_Work__c": "00:15:00.000Z",
+						"Start_Travel__c": "00:15:00.000Z",
+						"Engineer__c": "0Hn1800000001RjCAI",
+						"Id": "a1W18000001JHsYEAW"
+					}
+				}],
+				"objectName": "Service_Time_Entry__c",
+				"fields": [{
+					"type": "REFERENCE",
+					"name": "Engineer__c",
+					"label": "Engineer",
+					"isEditable": false
+				}, {
+					"type": "DATE",
+					"name": "Date__c",
+					"label": "Date",
+					"isEditable": true
+				}, {
+					"type": "TIME",
+					"name": "Start_Travel__c",
+					"label": "Start Travel",
+					"isEditable": true
+				}, {
+					"type": "TIME",
+					"name": "End_Travel__c",
+					"label": "End Travel",
+					"isEditable": true
+				}, {
+					"type": "TIME",
+					"name": "Start_Work__c",
+					"label": "Start Work",
+					"isEditable": true
+				}, {
+					"type": "TIME",
+					"name": "End_Work__c",
+					"label": "End Work",
+					"isEditable": true
+				}, {
+					"type": "DOUBLE",
+					"name": "Break_Time__c",
+					"label": "Break Time",
+					"isEditable": true
+				}, {
+					"type": "DOUBLE",
+					"name": "Mileage__c",
+					"label": "Mileage (KM/Mi)",
+					"isEditable": true
+				}]
+			}, {
+				"title": "Materials",
+				"records": [{
+					"relatedSections": null,
+					"data": {
+						"LocationId": "131180000009IUHAA2",
+						"Cust_Stock__c": false,
+						"Fike_Stock__c": false,
+						"OwnerId": "00518000003YNrYAAW",
+						"QuantityOnHand": 11.00,
+						"Id": "0Co18000000023aCAA"
+					}
+				}, {
+					"relatedSections": null,
+					"data": {
+						"LocationId": "131180000009IUHAA2",
+						"Cust_Stock__c": false,
+						"Fike_Stock__c": false,
+						"OwnerId": "00518000003YNrYAAW",
+						"QuantityOnHand": 33.00,
+						"Id": "0Co18000000023kCAA"
+					}
+				}],
+				"objectName": "ProductItem",
+				"fields": [{
+					"type": "REFERENCE",
+					"name": "OwnerId",
+					"label": "Engineer",
+					"isEditable": true
+				}, {
+					"type": "REFERENCE",
+					"name": "Engineer__c",
+					"label": "Engineer",
+					"isEditable": true
+				}, {
+					"type": "DOUBLE",
+					"name": "QuantityOnHand",
+					"label": "Quantity On Handdd",
+					"isEditable": true
+				}, {
+					"type": "STRING",
+					"name": "Part_Number__c",
+					"label": "Part Number",
+					"isEditable": true
+				}, {
+					"type": "TEXTAREA",
+					"name": "Description__c",
+					"label": "Description",
+					"isEditable": true
+				}, {
+					"type": "BOOLEAN",
+					"name": "Fike_Stock__c",
+					"label": "Fike Stock",
+					"isEditable": true
+				}, {
+					"type": "BOOLEAN",
+					"name": "Cust_Stock__c",
+					"label": "Cust Stock",
+					"isEditable": true
+				}]
+			}, {
+				"title": "Zones",
+				"records": [{
+					"relatedSections": [{
+						"title": "Assets",
+						"records": [{
+							"relatedSections": [{
+								"title": "Hardware Checklists",
+								"records": [{
+									"relatedSections": [{
+										"title": "Sub Assets",
+										"records": [{
+											"relatedSections": null,
+											"data": {
+												"Asset__c": "a1218000003Qr6lAAC",
+												"Quantity__c": 123,
+												"Expiry_Date__c": "2019-06-19",
+												"Size__c": "400mbar",
+												"Type__c": "Ceramic ABC",
+												"Id": "a0j18000001aL2KAAU"
+											}
+										}, {
+											"relatedSections": null,
+											"data": {
+												"Asset__c": "a1218000003Qr6lAAC",
+												"Quantity__c": 123,
+												"Expiry_Date__c": "2019-06-21",
+												"Size__c": "xxxyyy",
+												"Type__c": "Battery",
+												"Id": "a0j18000001aL2FAAU"
+											}
+										}, {
+											"relatedSections": null,
+											"data": {
+												"Asset__c": "a1218000003Qr6lAAC",
+												"Quantity__c": 2,
+												"Expiry_Date__c": "2019-06-20",
+												"Size__c": "300mbar",
+												"Type__c": "Ceramic",
+												"Id": "a0j18000001aL2AAAU"
+											}
+										}],
+										"objectName": "Sub_Asset__c",
+										"fields": [{
+											"type": "DOUBLE",
+											"name": "Quantity__c",
+											"label": "Quantity",
+											"isEditable": true
+										}, {
+											"type": "DATE",
+											"name": "Expiry_Date__c",
+											"label": "Expiry Date",
+											"isEditable": true
+										}, {
+											"type": "STRING",
+											"name": "Type__c",
+											"label": "Type",
+											"isEditable": true
+										}, {
+											"type": "STRING",
+											"name": "Size__c",
+											"label": "Size",
+											"isEditable": true
+										}, {
+											"type": "TEXTAREA",
+											"name": "Description__c",
+											"label": "Description",
+											"isEditable": true
+										}, {
+											"type": "STRING",
+											"name": "Part_Number__c",
+											"label": "Part Number",
+											"isEditable": true
+										}]
+									}],
+									"data": {
+										"Work_Order__c": "0WO18000000842wGAA",
+										"Remarks__c": false,
+										"Power_Off__c": false,
+										"Initiator_Connected__c": false,
+										"Fike_Tag_No__c": "73103427",
+										"Fail__c": false,
+										"External_Id__c": "EX-48709",
+										"Disarmed__c": false,
+										"Customer_Tag_No__c": "EPC 113",
+										"Asset_C__c": "a1218000003Qr6lAAC",
+										"Armed__c": false,
+										"Id": "a1318000000qt2DAAQ"
+									}
+								}],
+								"objectName": "Hardware_Checklist__c",
+								"fields": [{
+									"type": "STRING",
+									"name": "Old__c",
+									"label": "Old",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "New__c",
+									"label": "New",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Offset__c",
+									"label": "Offset",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Dead_Band__c",
+									"label": "Dead Band",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Wire_Troubles__c",
+									"label": "#Wire Troubles",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Activations__c",
+									"label": "#Activations",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Zero__c",
+									"label": "Zero",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Pset__c",
+									"label": "Pset",
+									"isEditable": true
+								}]
+							}],
+							"data": {
+								"RecordType": {
+									"Name": "Beta Eexd",
+									"Id": "012180000000d3FAAQ",
+									"attributes": {
+										"url": "/services/data/v46.0/sobjects/RecordType/012180000000d3FAAQ",
+										"type": "RecordType"
+									}
+								},
+								"RecordTypeId": "012180000000d3FAAQ",
+								"Customer_Tag_No__c": "EPC 113",
+								"Name": "73103427",
+								"Id": "a1218000003Qr6lAAC"
+							}
+						}, {
+							"relatedSections": [{
+								"title": "Hardware Checklists",
+								"records": [{
+									"relatedSections": null,
+									"data": {
+										"Work_Order__c": "0WO18000000842wGAA",
+										"Remarks__c": false,
+										"Power_Off__c": false,
+										"Initiator_Connected__c": false,
+										"Fike_Tag_No__c": "0736002-09",
+										"Fail__c": false,
+										"External_Id__c": "EX-48710",
+										"Disarmed__c": false,
+										"Customer_Tag_No__c": "SRD 113.1",
+										"Asset_C__c": "a1218000003Qr6uAAC",
+										"Armed__c": false,
+										"Id": "a1318000000qt2EAAQ"
+									}
+								}],
+								"objectName": "Hardware_Checklist__c",
+								"fields": [{
+									"type": "STRING",
+									"name": "Old__c",
+									"label": "Old",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "New__c",
+									"label": "New",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Offset__c",
+									"label": "Offset",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Dead_Band__c",
+									"label": "Dead Band",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Wire_Troubles__c",
+									"label": "#Wire Troubles",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Activations__c",
+									"label": "#Activations",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Zero__c",
+									"label": "Zero",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Pset__c",
+									"label": "Pset",
+									"isEditable": true
+								}]
+							}],
+							"data": {
+								"RecordType": {
+									"Name": "Beta Eexd",
+									"Id": "012180000000d3FAAQ",
+									"attributes": {
+										"url": "/services/data/v46.0/sobjects/RecordType/012180000000d3FAAQ",
+										"type": "RecordType"
+									}
+								},
+								"RecordTypeId": "012180000000d3FAAQ",
+								"Customer_Tag_No__c": "SRD 113.1",
+								"Name": "0736002-09",
+								"Id": "a1218000003Qr6uAAC"
+							}
+						}, {
+							"relatedSections": [{
+								"title": "Hardware Checklists",
+								"records": [{
+									"relatedSections": [{
+										"title": "Sub Assets",
+										"records": [{
+											"relatedSections": null,
+											"data": {
+												"Asset__c": "a1218000003Qr6vAAC",
+												"Quantity__c": 3,
+												"Expiry_Date__c": "2019-06-14",
+												"Size__c": "444",
+												"Type__c": "Junction Box",
+												"Id": "a0j18000001aL2ZAAU"
+											}
+										}, {
+											"relatedSections": null,
+											"data": {
+												"Asset__c": "a1218000003Qr6vAAC",
+												"Quantity__c": 3,
+												"Expiry_Date__c": "2019-06-20",
+												"Size__c": "213",
+												"Type__c": "Ceramic3",
+												"Id": "a0j18000001aL2PAAU"
+											}
+										}],
+										"objectName": "Sub_Asset__c",
+										"fields": [{
+											"type": "DOUBLE",
+											"name": "Quantity__c",
+											"label": "Quantity",
+											"isEditable": true
+										}, {
+											"type": "DATE",
+											"name": "Expiry_Date__c",
+											"label": "Expiry Date",
+											"isEditable": true
+										}, {
+											"type": "STRING",
+											"name": "Type__c",
+											"label": "Type",
+											"isEditable": true
+										}, {
+											"type": "STRING",
+											"name": "Size__c",
+											"label": "Size",
+											"isEditable": true
+										}, {
+											"type": "TEXTAREA",
+											"name": "Description__c",
+											"label": "Description",
+											"isEditable": true
+										}, {
+											"type": "STRING",
+											"name": "Part_Number__c",
+											"label": "Part Number",
+											"isEditable": true
+										}]
+									}],
+									"data": {
+										"Work_Order__c": "0WO18000000842wGAA",
+										"Remarks__c": false,
+										"Power_Off__c": false,
+										"Initiator_Connected__c": false,
+										"Fike_Tag_No__c": "93630356",
+										"Fail__c": false,
+										"External_Id__c": "EX-48711",
+										"Disarmed__c": false,
+										"Customer_Tag_No__c": "OT 113.1",
+										"Asset_C__c": "a1218000003Qr6vAAC",
+										"Armed__c": false,
+										"Id": "a1318000000qt2FAAQ"
+									}
+								}],
+								"objectName": "Hardware_Checklist__c",
+								"fields": [{
+									"type": "STRING",
+									"name": "Old__c",
+									"label": "Old",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "New__c",
+									"label": "New",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Offset__c",
+									"label": "Offset",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Dead_Band__c",
+									"label": "Dead Band",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Wire_Troubles__c",
+									"label": "#Wire Troubles",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Activations__c",
+									"label": "#Activations",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Zero__c",
+									"label": "Zero",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Pset__c",
+									"label": "Pset",
+									"isEditable": true
+								}]
+							}],
+							"data": {
+								"RecordType": {
+									"Name": "Beta Eexd",
+									"Id": "012180000000d3FAAQ",
+									"attributes": {
+										"url": "/services/data/v46.0/sobjects/RecordType/012180000000d3FAAQ",
+										"type": "RecordType"
+									}
+								},
+								"RecordTypeId": "012180000000d3FAAQ",
+								"Customer_Tag_No__c": "OT 113.1",
+								"Name": "93630356",
+								"Id": "a1218000003Qr6vAAC"
+							}
+						}, {
+							"relatedSections": [{
+								"title": "Hardware Checklists",
+								"records": [{
+									"relatedSections": null,
+									"data": {
+										"Work_Order__c": "0WO18000000842wGAA",
+										"Remarks__c": false,
+										"Power_Off__c": false,
+										"Initiator_Connected__c": false,
+										"Fike_Tag_No__c": "756290",
+										"Fail__c": false,
+										"External_Id__c": "EX-48712",
+										"Disarmed__c": false,
+										"Customer_Tag_No__c": "CV-S RI2 113.1",
+										"Asset_C__c": "a1218000003Qr6yAAC",
+										"Armed__c": false,
+										"Id": "a1318000000qt2GAAQ"
+									}
+								}],
+								"objectName": "Hardware_Checklist__c",
+								"fields": [{
+									"type": "STRING",
+									"name": "Old__c",
+									"label": "Old",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "New__c",
+									"label": "New",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Offset__c",
+									"label": "Offset",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Dead_Band__c",
+									"label": "Dead Band",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Wire_Troubles__c",
+									"label": "#Wire Troubles",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Activations__c",
+									"label": "#Activations",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Zero__c",
+									"label": "Zero",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Pset__c",
+									"label": "Pset",
+									"isEditable": true
+								}]
+							}],
+							"data": {
+								"RecordType": {
+									"Name": "Beta Eexd",
+									"Id": "012180000000d3FAAQ",
+									"attributes": {
+										"url": "/services/data/v46.0/sobjects/RecordType/012180000000d3FAAQ",
+										"type": "RecordType"
+									}
+								},
+								"RecordTypeId": "012180000000d3FAAQ",
+								"Customer_Tag_No__c": "CV-S RI2 113.1",
+								"Name": "756290",
+								"Id": "a1218000003Qr6yAAC"
+							}
+						}, {
+							"relatedSections": [{
+								"title": "Hardware Checklists",
+								"records": [{
+									"relatedSections": null,
+									"data": {
+										"Work_Order__c": "0WO18000000842wGAA",
+										"Remarks__c": false,
+										"Power_Off__c": false,
+										"Initiator_Connected__c": false,
+										"Fike_Tag_No__c": "a1218000003Qr75",
+										"Fail__c": false,
+										"External_Id__c": "EX-48713",
+										"Disarmed__c": false,
+										"Customer_Tag_No__c": "CV-S-RI2 113.2",
+										"Asset_C__c": "a1218000003Qr75AAC",
+										"Armed__c": false,
+										"Id": "a1318000000qt2HAAQ"
+									}
+								}],
+								"objectName": "Hardware_Checklist__c",
+								"fields": [{
+									"type": "STRING",
+									"name": "Old__c",
+									"label": "Old",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "New__c",
+									"label": "New",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Offset__c",
+									"label": "Offset",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Dead_Band__c",
+									"label": "Dead Band",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Wire_Troubles__c",
+									"label": "#Wire Troubles",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Activations__c",
+									"label": "#Activations",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Zero__c",
+									"label": "Zero",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Pset__c",
+									"label": "Pset",
+									"isEditable": true
+								}]
+							}],
+							"data": {
+								"RecordType": {
+									"Name": "Beta Eexd",
+									"Id": "012180000000d3FAAQ",
+									"attributes": {
+										"url": "/services/data/v46.0/sobjects/RecordType/012180000000d3FAAQ",
+										"type": "RecordType"
+									}
+								},
+								"RecordTypeId": "012180000000d3FAAQ",
+								"Customer_Tag_No__c": "CV-S-RI2 113.2",
+								"Name": "a1218000003Qr75",
+								"Id": "a1218000003Qr75AAC"
+							}
+						}, {
+							"relatedSections": [{
+								"title": "Hardware Checklists",
+								"records": [{
+									"relatedSections": null,
+									"data": {
+										"Work_Order__c": "0WO18000000842wGAA",
+										"Remarks__c": false,
+										"Power_Off__c": false,
+										"Initiator_Connected__c": false,
+										"Fike_Tag_No__c": "0756303-1",
+										"Fail__c": false,
+										"External_Id__c": "EX-48714",
+										"Disarmed__c": false,
+										"Customer_Tag_No__c": "FQ II SQ 113.1",
+										"Asset_C__c": "a1218000003Qr76AAC",
+										"Armed__c": false,
+										"Id": "a1318000000qt2IAAQ"
+									}
+								}],
+								"objectName": "Hardware_Checklist__c",
+								"fields": [{
+									"type": "STRING",
+									"name": "Old__c",
+									"label": "Old",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "New__c",
+									"label": "New",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Offset__c",
+									"label": "Offset",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Dead_Band__c",
+									"label": "Dead Band",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Wire_Troubles__c",
+									"label": "#Wire Troubles",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Activations__c",
+									"label": "#Activations",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Zero__c",
+									"label": "Zero",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Pset__c",
+									"label": "Pset",
+									"isEditable": true
+								}]
+							}],
+							"data": {
+								"RecordType": {
+									"Name": "Beta Eexd",
+									"Id": "012180000000d3FAAQ",
+									"attributes": {
+										"url": "/services/data/v46.0/sobjects/RecordType/012180000000d3FAAQ",
+										"type": "RecordType"
+									}
+								},
+								"RecordTypeId": "012180000000d3FAAQ",
+								"Customer_Tag_No__c": "FQ II SQ 113.1",
+								"Name": "0756303-1",
+								"Id": "a1218000003Qr76AAC"
+							}
+						}, {
+							"relatedSections": [{
+								"title": "Hardware Checklists",
+								"records": [{
+									"relatedSections": null,
+									"data": {
+										"Work_Order__c": "0WO18000000842wGAA",
+										"Remarks__c": false,
+										"Power_Off__c": false,
+										"Initiator_Connected__c": false,
+										"Fike_Tag_No__c": "0756303-02",
+										"Fail__c": false,
+										"External_Id__c": "EX-48715",
+										"Disarmed__c": false,
+										"Customer_Tag_No__c": "FQ II SQ 113.2",
+										"Asset_C__c": "a1218000003Qr77AAC",
+										"Armed__c": false,
+										"Id": "a1318000000qt2JAAQ"
+									}
+								}],
+								"objectName": "Hardware_Checklist__c",
+								"fields": [{
+									"type": "STRING",
+									"name": "Old__c",
+									"label": "Old",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "New__c",
+									"label": "New",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Offset__c",
+									"label": "Offset",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Dead_Band__c",
+									"label": "Dead Band",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Wire_Troubles__c",
+									"label": "#Wire Troubles",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Activations__c",
+									"label": "#Activations",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Zero__c",
+									"label": "Zero",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Pset__c",
+									"label": "Pset",
+									"isEditable": true
+								}]
+							}],
+							"data": {
+								"RecordType": {
+									"Name": "Beta Eexd",
+									"Id": "012180000000d3FAAQ",
+									"attributes": {
+										"url": "/services/data/v46.0/sobjects/RecordType/012180000000d3FAAQ",
+										"type": "RecordType"
+									}
+								},
+								"RecordTypeId": "012180000000d3FAAQ",
+								"Customer_Tag_No__c": "FQ II SQ 113.2",
+								"Name": "0756303-02",
+								"Id": "a1218000003Qr77AAC"
+							}
+						}, {
+							"relatedSections": [{
+								"title": "Hardware Checklists",
+								"records": [{
+									"relatedSections": null,
+									"data": {
+										"Work_Order__c": "0WO18000000842wGAA",
+										"Remarks__c": false,
+										"Power_Off__c": false,
+										"Initiator_Connected__c": false,
+										"Fike_Tag_No__c": "a1218000003Qr7A",
+										"Fail__c": false,
+										"External_Id__c": "EX-48716",
+										"Disarmed__c": false,
+										"Customer_Tag_No__c": "DS 113",
+										"Asset_C__c": "a1218000003Qr7AAAS",
+										"Armed__c": false,
+										"Id": "a1318000000qt2KAAQ"
+									}
+								}],
+								"objectName": "Hardware_Checklist__c",
+								"fields": [{
+									"type": "STRING",
+									"name": "Old__c",
+									"label": "Old",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "New__c",
+									"label": "New",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Offset__c",
+									"label": "Offset",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Dead_Band__c",
+									"label": "Dead Band",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Wire_Troubles__c",
+									"label": "#Wire Troubles",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Activations__c",
+									"label": "#Activations",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Zero__c",
+									"label": "Zero",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Pset__c",
+									"label": "Pset",
+									"isEditable": true
+								}]
+							}],
+							"data": {
+								"RecordType": {
+									"Name": "Beta Eexd",
+									"Id": "012180000000d3FAAQ",
+									"attributes": {
+										"url": "/services/data/v46.0/sobjects/RecordType/012180000000d3FAAQ",
+										"type": "RecordType"
+									}
+								},
+								"RecordTypeId": "012180000000d3FAAQ",
+								"Customer_Tag_No__c": "DS 113",
+								"Name": "a1218000003Qr7A",
+								"Id": "a1218000003Qr7AAAS"
+							}
+						}, {
+							"relatedSections": [{
+								"title": "Hardware Checklists",
+								"records": [{
+									"relatedSections": null,
+									"data": {
+										"Work_Order__c": "0WO18000000842wGAA",
+										"Remarks__c": false,
+										"Power_Off__c": false,
+										"Initiator_Connected__c": false,
+										"Fike_Tag_No__c": "44864037",
+										"Fail__c": false,
+										"External_Id__c": "EX-48717",
+										"Disarmed__c": false,
+										"Customer_Tag_No__c": "PSU 11",
+										"Asset_C__c": "a1218000003Qr7TAAS",
+										"Armed__c": false,
+										"Id": "a1318000000qt2LAAQ"
+									}
+								}],
+								"objectName": "Hardware_Checklist__c",
+								"fields": [{
+									"type": "STRING",
+									"name": "Old__c",
+									"label": "Old",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "New__c",
+									"label": "New",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Offset__c",
+									"label": "Offset",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Dead_Band__c",
+									"label": "Dead Band",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Wire_Troubles__c",
+									"label": "#Wire Troubles",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Activations__c",
+									"label": "#Activations",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Zero__c",
+									"label": "Zero",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Pset__c",
+									"label": "Pset",
+									"isEditable": true
+								}]
+							}],
+							"data": {
+								"RecordType": {
+									"Name": "Beta Eexd",
+									"Id": "012180000000d3FAAQ",
+									"attributes": {
+										"url": "/services/data/v46.0/sobjects/RecordType/012180000000d3FAAQ",
+										"type": "RecordType"
+									}
+								},
+								"RecordTypeId": "012180000000d3FAAQ",
+								"Customer_Tag_No__c": "PSU 11",
+								"Name": "44864037",
+								"Id": "a1218000003Qr7TAAS"
+							}
+						}],
+						"objectName": "Asset_c__c",
+						"fields": [{
+							"type": "STRING",
+							"name": "Name",
+							"label": "Fike Tag Number",
+							"isEditable": true
+						}, {
+							"type": "PICKLIST",
+							"name": "Equipment_Type__c",
+							"label": "Equipment Type",
+							"isEditable": true
+						}, {
+							"type": "STRING",
+							"name": "Serial__c",
+							"label": "Serial #",
+							"isEditable": true
+						}, {
+							"type": "STRING",
+							"name": "Customer_Tag_No__c",
+							"label": "Customer Tag No",
+							"isEditable": true
+						}, {
+							"type": "STRING",
+							"name": "Required__c",
+							"label": "Required",
+							"isEditable": true
+						}, {
+							"type": "PICKLIST",
+							"name": "Size1__c",
+							"label": "Size",
+							"isEditable": true
+						}]
+					}],
+					"data": {
+						"Name": "01nesle0102",
+						"Id": "a1118000000II2JAAW"
+					}
+				}, {
+					"relatedSections": [{
+						"title": "Assets",
+						"records": [{
+							"relatedSections": [{
+								"title": "Hardware Checklists",
+								"records": [{
+									"relatedSections": null,
+									"data": {
+										"Work_Order__c": "0WO18000000842wGAA",
+										"Remarks__c": false,
+										"Power_Off__c": false,
+										"Initiator_Connected__c": false,
+										"Fike_Tag_No__c": "73103426",
+										"Fail__c": false,
+										"External_Id__c": "EX-48718",
+										"Disarmed__c": false,
+										"Customer_Tag_No__c": "EPC 112",
+										"Asset_C__c": "a1218000003Qr6mAAC",
+										"Armed__c": false,
+										"Id": "a1318000000qt2MAAQ"
+									}
+								}],
+								"objectName": "Hardware_Checklist__c",
+								"fields": [{
+									"type": "STRING",
+									"name": "Old__c",
+									"label": "Old",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "New__c",
+									"label": "New",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Offset__c",
+									"label": "Offset",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Dead_Band__c",
+									"label": "Dead Band",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Wire_Troubles__c",
+									"label": "#Wire Troubles",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Activations__c",
+									"label": "#Activations",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Zero__c",
+									"label": "Zero",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Pset__c",
+									"label": "Pset",
+									"isEditable": true
+								}]
+							}],
+							"data": {
+								"RecordType": {
+									"Name": "Beta Eexd",
+									"Id": "012180000000d3FAAQ",
+									"attributes": {
+										"url": "/services/data/v46.0/sobjects/RecordType/012180000000d3FAAQ",
+										"type": "RecordType"
+									}
+								},
+								"RecordTypeId": "012180000000d3FAAQ",
+								"Customer_Tag_No__c": "EPC 112",
+								"Name": "73103426",
+								"Id": "a1218000003Qr6mAAC"
+							}
+						}, {
+							"relatedSections": [{
+								"title": "Hardware Checklists",
+								"records": [{
+									"relatedSections": null,
+									"data": {
+										"Work_Order__c": "0WO18000000842wGAA",
+										"Remarks__c": false,
+										"Power_Off__c": false,
+										"Initiator_Connected__c": false,
+										"Fike_Tag_No__c": "0736002-06",
+										"Fail__c": false,
+										"External_Id__c": "EX-48719",
+										"Disarmed__c": false,
+										"Customer_Tag_No__c": "SRD 112.1",
+										"Asset_C__c": "a1218000003Qr6rAAC",
+										"Armed__c": false,
+										"Id": "a1318000000qt2NAAQ"
+									}
+								}],
+								"objectName": "Hardware_Checklist__c",
+								"fields": [{
+									"type": "STRING",
+									"name": "Old__c",
+									"label": "Old",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "New__c",
+									"label": "New",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Offset__c",
+									"label": "Offset",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Dead_Band__c",
+									"label": "Dead Band",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Wire_Troubles__c",
+									"label": "#Wire Troubles",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Activations__c",
+									"label": "#Activations",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Zero__c",
+									"label": "Zero",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Pset__c",
+									"label": "Pset",
+									"isEditable": true
+								}]
+							}],
+							"data": {
+								"RecordType": {
+									"Name": "Beta Eexd",
+									"Id": "012180000000d3FAAQ",
+									"attributes": {
+										"url": "/services/data/v46.0/sobjects/RecordType/012180000000d3FAAQ",
+										"type": "RecordType"
+									}
+								},
+								"RecordTypeId": "012180000000d3FAAQ",
+								"Customer_Tag_No__c": "SRD 112.1",
+								"Name": "0736002-06",
+								"Id": "a1218000003Qr6rAAC"
+							}
+						}, {
+							"relatedSections": [{
+								"title": "Hardware Checklists",
+								"records": [{
+									"relatedSections": null,
+									"data": {
+										"Work_Order__c": "0WO18000000842wGAA",
+										"Remarks__c": false,
+										"Power_Off__c": false,
+										"Initiator_Connected__c": false,
+										"Fike_Tag_No__c": "0736002-04",
+										"Fail__c": false,
+										"External_Id__c": "EX-48720",
+										"Disarmed__c": false,
+										"Customer_Tag_No__c": "SRD 112.2",
+										"Asset_C__c": "a1218000003Qr6sAAC",
+										"Armed__c": false,
+										"Id": "a1318000000qt2OAAQ"
+									}
+								}],
+								"objectName": "Hardware_Checklist__c",
+								"fields": [{
+									"type": "STRING",
+									"name": "Old__c",
+									"label": "Old",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "New__c",
+									"label": "New",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Offset__c",
+									"label": "Offset",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Dead_Band__c",
+									"label": "Dead Band",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Wire_Troubles__c",
+									"label": "#Wire Troubles",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Activations__c",
+									"label": "#Activations",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Zero__c",
+									"label": "Zero",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Pset__c",
+									"label": "Pset",
+									"isEditable": true
+								}]
+							}],
+							"data": {
+								"RecordType": {
+									"Name": "Beta Eexd",
+									"Id": "012180000000d3FAAQ",
+									"attributes": {
+										"url": "/services/data/v46.0/sobjects/RecordType/012180000000d3FAAQ",
+										"type": "RecordType"
+									}
+								},
+								"RecordTypeId": "012180000000d3FAAQ",
+								"Customer_Tag_No__c": "SRD 112.2",
+								"Name": "0736002-04",
+								"Id": "a1218000003Qr6sAAC"
+							}
+						}, {
+							"relatedSections": [{
+								"title": "Hardware Checklists",
+								"records": [{
+									"relatedSections": null,
+									"data": {
+										"Work_Order__c": "0WO18000000842wGAA",
+										"Remarks__c": false,
+										"Power_Off__c": false,
+										"Initiator_Connected__c": false,
+										"Fike_Tag_No__c": "0736002-03",
+										"Fail__c": false,
+										"External_Id__c": "EX-48721",
+										"Disarmed__c": false,
+										"Customer_Tag_No__c": "SRD 112.4",
+										"Asset_C__c": "a1218000003Qr6tAAC",
+										"Armed__c": false,
+										"Id": "a1318000000qt2PAAQ"
+									}
+								}],
+								"objectName": "Hardware_Checklist__c",
+								"fields": [{
+									"type": "STRING",
+									"name": "Old__c",
+									"label": "Old",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "New__c",
+									"label": "New",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Offset__c",
+									"label": "Offset",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Dead_Band__c",
+									"label": "Dead Band",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Wire_Troubles__c",
+									"label": "#Wire Troubles",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Activations__c",
+									"label": "#Activations",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Zero__c",
+									"label": "Zero",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Pset__c",
+									"label": "Pset",
+									"isEditable": true
+								}]
+							}],
+							"data": {
+								"RecordType": {
+									"Name": "Beta Eexd",
+									"Id": "012180000000d3FAAQ",
+									"attributes": {
+										"url": "/services/data/v46.0/sobjects/RecordType/012180000000d3FAAQ",
+										"type": "RecordType"
+									}
+								},
+								"RecordTypeId": "012180000000d3FAAQ",
+								"Customer_Tag_No__c": "SRD 112.4",
+								"Name": "0736002-03",
+								"Id": "a1218000003Qr6tAAC"
+							}
+						}, {
+							"relatedSections": [{
+								"title": "Hardware Checklists",
+								"records": [{
+									"relatedSections": null,
+									"data": {
+										"Work_Order__c": "0WO18000000842wGAA",
+										"Remarks__c": false,
+										"Power_Off__c": false,
+										"Initiator_Connected__c": false,
+										"Fike_Tag_No__c": "93630380",
+										"Fail__c": false,
+										"External_Id__c": "EX-48722",
+										"Disarmed__c": false,
+										"Customer_Tag_No__c": "OT 112.1",
+										"Asset_C__c": "a1218000003Qr6wAAC",
+										"Armed__c": false,
+										"Id": "a1318000000qt2QAAQ"
+									}
+								}],
+								"objectName": "Hardware_Checklist__c",
+								"fields": [{
+									"type": "STRING",
+									"name": "Old__c",
+									"label": "Old",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "New__c",
+									"label": "New",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Offset__c",
+									"label": "Offset",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Dead_Band__c",
+									"label": "Dead Band",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Wire_Troubles__c",
+									"label": "#Wire Troubles",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Activations__c",
+									"label": "#Activations",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Zero__c",
+									"label": "Zero",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Pset__c",
+									"label": "Pset",
+									"isEditable": true
+								}]
+							}],
+							"data": {
+								"RecordType": {
+									"Name": "Beta Eexd",
+									"Id": "012180000000d3FAAQ",
+									"attributes": {
+										"url": "/services/data/v46.0/sobjects/RecordType/012180000000d3FAAQ",
+										"type": "RecordType"
+									}
+								},
+								"RecordTypeId": "012180000000d3FAAQ",
+								"Customer_Tag_No__c": "OT 112.1",
+								"Name": "93630380",
+								"Id": "a1218000003Qr6wAAC"
+							}
+						}, {
+							"relatedSections": [{
+								"title": "Hardware Checklists",
+								"records": [{
+									"relatedSections": null,
+									"data": {
+										"Work_Order__c": "0WO18000000842wGAA",
+										"Remarks__c": false,
+										"Power_Off__c": false,
+										"Initiator_Connected__c": false,
+										"Fike_Tag_No__c": "756313",
+										"Fail__c": false,
+										"External_Id__c": "EX-48723",
+										"Disarmed__c": false,
+										"Customer_Tag_No__c": "CV-S-Ri2 112.1",
+										"Asset_C__c": "a1218000003Qr6zAAC",
+										"Armed__c": false,
+										"Id": "a1318000000qt2RAAQ"
+									}
+								}],
+								"objectName": "Hardware_Checklist__c",
+								"fields": [{
+									"type": "STRING",
+									"name": "Old__c",
+									"label": "Old",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "New__c",
+									"label": "New",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Offset__c",
+									"label": "Offset",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Dead_Band__c",
+									"label": "Dead Band",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Wire_Troubles__c",
+									"label": "#Wire Troubles",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Activations__c",
+									"label": "#Activations",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Zero__c",
+									"label": "Zero",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Pset__c",
+									"label": "Pset",
+									"isEditable": true
+								}]
+							}],
+							"data": {
+								"RecordType": {
+									"Name": "Beta Eexd",
+									"Id": "012180000000d3FAAQ",
+									"attributes": {
+										"url": "/services/data/v46.0/sobjects/RecordType/012180000000d3FAAQ",
+										"type": "RecordType"
+									}
+								},
+								"RecordTypeId": "012180000000d3FAAQ",
+								"Customer_Tag_No__c": "CV-S-Ri2 112.1",
+								"Name": "756313",
+								"Id": "a1218000003Qr6zAAC"
+							}
+						}, {
+							"relatedSections": [{
+								"title": "Hardware Checklists",
+								"records": [{
+									"relatedSections": null,
+									"data": {
+										"Work_Order__c": "0WO18000000842wGAA",
+										"Remarks__c": false,
+										"Power_Off__c": false,
+										"Initiator_Connected__c": false,
+										"Fike_Tag_No__c": "756314",
+										"Fail__c": false,
+										"External_Id__c": "EX-48724",
+										"Disarmed__c": false,
+										"Customer_Tag_No__c": "FQ II SQ 112.1",
+										"Asset_C__c": "a1218000003Qr70AAC",
+										"Armed__c": false,
+										"Id": "a1318000000qt2SAAQ"
+									}
+								}],
+								"objectName": "Hardware_Checklist__c",
+								"fields": [{
+									"type": "STRING",
+									"name": "Old__c",
+									"label": "Old",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "New__c",
+									"label": "New",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Offset__c",
+									"label": "Offset",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Dead_Band__c",
+									"label": "Dead Band",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Wire_Troubles__c",
+									"label": "#Wire Troubles",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Activations__c",
+									"label": "#Activations",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Zero__c",
+									"label": "Zero",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Pset__c",
+									"label": "Pset",
+									"isEditable": true
+								}]
+							}],
+							"data": {
+								"RecordType": {
+									"Name": "Beta Eexd",
+									"Id": "012180000000d3FAAQ",
+									"attributes": {
+										"url": "/services/data/v46.0/sobjects/RecordType/012180000000d3FAAQ",
+										"type": "RecordType"
+									}
+								},
+								"RecordTypeId": "012180000000d3FAAQ",
+								"Customer_Tag_No__c": "FQ II SQ 112.1",
+								"Name": "756314",
+								"Id": "a1218000003Qr70AAC"
+							}
+						}, {
+							"relatedSections": [{
+								"title": "Hardware Checklists",
+								"records": [{
+									"relatedSections": null,
+									"data": {
+										"Work_Order__c": "0WO18000000842wGAA",
+										"Remarks__c": false,
+										"Power_Off__c": false,
+										"Initiator_Connected__c": false,
+										"Fike_Tag_No__c": "a1218000003Qr79",
+										"Fail__c": false,
+										"External_Id__c": "EX-48725",
+										"Disarmed__c": false,
+										"Customer_Tag_No__c": "DS 112",
+										"Asset_C__c": "a1218000003Qr79AAC",
+										"Armed__c": false,
+										"Id": "a1318000000qt2TAAQ"
+									}
+								}],
+								"objectName": "Hardware_Checklist__c",
+								"fields": [{
+									"type": "STRING",
+									"name": "Old__c",
+									"label": "Old",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "New__c",
+									"label": "New",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Offset__c",
+									"label": "Offset",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Dead_Band__c",
+									"label": "Dead Band",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Wire_Troubles__c",
+									"label": "#Wire Troubles",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Activations__c",
+									"label": "#Activations",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Zero__c",
+									"label": "Zero",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Pset__c",
+									"label": "Pset",
+									"isEditable": true
+								}]
+							}],
+							"data": {
+								"RecordType": {
+									"Name": "Beta Eexd",
+									"Id": "012180000000d3FAAQ",
+									"attributes": {
+										"url": "/services/data/v46.0/sobjects/RecordType/012180000000d3FAAQ",
+										"type": "RecordType"
+									}
+								},
+								"RecordTypeId": "012180000000d3FAAQ",
+								"Customer_Tag_No__c": "DS 112",
+								"Name": "a1218000003Qr79",
+								"Id": "a1218000003Qr79AAC"
+							}
+						}],
+						"objectName": "Asset_c__c",
+						"fields": [{
+							"type": "STRING",
+							"name": "Name",
+							"label": "Fike Tag Number",
+							"isEditable": true
+						}, {
+							"type": "PICKLIST",
+							"name": "Equipment_Type__c",
+							"label": "Equipment Type",
+							"isEditable": true
+						}, {
+							"type": "STRING",
+							"name": "Serial__c",
+							"label": "Serial #",
+							"isEditable": true
+						}, {
+							"type": "STRING",
+							"name": "Customer_Tag_No__c",
+							"label": "Customer Tag No",
+							"isEditable": true
+						}, {
+							"type": "STRING",
+							"name": "Required__c",
+							"label": "Required",
+							"isEditable": true
+						}, {
+							"type": "PICKLIST",
+							"name": "Size1__c",
+							"label": "Size",
+							"isEditable": true
+						}]
+					}],
+					"data": {
+						"Name": "01nesle0103",
+						"Id": "a1118000000II2KAAW"
+					}
+				}, {
+					"relatedSections": [{
+						"title": "Assets",
+						"records": [{
+							"relatedSections": [{
+								"title": "Hardware Checklists",
+								"records": [{
+									"relatedSections": null,
+									"data": {
+										"Work_Order__c": "0WO18000000842wGAA",
+										"Remarks__c": false,
+										"Power_Off__c": false,
+										"Initiator_Connected__c": false,
+										"Fike_Tag_No__c": "73103425",
+										"Fail__c": false,
+										"External_Id__c": "EX-48726",
+										"Disarmed__c": false,
+										"Customer_Tag_No__c": "EPC 111",
+										"Asset_C__c": "a1218000003Qr6nAAC",
+										"Armed__c": false,
+										"Id": "a1318000000qt2UAAQ"
+									}
+								}],
+								"objectName": "Hardware_Checklist__c",
+								"fields": [{
+									"type": "STRING",
+									"name": "Old__c",
+									"label": "Old",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "New__c",
+									"label": "New",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Offset__c",
+									"label": "Offset",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Dead_Band__c",
+									"label": "Dead Band",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Wire_Troubles__c",
+									"label": "#Wire Troubles",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Activations__c",
+									"label": "#Activations",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Zero__c",
+									"label": "Zero",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Pset__c",
+									"label": "Pset",
+									"isEditable": true
+								}]
+							}],
+							"data": {
+								"RecordType": {
+									"Name": "Beta Eexd",
+									"Id": "012180000000d3FAAQ",
+									"attributes": {
+										"url": "/services/data/v46.0/sobjects/RecordType/012180000000d3FAAQ",
+										"type": "RecordType"
+									}
+								},
+								"RecordTypeId": "012180000000d3FAAQ",
+								"Customer_Tag_No__c": "EPC 111",
+								"Name": "73103425",
+								"Id": "a1218000003Qr6nAAC"
+							}
+						}, {
+							"relatedSections": [{
+								"title": "Hardware Checklists",
+								"records": [{
+									"relatedSections": null,
+									"data": {
+										"Work_Order__c": "0WO18000000842wGAA",
+										"Remarks__c": false,
+										"Power_Off__c": false,
+										"Initiator_Connected__c": false,
+										"Fike_Tag_No__c": "72351212",
+										"Fail__c": false,
+										"External_Id__c": "EX-48727",
+										"Disarmed__c": false,
+										"Customer_Tag_No__c": "AM 11",
+										"Asset_C__c": "a1218000003Qr6oAAC",
+										"Armed__c": false,
+										"Id": "a1318000000qt2VAAQ"
+									}
+								}],
+								"objectName": "Hardware_Checklist__c",
+								"fields": [{
+									"type": "STRING",
+									"name": "Old__c",
+									"label": "Old",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "New__c",
+									"label": "New",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Offset__c",
+									"label": "Offset",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Dead_Band__c",
+									"label": "Dead Band",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Wire_Troubles__c",
+									"label": "#Wire Troubles",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Activations__c",
+									"label": "#Activations",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Zero__c",
+									"label": "Zero",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Pset__c",
+									"label": "Pset",
+									"isEditable": true
+								}]
+							}],
+							"data": {
+								"RecordType": {
+									"Name": "Beta Eexd",
+									"Id": "012180000000d3FAAQ",
+									"attributes": {
+										"url": "/services/data/v46.0/sobjects/RecordType/012180000000d3FAAQ",
+										"type": "RecordType"
+									}
+								},
+								"RecordTypeId": "012180000000d3FAAQ",
+								"Customer_Tag_No__c": "AM 11",
+								"Name": "72351212",
+								"Id": "a1218000003Qr6oAAC"
+							}
+						}, {
+							"relatedSections": [{
+								"title": "Hardware Checklists",
+								"records": [{
+									"relatedSections": null,
+									"data": {
+										"Work_Order__c": "0WO18000000842wGAA",
+										"Remarks__c": false,
+										"Power_Off__c": false,
+										"Initiator_Connected__c": false,
+										"Fike_Tag_No__c": "72558402",
+										"Fail__c": false,
+										"External_Id__c": "EX-48728",
+										"Disarmed__c": false,
+										"Customer_Tag_No__c": "RC 111",
+										"Asset_C__c": "a1218000003Qr6pAAC",
+										"Armed__c": false,
+										"Id": "a1318000000qt2WAAQ"
+									}
+								}],
+								"objectName": "Hardware_Checklist__c",
+								"fields": [{
+									"type": "STRING",
+									"name": "Old__c",
+									"label": "Old",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "New__c",
+									"label": "New",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Offset__c",
+									"label": "Offset",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Dead_Band__c",
+									"label": "Dead Band",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Wire_Troubles__c",
+									"label": "#Wire Troubles",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Activations__c",
+									"label": "#Activations",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Zero__c",
+									"label": "Zero",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Pset__c",
+									"label": "Pset",
+									"isEditable": true
+								}]
+							}],
+							"data": {
+								"RecordType": {
+									"Name": "Beta Eexd",
+									"Id": "012180000000d3FAAQ",
+									"attributes": {
+										"url": "/services/data/v46.0/sobjects/RecordType/012180000000d3FAAQ",
+										"type": "RecordType"
+									}
+								},
+								"RecordTypeId": "012180000000d3FAAQ",
+								"Customer_Tag_No__c": "RC 111",
+								"Name": "72558402",
+								"Id": "a1218000003Qr6pAAC"
+							}
+						}, {
+							"relatedSections": [{
+								"title": "Hardware Checklists",
+								"records": [{
+									"relatedSections": null,
+									"data": {
+										"Work_Order__c": "0WO18000000842wGAA",
+										"Remarks__c": false,
+										"Power_Off__c": false,
+										"Initiator_Connected__c": false,
+										"Fike_Tag_No__c": "0736002-02",
+										"Fail__c": false,
+										"External_Id__c": "EX-48729",
+										"Disarmed__c": false,
+										"Customer_Tag_No__c": "SRD 111.1",
+										"Asset_C__c": "a1218000003Qr6qAAC",
+										"Armed__c": false,
+										"Id": "a1318000000qt2XAAQ"
+									}
+								}],
+								"objectName": "Hardware_Checklist__c",
+								"fields": [{
+									"type": "STRING",
+									"name": "Old__c",
+									"label": "Old",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "New__c",
+									"label": "New",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Offset__c",
+									"label": "Offset",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Dead_Band__c",
+									"label": "Dead Band",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Wire_Troubles__c",
+									"label": "#Wire Troubles",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Activations__c",
+									"label": "#Activations",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Zero__c",
+									"label": "Zero",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Pset__c",
+									"label": "Pset",
+									"isEditable": true
+								}]
+							}],
+							"data": {
+								"RecordType": {
+									"Name": "Beta Eexd",
+									"Id": "012180000000d3FAAQ",
+									"attributes": {
+										"url": "/services/data/v46.0/sobjects/RecordType/012180000000d3FAAQ",
+										"type": "RecordType"
+									}
+								},
+								"RecordTypeId": "012180000000d3FAAQ",
+								"Customer_Tag_No__c": "SRD 111.1",
+								"Name": "0736002-02",
+								"Id": "a1218000003Qr6qAAC"
+							}
+						}, {
+							"relatedSections": [{
+								"title": "Hardware Checklists",
+								"records": [{
+									"relatedSections": null,
+									"data": {
+										"Work_Order__c": "0WO18000000842wGAA",
+										"Remarks__c": false,
+										"Power_Off__c": false,
+										"Initiator_Connected__c": false,
+										"Fike_Tag_No__c": "93630377",
+										"Fail__c": false,
+										"External_Id__c": "EX-48730",
+										"Disarmed__c": false,
+										"Customer_Tag_No__c": "OT 111.1",
+										"Asset_C__c": "a1218000003Qr6xAAC",
+										"Armed__c": false,
+										"Id": "a1318000000qt2YAAQ"
+									}
+								}],
+								"objectName": "Hardware_Checklist__c",
+								"fields": [{
+									"type": "STRING",
+									"name": "Old__c",
+									"label": "Old",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "New__c",
+									"label": "New",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Offset__c",
+									"label": "Offset",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Dead_Band__c",
+									"label": "Dead Band",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Wire_Troubles__c",
+									"label": "#Wire Troubles",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Activations__c",
+									"label": "#Activations",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Zero__c",
+									"label": "Zero",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Pset__c",
+									"label": "Pset",
+									"isEditable": true
+								}]
+							}],
+							"data": {
+								"RecordType": {
+									"Name": "Beta Eexd",
+									"Id": "012180000000d3FAAQ",
+									"attributes": {
+										"url": "/services/data/v46.0/sobjects/RecordType/012180000000d3FAAQ",
+										"type": "RecordType"
+									}
+								},
+								"RecordTypeId": "012180000000d3FAAQ",
+								"Customer_Tag_No__c": "OT 111.1",
+								"Name": "93630377",
+								"Id": "a1218000003Qr6xAAC"
+							}
+						}, {
+							"relatedSections": [{
+								"title": "Hardware Checklists",
+								"records": [{
+									"relatedSections": null,
+									"data": {
+										"Work_Order__c": "0WO18000000842wGAA",
+										"Remarks__c": false,
+										"Power_Off__c": false,
+										"Initiator_Connected__c": false,
+										"Fike_Tag_No__c": "756302",
+										"Fail__c": false,
+										"External_Id__c": "EX-48731",
+										"Disarmed__c": false,
+										"Customer_Tag_No__c": "CV-S-RI2 111.1",
+										"Asset_C__c": "a1218000003Qr71AAC",
+										"Armed__c": false,
+										"Id": "a1318000000qt2ZAAQ"
+									}
+								}],
+								"objectName": "Hardware_Checklist__c",
+								"fields": [{
+									"type": "STRING",
+									"name": "Old__c",
+									"label": "Old",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "New__c",
+									"label": "New",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Offset__c",
+									"label": "Offset",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Dead_Band__c",
+									"label": "Dead Band",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Wire_Troubles__c",
+									"label": "#Wire Troubles",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Activations__c",
+									"label": "#Activations",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Zero__c",
+									"label": "Zero",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Pset__c",
+									"label": "Pset",
+									"isEditable": true
+								}]
+							}],
+							"data": {
+								"RecordType": {
+									"Name": "Beta Eexd",
+									"Id": "012180000000d3FAAQ",
+									"attributes": {
+										"url": "/services/data/v46.0/sobjects/RecordType/012180000000d3FAAQ",
+										"type": "RecordType"
+									}
+								},
+								"RecordTypeId": "012180000000d3FAAQ",
+								"Customer_Tag_No__c": "CV-S-RI2 111.1",
+								"Name": "756302",
+								"Id": "a1218000003Qr71AAC"
+							}
+						}, {
+							"relatedSections": [{
+								"title": "Hardware Checklists",
+								"records": [{
+									"relatedSections": null,
+									"data": {
+										"Work_Order__c": "0WO18000000842wGAA",
+										"Remarks__c": false,
+										"Power_Off__c": false,
+										"Initiator_Connected__c": false,
+										"Fike_Tag_No__c": "a1218000003Qr72",
+										"Fail__c": false,
+										"External_Id__c": "EX-48732",
+										"Disarmed__c": false,
+										"Customer_Tag_No__c": "CV-S-RI2 111.2",
+										"Asset_C__c": "a1218000003Qr72AAC",
+										"Armed__c": false,
+										"Id": "a1318000000qt2aAAA"
+									}
+								}],
+								"objectName": "Hardware_Checklist__c",
+								"fields": [{
+									"type": "STRING",
+									"name": "Old__c",
+									"label": "Old",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "New__c",
+									"label": "New",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Offset__c",
+									"label": "Offset",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Dead_Band__c",
+									"label": "Dead Band",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Wire_Troubles__c",
+									"label": "#Wire Troubles",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Activations__c",
+									"label": "#Activations",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Zero__c",
+									"label": "Zero",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Pset__c",
+									"label": "Pset",
+									"isEditable": true
+								}]
+							}],
+							"data": {
+								"RecordType": {
+									"Name": "Beta Eexd",
+									"Id": "012180000000d3FAAQ",
+									"attributes": {
+										"url": "/services/data/v46.0/sobjects/RecordType/012180000000d3FAAQ",
+										"type": "RecordType"
+									}
+								},
+								"RecordTypeId": "012180000000d3FAAQ",
+								"Customer_Tag_No__c": "CV-S-RI2 111.2",
+								"Name": "a1218000003Qr72",
+								"Id": "a1218000003Qr72AAC"
+							}
+						}, {
+							"relatedSections": [{
+								"title": "Hardware Checklists",
+								"records": [{
+									"relatedSections": null,
+									"data": {
+										"Work_Order__c": "0WO18000000842wGAA",
+										"Remarks__c": false,
+										"Power_Off__c": false,
+										"Initiator_Connected__c": false,
+										"Fike_Tag_No__c": "0756291-01",
+										"Fail__c": false,
+										"External_Id__c": "EX-48733",
+										"Disarmed__c": false,
+										"Customer_Tag_No__c": "FQ II SQ 111.1",
+										"Asset_C__c": "a1218000003Qr73AAC",
+										"Armed__c": false,
+										"Id": "a1318000000qt2bAAA"
+									}
+								}],
+								"objectName": "Hardware_Checklist__c",
+								"fields": [{
+									"type": "STRING",
+									"name": "Old__c",
+									"label": "Old",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "New__c",
+									"label": "New",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Offset__c",
+									"label": "Offset",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Dead_Band__c",
+									"label": "Dead Band",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Wire_Troubles__c",
+									"label": "#Wire Troubles",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Activations__c",
+									"label": "#Activations",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Zero__c",
+									"label": "Zero",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Pset__c",
+									"label": "Pset",
+									"isEditable": true
+								}]
+							}],
+							"data": {
+								"RecordType": {
+									"Name": "Beta Eexd",
+									"Id": "012180000000d3FAAQ",
+									"attributes": {
+										"url": "/services/data/v46.0/sobjects/RecordType/012180000000d3FAAQ",
+										"type": "RecordType"
+									}
+								},
+								"RecordTypeId": "012180000000d3FAAQ",
+								"Customer_Tag_No__c": "FQ II SQ 111.1",
+								"Name": "0756291-01",
+								"Id": "a1218000003Qr73AAC"
+							}
+						}, {
+							"relatedSections": [{
+								"title": "Hardware Checklists",
+								"records": [{
+									"relatedSections": null,
+									"data": {
+										"Work_Order__c": "0WO18000000842wGAA",
+										"Remarks__c": false,
+										"Power_Off__c": false,
+										"Initiator_Connected__c": false,
+										"Fike_Tag_No__c": "0756291-02",
+										"Fail__c": false,
+										"External_Id__c": "EX-48734",
+										"Disarmed__c": false,
+										"Customer_Tag_No__c": "FQ II SQ 111.2",
+										"Asset_C__c": "a1218000003Qr74AAC",
+										"Armed__c": false,
+										"Id": "a1318000000qt2cAAA"
+									}
+								}],
+								"objectName": "Hardware_Checklist__c",
+								"fields": [{
+									"type": "STRING",
+									"name": "Old__c",
+									"label": "Old",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "New__c",
+									"label": "New",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Offset__c",
+									"label": "Offset",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Dead_Band__c",
+									"label": "Dead Band",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Wire_Troubles__c",
+									"label": "#Wire Troubles",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Activations__c",
+									"label": "#Activations",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Zero__c",
+									"label": "Zero",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Pset__c",
+									"label": "Pset",
+									"isEditable": true
+								}]
+							}],
+							"data": {
+								"RecordType": {
+									"Name": "Beta Eexd",
+									"Id": "012180000000d3FAAQ",
+									"attributes": {
+										"url": "/services/data/v46.0/sobjects/RecordType/012180000000d3FAAQ",
+										"type": "RecordType"
+									}
+								},
+								"RecordTypeId": "012180000000d3FAAQ",
+								"Customer_Tag_No__c": "FQ II SQ 111.2",
+								"Name": "0756291-02",
+								"Id": "a1218000003Qr74AAC"
+							}
+						}, {
+							"relatedSections": [{
+								"title": "Hardware Checklists",
+								"records": [{
+									"relatedSections": null,
+									"data": {
+										"Work_Order__c": "0WO18000000842wGAA",
+										"Remarks__c": false,
+										"Power_Off__c": false,
+										"Initiator_Connected__c": false,
+										"Fike_Tag_No__c": "a1218000003Qr78",
+										"Fail__c": false,
+										"External_Id__c": "EX-48735",
+										"Disarmed__c": false,
+										"Customer_Tag_No__c": "DS 111",
+										"Asset_C__c": "a1218000003Qr78AAC",
+										"Armed__c": false,
+										"Id": "a1318000000qt2dAAA"
+									}
+								}],
+								"objectName": "Hardware_Checklist__c",
+								"fields": [{
+									"type": "STRING",
+									"name": "Old__c",
+									"label": "Old",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "New__c",
+									"label": "New",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Offset__c",
+									"label": "Offset",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Dead_Band__c",
+									"label": "Dead Band",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Wire_Troubles__c",
+									"label": "#Wire Troubles",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Activations__c",
+									"label": "#Activations",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Zero__c",
+									"label": "Zero",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Pset__c",
+									"label": "Pset",
+									"isEditable": true
+								}]
+							}],
+							"data": {
+								"RecordType": {
+									"Name": "Beta Eexd",
+									"Id": "012180000000d3FAAQ",
+									"attributes": {
+										"url": "/services/data/v46.0/sobjects/RecordType/012180000000d3FAAQ",
+										"type": "RecordType"
+									}
+								},
+								"RecordTypeId": "012180000000d3FAAQ",
+								"Customer_Tag_No__c": "DS 111",
+								"Name": "a1218000003Qr78",
+								"Id": "a1218000003Qr78AAC"
+							}
+						}],
+						"objectName": "Asset_c__c",
+						"fields": [{
+							"type": "STRING",
+							"name": "Name",
+							"label": "Fike Tag Number",
+							"isEditable": true
+						}, {
+							"type": "PICKLIST",
+							"name": "Equipment_Type__c",
+							"label": "Equipment Type",
+							"isEditable": true
+						}, {
+							"type": "STRING",
+							"name": "Serial__c",
+							"label": "Serial #",
+							"isEditable": true
+						}, {
+							"type": "STRING",
+							"name": "Customer_Tag_No__c",
+							"label": "Customer Tag No",
+							"isEditable": true
+						}, {
+							"type": "STRING",
+							"name": "Required__c",
+							"label": "Required",
+							"isEditable": true
+						}, {
+							"type": "PICKLIST",
+							"name": "Size1__c",
+							"label": "Size",
+							"isEditable": true
+						}]
+					}],
+					"data": {
+						"Name": "01nesle0104",
+						"Id": "a1118000000II2LAAW"
+					}
+				}, {
+					"relatedSections": [{
+						"title": "Assets",
+						"records": [{
+							"relatedSections": [{
+								"title": "Hardware Checklists",
+								"records": [{
+									"relatedSections": null,
+									"data": {
+										"Work_Order__c": "0WO18000000842wGAA",
+										"Remarks__c": false,
+										"Power_Off__c": false,
+										"Initiator_Connected__c": false,
+										"Fike_Tag_No__c": "73103422",
+										"Fail__c": false,
+										"External_Id__c": "EX-48736",
+										"Disarmed__c": false,
+										"Customer_Tag_No__c": "EPC 211",
+										"Asset_C__c": "a1218000003Qr7CAAS",
+										"Armed__c": false,
+										"Id": "a1318000000qt2eAAA"
+									}
+								}],
+								"objectName": "Hardware_Checklist__c",
+								"fields": [{
+									"type": "STRING",
+									"name": "Old__c",
+									"label": "Old",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "New__c",
+									"label": "New",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Offset__c",
+									"label": "Offset",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Dead_Band__c",
+									"label": "Dead Band",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Wire_Troubles__c",
+									"label": "#Wire Troubles",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Activations__c",
+									"label": "#Activations",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Zero__c",
+									"label": "Zero",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Pset__c",
+									"label": "Pset",
+									"isEditable": true
+								}]
+							}],
+							"data": {
+								"RecordType": {
+									"Name": "Beta Eexd",
+									"Id": "012180000000d3FAAQ",
+									"attributes": {
+										"url": "/services/data/v46.0/sobjects/RecordType/012180000000d3FAAQ",
+										"type": "RecordType"
+									}
+								},
+								"RecordTypeId": "012180000000d3FAAQ",
+								"Customer_Tag_No__c": "EPC 211",
+								"Name": "73103422",
+								"Id": "a1218000003Qr7CAAS"
+							}
+						}, {
+							"relatedSections": [{
+								"title": "Hardware Checklists",
+								"records": [{
+									"relatedSections": null,
+									"data": {
+										"Work_Order__c": "0WO18000000842wGAA",
+										"Remarks__c": false,
+										"Power_Off__c": false,
+										"Initiator_Connected__c": false,
+										"Fike_Tag_No__c": "72558401",
+										"Fail__c": false,
+										"External_Id__c": "EX-48737",
+										"Disarmed__c": false,
+										"Customer_Tag_No__c": "RC 211",
+										"Asset_C__c": "a1218000003Qr7GAAS",
+										"Armed__c": false,
+										"Id": "a1318000000qt2fAAA"
+									}
+								}],
+								"objectName": "Hardware_Checklist__c",
+								"fields": [{
+									"type": "STRING",
+									"name": "Old__c",
+									"label": "Old",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "New__c",
+									"label": "New",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Offset__c",
+									"label": "Offset",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Dead_Band__c",
+									"label": "Dead Band",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Wire_Troubles__c",
+									"label": "#Wire Troubles",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Activations__c",
+									"label": "#Activations",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Zero__c",
+									"label": "Zero",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Pset__c",
+									"label": "Pset",
+									"isEditable": true
+								}]
+							}],
+							"data": {
+								"RecordType": {
+									"Name": "Beta Eexd",
+									"Id": "012180000000d3FAAQ",
+									"attributes": {
+										"url": "/services/data/v46.0/sobjects/RecordType/012180000000d3FAAQ",
+										"type": "RecordType"
+									}
+								},
+								"RecordTypeId": "012180000000d3FAAQ",
+								"Customer_Tag_No__c": "RC 211",
+								"Name": "72558401",
+								"Id": "a1218000003Qr7GAAS"
+							}
+						}, {
+							"relatedSections": [{
+								"title": "Hardware Checklists",
+								"records": [{
+									"relatedSections": null,
+									"data": {
+										"Work_Order__c": "0WO18000000842wGAA",
+										"Remarks__c": false,
+										"Power_Off__c": false,
+										"Initiator_Connected__c": false,
+										"Fike_Tag_No__c": "0736002-21",
+										"Fail__c": false,
+										"External_Id__c": "EX-48738",
+										"Disarmed__c": false,
+										"Customer_Tag_No__c": "SRD 211.1",
+										"Asset_C__c": "a1218000003Qr7HAAS",
+										"Armed__c": false,
+										"Id": "a1318000000qt2gAAA"
+									}
+								}],
+								"objectName": "Hardware_Checklist__c",
+								"fields": [{
+									"type": "STRING",
+									"name": "Old__c",
+									"label": "Old",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "New__c",
+									"label": "New",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Offset__c",
+									"label": "Offset",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Dead_Band__c",
+									"label": "Dead Band",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Wire_Troubles__c",
+									"label": "#Wire Troubles",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Activations__c",
+									"label": "#Activations",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Zero__c",
+									"label": "Zero",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Pset__c",
+									"label": "Pset",
+									"isEditable": true
+								}]
+							}],
+							"data": {
+								"RecordType": {
+									"Name": "Beta Eexd",
+									"Id": "012180000000d3FAAQ",
+									"attributes": {
+										"url": "/services/data/v46.0/sobjects/RecordType/012180000000d3FAAQ",
+										"type": "RecordType"
+									}
+								},
+								"RecordTypeId": "012180000000d3FAAQ",
+								"Customer_Tag_No__c": "SRD 211.1",
+								"Name": "0736002-21",
+								"Id": "a1218000003Qr7HAAS"
+							}
+						}, {
+							"relatedSections": [{
+								"title": "Hardware Checklists",
+								"records": [{
+									"relatedSections": null,
+									"data": {
+										"Work_Order__c": "0WO18000000842wGAA",
+										"Remarks__c": false,
+										"Power_Off__c": false,
+										"Initiator_Connected__c": false,
+										"Fike_Tag_No__c": "93630531",
+										"Fail__c": false,
+										"External_Id__c": "EX-48739",
+										"Disarmed__c": false,
+										"Customer_Tag_No__c": "OT 211.1",
+										"Asset_C__c": "a1218000003Qr7KAAS",
+										"Armed__c": false,
+										"Id": "a1318000000qt2hAAA"
+									}
+								}],
+								"objectName": "Hardware_Checklist__c",
+								"fields": [{
+									"type": "STRING",
+									"name": "Old__c",
+									"label": "Old",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "New__c",
+									"label": "New",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Offset__c",
+									"label": "Offset",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Dead_Band__c",
+									"label": "Dead Band",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Wire_Troubles__c",
+									"label": "#Wire Troubles",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Activations__c",
+									"label": "#Activations",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Zero__c",
+									"label": "Zero",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Pset__c",
+									"label": "Pset",
+									"isEditable": true
+								}]
+							}],
+							"data": {
+								"RecordType": {
+									"Name": "Beta Eexd",
+									"Id": "012180000000d3FAAQ",
+									"attributes": {
+										"url": "/services/data/v46.0/sobjects/RecordType/012180000000d3FAAQ",
+										"type": "RecordType"
+									}
+								},
+								"RecordTypeId": "012180000000d3FAAQ",
+								"Customer_Tag_No__c": "OT 211.1",
+								"Name": "93630531",
+								"Id": "a1218000003Qr7KAAS"
+							}
+						}, {
+							"relatedSections": [{
+								"title": "Hardware Checklists",
+								"records": [{
+									"relatedSections": null,
+									"data": {
+										"Work_Order__c": "0WO18000000842wGAA",
+										"Remarks__c": false,
+										"Power_Off__c": false,
+										"Initiator_Connected__c": false,
+										"Fike_Tag_No__c": "93630364",
+										"Fail__c": false,
+										"External_Id__c": "EX-48740",
+										"Disarmed__c": false,
+										"Customer_Tag_No__c": "OT 211.2",
+										"Asset_C__c": "a1218000003Qr7LAAS",
+										"Armed__c": false,
+										"Id": "a1318000000qt2iAAA"
+									}
+								}],
+								"objectName": "Hardware_Checklist__c",
+								"fields": [{
+									"type": "STRING",
+									"name": "Old__c",
+									"label": "Old",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "New__c",
+									"label": "New",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Offset__c",
+									"label": "Offset",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Dead_Band__c",
+									"label": "Dead Band",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Wire_Troubles__c",
+									"label": "#Wire Troubles",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Activations__c",
+									"label": "#Activations",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Zero__c",
+									"label": "Zero",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Pset__c",
+									"label": "Pset",
+									"isEditable": true
+								}]
+							}],
+							"data": {
+								"RecordType": {
+									"Name": "Beta Eexd",
+									"Id": "012180000000d3FAAQ",
+									"attributes": {
+										"url": "/services/data/v46.0/sobjects/RecordType/012180000000d3FAAQ",
+										"type": "RecordType"
+									}
+								},
+								"RecordTypeId": "012180000000d3FAAQ",
+								"Customer_Tag_No__c": "OT 211.2",
+								"Name": "93630364",
+								"Id": "a1218000003Qr7LAAS"
+							}
+						}, {
+							"relatedSections": [{
+								"title": "Hardware Checklists",
+								"records": [{
+									"relatedSections": null,
+									"data": {
+										"Work_Order__c": "0WO18000000842wGAA",
+										"Remarks__c": false,
+										"Power_Off__c": false,
+										"Initiator_Connected__c": false,
+										"Fike_Tag_No__c": "a1218000003Qr7Q",
+										"Fail__c": false,
+										"External_Id__c": "EX-48741",
+										"Disarmed__c": false,
+										"Customer_Tag_No__c": "DS 211",
+										"Asset_C__c": "a1218000003Qr7QAAS",
+										"Armed__c": false,
+										"Id": "a1318000000qt2jAAA"
+									}
+								}],
+								"objectName": "Hardware_Checklist__c",
+								"fields": [{
+									"type": "STRING",
+									"name": "Old__c",
+									"label": "Old",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "New__c",
+									"label": "New",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Offset__c",
+									"label": "Offset",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Dead_Band__c",
+									"label": "Dead Band",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Wire_Troubles__c",
+									"label": "#Wire Troubles",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Activations__c",
+									"label": "#Activations",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Zero__c",
+									"label": "Zero",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Pset__c",
+									"label": "Pset",
+									"isEditable": true
+								}]
+							}],
+							"data": {
+								"RecordType": {
+									"Name": "Beta Eexd",
+									"Id": "012180000000d3FAAQ",
+									"attributes": {
+										"url": "/services/data/v46.0/sobjects/RecordType/012180000000d3FAAQ",
+										"type": "RecordType"
+									}
+								},
+								"RecordTypeId": "012180000000d3FAAQ",
+								"Customer_Tag_No__c": "DS 211",
+								"Name": "a1218000003Qr7Q",
+								"Id": "a1218000003Qr7QAAS"
+							}
+						}],
+						"objectName": "Asset_c__c",
+						"fields": [{
+							"type": "STRING",
+							"name": "Name",
+							"label": "Fike Tag Number",
+							"isEditable": true
+						}, {
+							"type": "PICKLIST",
+							"name": "Equipment_Type__c",
+							"label": "Equipment Type",
+							"isEditable": true
+						}, {
+							"type": "STRING",
+							"name": "Serial__c",
+							"label": "Serial #",
+							"isEditable": true
+						}, {
+							"type": "STRING",
+							"name": "Customer_Tag_No__c",
+							"label": "Customer Tag No",
+							"isEditable": true
+						}, {
+							"type": "STRING",
+							"name": "Required__c",
+							"label": "Required",
+							"isEditable": true
+						}, {
+							"type": "PICKLIST",
+							"name": "Size1__c",
+							"label": "Size",
+							"isEditable": true
+						}]
+					}],
+					"data": {
+						"Name": "01nesle0201",
+						"Id": "a1118000000II2MAAW"
+					}
+				}, {
+					"relatedSections": [{
+						"title": "Assets",
+						"records": [{
+							"relatedSections": [{
+								"title": "Hardware Checklists",
+								"records": [{
+									"relatedSections": null,
+									"data": {
+										"Work_Order__c": "0WO18000000842wGAA",
+										"Remarks__c": false,
+										"Power_Off__c": false,
+										"Initiator_Connected__c": false,
+										"Fike_Tag_No__c": "71892247",
+										"Fail__c": false,
+										"External_Id__c": "EX-48742",
+										"Disarmed__c": false,
+										"Customer_Tag_No__c": "PSU 21",
+										"Asset_C__c": "a1218000003Qr7BAAS",
+										"Armed__c": false,
+										"Id": "a1318000000qt2kAAA"
+									}
+								}],
+								"objectName": "Hardware_Checklist__c",
+								"fields": [{
+									"type": "STRING",
+									"name": "Old__c",
+									"label": "Old",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "New__c",
+									"label": "New",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Offset__c",
+									"label": "Offset",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Dead_Band__c",
+									"label": "Dead Band",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Wire_Troubles__c",
+									"label": "#Wire Troubles",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Activations__c",
+									"label": "#Activations",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Zero__c",
+									"label": "Zero",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Pset__c",
+									"label": "Pset",
+									"isEditable": true
+								}]
+							}],
+							"data": {
+								"RecordType": {
+									"Name": "Beta Eexd",
+									"Id": "012180000000d3FAAQ",
+									"attributes": {
+										"url": "/services/data/v46.0/sobjects/RecordType/012180000000d3FAAQ",
+										"type": "RecordType"
+									}
+								},
+								"RecordTypeId": "012180000000d3FAAQ",
+								"Customer_Tag_No__c": "PSU 21",
+								"Name": "71892247",
+								"Id": "a1218000003Qr7BAAS"
+							}
+						}, {
+							"relatedSections": [{
+								"title": "Hardware Checklists",
+								"records": [{
+									"relatedSections": null,
+									"data": {
+										"Work_Order__c": "0WO18000000842wGAA",
+										"Remarks__c": false,
+										"Power_Off__c": false,
+										"Initiator_Connected__c": false,
+										"Fike_Tag_No__c": "73103424",
+										"Fail__c": false,
+										"External_Id__c": "EX-48743",
+										"Disarmed__c": false,
+										"Customer_Tag_No__c": "EPC 213",
+										"Asset_C__c": "a1218000003Qr7EAAS",
+										"Armed__c": false,
+										"Id": "a1318000000qt2lAAA"
+									}
+								}],
+								"objectName": "Hardware_Checklist__c",
+								"fields": [{
+									"type": "STRING",
+									"name": "Old__c",
+									"label": "Old",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "New__c",
+									"label": "New",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Offset__c",
+									"label": "Offset",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Dead_Band__c",
+									"label": "Dead Band",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Wire_Troubles__c",
+									"label": "#Wire Troubles",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Activations__c",
+									"label": "#Activations",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Zero__c",
+									"label": "Zero",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Pset__c",
+									"label": "Pset",
+									"isEditable": true
+								}]
+							}],
+							"data": {
+								"RecordType": {
+									"Name": "Beta Eexd",
+									"Id": "012180000000d3FAAQ",
+									"attributes": {
+										"url": "/services/data/v46.0/sobjects/RecordType/012180000000d3FAAQ",
+										"type": "RecordType"
+									}
+								},
+								"RecordTypeId": "012180000000d3FAAQ",
+								"Customer_Tag_No__c": "EPC 213",
+								"Name": "73103424",
+								"Id": "a1218000003Qr7EAAS"
+							}
+						}, {
+							"relatedSections": [{
+								"title": "Hardware Checklists",
+								"records": [{
+									"relatedSections": null,
+									"data": {
+										"Work_Order__c": "0WO18000000842wGAA",
+										"Remarks__c": false,
+										"Power_Off__c": false,
+										"Initiator_Connected__c": false,
+										"Fike_Tag_No__c": "0736002-13",
+										"Fail__c": false,
+										"External_Id__c": "EX-48744",
+										"Disarmed__c": false,
+										"Customer_Tag_No__c": "SRD 213.1",
+										"Asset_C__c": "a1218000003Qr7JAAS",
+										"Armed__c": false,
+										"Id": "a1318000000qt2mAAA"
+									}
+								}],
+								"objectName": "Hardware_Checklist__c",
+								"fields": [{
+									"type": "STRING",
+									"name": "Old__c",
+									"label": "Old",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "New__c",
+									"label": "New",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Offset__c",
+									"label": "Offset",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Dead_Band__c",
+									"label": "Dead Band",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Wire_Troubles__c",
+									"label": "#Wire Troubles",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Activations__c",
+									"label": "#Activations",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Zero__c",
+									"label": "Zero",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Pset__c",
+									"label": "Pset",
+									"isEditable": true
+								}]
+							}],
+							"data": {
+								"RecordType": {
+									"Name": "Beta Eexd",
+									"Id": "012180000000d3FAAQ",
+									"attributes": {
+										"url": "/services/data/v46.0/sobjects/RecordType/012180000000d3FAAQ",
+										"type": "RecordType"
+									}
+								},
+								"RecordTypeId": "012180000000d3FAAQ",
+								"Customer_Tag_No__c": "SRD 213.1",
+								"Name": "0736002-13",
+								"Id": "a1218000003Qr7JAAS"
+							}
+						}, {
+							"relatedSections": [{
+								"title": "Hardware Checklists",
+								"records": [{
+									"relatedSections": null,
+									"data": {
+										"Work_Order__c": "0WO18000000842wGAA",
+										"Remarks__c": false,
+										"Power_Off__c": false,
+										"Initiator_Connected__c": false,
+										"Fike_Tag_No__c": "93630348",
+										"Fail__c": false,
+										"External_Id__c": "EX-48745",
+										"Disarmed__c": false,
+										"Customer_Tag_No__c": "OT 213.1",
+										"Asset_C__c": "a1218000003Qr7OAAS",
+										"Armed__c": false,
+										"Id": "a1318000000qt2nAAA"
+									}
+								}],
+								"objectName": "Hardware_Checklist__c",
+								"fields": [{
+									"type": "STRING",
+									"name": "Old__c",
+									"label": "Old",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "New__c",
+									"label": "New",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Offset__c",
+									"label": "Offset",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Dead_Band__c",
+									"label": "Dead Band",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Wire_Troubles__c",
+									"label": "#Wire Troubles",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Activations__c",
+									"label": "#Activations",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Zero__c",
+									"label": "Zero",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Pset__c",
+									"label": "Pset",
+									"isEditable": true
+								}]
+							}],
+							"data": {
+								"RecordType": {
+									"Name": "Beta Eexd",
+									"Id": "012180000000d3FAAQ",
+									"attributes": {
+										"url": "/services/data/v46.0/sobjects/RecordType/012180000000d3FAAQ",
+										"type": "RecordType"
+									}
+								},
+								"RecordTypeId": "012180000000d3FAAQ",
+								"Customer_Tag_No__c": "OT 213.1",
+								"Name": "93630348",
+								"Id": "a1218000003Qr7OAAS"
+							}
+						}, {
+							"relatedSections": [{
+								"title": "Hardware Checklists",
+								"records": [{
+									"relatedSections": null,
+									"data": {
+										"Work_Order__c": "0WO18000000842wGAA",
+										"Type__c": "Beta Eexd",
+										"Serial__c": "7685903382",
+										"Remarks__c": false,
+										"Power_Off__c": false,
+										"Initiator_Connected__c": false,
+										"Fike_Tag_No__c": "93630487",
+										"Fail__c": false,
+										"External_Id__c": "EX-48746",
+										"Disarmed__c": false,
+										"Customer_Tag_No__c": "OT 213.2",
+										"Asset_C__c": "a1218000003Qr7PAAS",
+										"Armed__c": false,
+										"Id": "a1318000000qt2oAAA"
+									}
+								}],
+								"objectName": "Hardware_Checklist__c",
+								"fields": [{
+									"type": "STRING",
+									"name": "Old__c",
+									"label": "Old",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "New__c",
+									"label": "New",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Offset__c",
+									"label": "Offset",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Dead_Band__c",
+									"label": "Dead Band",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Wire_Troubles__c",
+									"label": "#Wire Troubles",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Activations__c",
+									"label": "#Activations",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Zero__c",
+									"label": "Zero",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Pset__c",
+									"label": "Pset",
+									"isEditable": true
+								}]
+							}],
+							"data": {
+								"RecordType": {
+									"Name": "Beta Eexd",
+									"Id": "012180000000d3FAAQ",
+									"attributes": {
+										"url": "/services/data/v46.0/sobjects/RecordType/012180000000d3FAAQ",
+										"type": "RecordType"
+									}
+								},
+								"RecordTypeId": "012180000000d3FAAQ",
+								"Customer_Tag_No__c": "OT 213.2",
+								"Serial__c": "7685903382",
+								"Size1__c": "2\" (10- 100mbarg)",
+								"Equipment_Type__c": "Beta Eexd",
+								"Name": "93630487",
+								"Id": "a1218000003Qr7PAAS"
+							}
+						}, {
+							"relatedSections": [{
+								"title": "Hardware Checklists",
+								"records": [{
+									"relatedSections": null,
+									"data": {
+										"Work_Order__c": "0WO18000000842wGAA",
+										"Remarks__c": false,
+										"Power_Off__c": false,
+										"Initiator_Connected__c": false,
+										"Fike_Tag_No__c": "a1218000003Qr7S",
+										"Fail__c": false,
+										"External_Id__c": "EX-48747",
+										"Disarmed__c": false,
+										"Customer_Tag_No__c": "DS 213",
+										"Asset_C__c": "a1218000003Qr7SAAS",
+										"Armed__c": false,
+										"Id": "a1318000000qt2pAAA"
+									}
+								}],
+								"objectName": "Hardware_Checklist__c",
+								"fields": [{
+									"type": "STRING",
+									"name": "Old__c",
+									"label": "Old",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "New__c",
+									"label": "New",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Offset__c",
+									"label": "Offset",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Dead_Band__c",
+									"label": "Dead Band",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Wire_Troubles__c",
+									"label": "#Wire Troubles",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Activations__c",
+									"label": "#Activations",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Zero__c",
+									"label": "Zero",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Pset__c",
+									"label": "Pset",
+									"isEditable": true
+								}]
+							}],
+							"data": {
+								"RecordType": {
+									"Name": "Beta Eexd",
+									"Id": "012180000000d3FAAQ",
+									"attributes": {
+										"url": "/services/data/v46.0/sobjects/RecordType/012180000000d3FAAQ",
+										"type": "RecordType"
+									}
+								},
+								"RecordTypeId": "012180000000d3FAAQ",
+								"Customer_Tag_No__c": "DS 213",
+								"Name": "a1218000003Qr7S",
+								"Id": "a1218000003Qr7SAAS"
+							}
+						}],
+						"objectName": "Asset_c__c",
+						"fields": [{
+							"type": "STRING",
+							"name": "Name",
+							"label": "Fike Tag Number",
+							"isEditable": true
+						}, {
+							"type": "PICKLIST",
+							"name": "Equipment_Type__c",
+							"label": "Equipment Type",
+							"isEditable": true
+						}, {
+							"type": "STRING",
+							"name": "Serial__c",
+							"label": "Serial #",
+							"isEditable": true
+						}, {
+							"type": "STRING",
+							"name": "Customer_Tag_No__c",
+							"label": "Customer Tag No",
+							"isEditable": true
+						}, {
+							"type": "STRING",
+							"name": "Required__c",
+							"label": "Required",
+							"isEditable": true
+						}, {
+							"type": "PICKLIST",
+							"name": "Size1__c",
+							"label": "Size",
+							"isEditable": true
+						}]
+					}],
+					"data": {
+						"Name": "01nesle0202",
+						"Id": "a1118000000II2NAAW"
+					}
+				}, {
+					"relatedSections": [{
+						"title": "Assets",
+						"records": [{
+							"relatedSections": [{
+								"title": "Hardware Checklists",
+								"records": [{
+									"relatedSections": null,
+									"data": {
+										"Work_Order__c": "0WO18000000842wGAA",
+										"Remarks__c": false,
+										"Power_Off__c": false,
+										"Initiator_Connected__c": false,
+										"Fike_Tag_No__c": "73103423",
+										"Fail__c": false,
+										"External_Id__c": "EX-48748",
+										"Disarmed__c": false,
+										"Customer_Tag_No__c": "EPC 212",
+										"Asset_C__c": "a1218000003Qr7DAAS",
+										"Armed__c": false,
+										"Id": "a1318000000qt2qAAA"
+									}
+								}],
+								"objectName": "Hardware_Checklist__c",
+								"fields": [{
+									"type": "STRING",
+									"name": "Old__c",
+									"label": "Old",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "New__c",
+									"label": "New",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Offset__c",
+									"label": "Offset",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Dead_Band__c",
+									"label": "Dead Band",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Wire_Troubles__c",
+									"label": "#Wire Troubles",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Activations__c",
+									"label": "#Activations",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Zero__c",
+									"label": "Zero",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Pset__c",
+									"label": "Pset",
+									"isEditable": true
+								}]
+							}],
+							"data": {
+								"RecordType": {
+									"Name": "Beta Eexd",
+									"Id": "012180000000d3FAAQ",
+									"attributes": {
+										"url": "/services/data/v46.0/sobjects/RecordType/012180000000d3FAAQ",
+										"type": "RecordType"
+									}
+								},
+								"RecordTypeId": "012180000000d3FAAQ",
+								"Customer_Tag_No__c": "EPC 212",
+								"Name": "73103423",
+								"Id": "a1218000003Qr7DAAS"
+							}
+						}, {
+							"relatedSections": [{
+								"title": "Hardware Checklists",
+								"records": [{
+									"relatedSections": null,
+									"data": {
+										"Work_Order__c": "0WO18000000842wGAA",
+										"Remarks__c": false,
+										"Power_Off__c": false,
+										"Initiator_Connected__c": false,
+										"Fike_Tag_No__c": "73601405",
+										"Fail__c": false,
+										"External_Id__c": "EX-48749",
+										"Disarmed__c": false,
+										"Customer_Tag_No__c": "AM 21",
+										"Asset_C__c": "a1218000003Qr7FAAS",
+										"Armed__c": false,
+										"Id": "a1318000000qt2rAAA"
+									}
+								}],
+								"objectName": "Hardware_Checklist__c",
+								"fields": [{
+									"type": "STRING",
+									"name": "Old__c",
+									"label": "Old",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "New__c",
+									"label": "New",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Offset__c",
+									"label": "Offset",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Dead_Band__c",
+									"label": "Dead Band",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Wire_Troubles__c",
+									"label": "#Wire Troubles",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Activations__c",
+									"label": "#Activations",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Zero__c",
+									"label": "Zero",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Pset__c",
+									"label": "Pset",
+									"isEditable": true
+								}]
+							}],
+							"data": {
+								"RecordType": {
+									"Name": "Beta Eexd",
+									"Id": "012180000000d3FAAQ",
+									"attributes": {
+										"url": "/services/data/v46.0/sobjects/RecordType/012180000000d3FAAQ",
+										"type": "RecordType"
+									}
+								},
+								"RecordTypeId": "012180000000d3FAAQ",
+								"Customer_Tag_No__c": "AM 21",
+								"Name": "73601405",
+								"Id": "a1218000003Qr7FAAS"
+							}
+						}, {
+							"relatedSections": [{
+								"title": "Hardware Checklists",
+								"records": [{
+									"relatedSections": null,
+									"data": {
+										"Work_Order__c": "0WO18000000842wGAA",
+										"Remarks__c": false,
+										"Power_Off__c": false,
+										"Initiator_Connected__c": false,
+										"Fike_Tag_No__c": "0736002-1",
+										"Fail__c": false,
+										"External_Id__c": "EX-48750",
+										"Disarmed__c": false,
+										"Customer_Tag_No__c": "SRD 212.1",
+										"Asset_C__c": "a1218000003Qr7IAAS",
+										"Armed__c": false,
+										"Id": "a1318000000qt2sAAA"
+									}
+								}],
+								"objectName": "Hardware_Checklist__c",
+								"fields": [{
+									"type": "STRING",
+									"name": "Old__c",
+									"label": "Old",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "New__c",
+									"label": "New",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Offset__c",
+									"label": "Offset",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Dead_Band__c",
+									"label": "Dead Band",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Wire_Troubles__c",
+									"label": "#Wire Troubles",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Activations__c",
+									"label": "#Activations",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Zero__c",
+									"label": "Zero",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Pset__c",
+									"label": "Pset",
+									"isEditable": true
+								}]
+							}],
+							"data": {
+								"RecordType": {
+									"Name": "Beta Eexd",
+									"Id": "012180000000d3FAAQ",
+									"attributes": {
+										"url": "/services/data/v46.0/sobjects/RecordType/012180000000d3FAAQ",
+										"type": "RecordType"
+									}
+								},
+								"RecordTypeId": "012180000000d3FAAQ",
+								"Customer_Tag_No__c": "SRD 212.1",
+								"Name": "0736002-1",
+								"Id": "a1218000003Qr7IAAS"
+							}
+						}, {
+							"relatedSections": [{
+								"title": "Hardware Checklists",
+								"records": [{
+									"relatedSections": null,
+									"data": {
+										"Work_Order__c": "0WO18000000842wGAA",
+										"Remarks__c": false,
+										"Power_Off__c": false,
+										"Initiator_Connected__c": false,
+										"Fike_Tag_No__c": "93630372",
+										"Fail__c": false,
+										"External_Id__c": "EX-48751",
+										"Disarmed__c": false,
+										"Customer_Tag_No__c": "OT 212.1",
+										"Asset_C__c": "a1218000003Qr7MAAS",
+										"Armed__c": false,
+										"Id": "a1318000000qt2tAAA"
+									}
+								}],
+								"objectName": "Hardware_Checklist__c",
+								"fields": [{
+									"type": "STRING",
+									"name": "Old__c",
+									"label": "Old",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "New__c",
+									"label": "New",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Offset__c",
+									"label": "Offset",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Dead_Band__c",
+									"label": "Dead Band",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Wire_Troubles__c",
+									"label": "#Wire Troubles",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Activations__c",
+									"label": "#Activations",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Zero__c",
+									"label": "Zero",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Pset__c",
+									"label": "Pset",
+									"isEditable": true
+								}]
+							}],
+							"data": {
+								"RecordType": {
+									"Name": "Beta Eexd",
+									"Id": "012180000000d3FAAQ",
+									"attributes": {
+										"url": "/services/data/v46.0/sobjects/RecordType/012180000000d3FAAQ",
+										"type": "RecordType"
+									}
+								},
+								"RecordTypeId": "012180000000d3FAAQ",
+								"Customer_Tag_No__c": "OT 212.1",
+								"Name": "93630372",
+								"Id": "a1218000003Qr7MAAS"
+							}
+						}, {
+							"relatedSections": [{
+								"title": "Hardware Checklists",
+								"records": [{
+									"relatedSections": null,
+									"data": {
+										"Work_Order__c": "0WO18000000842wGAA",
+										"Remarks__c": false,
+										"Power_Off__c": false,
+										"Initiator_Connected__c": false,
+										"Fike_Tag_No__c": "93630385",
+										"Fail__c": false,
+										"External_Id__c": "EX-48752",
+										"Disarmed__c": false,
+										"Customer_Tag_No__c": "OT 212.2",
+										"Asset_C__c": "a1218000003Qr7NAAS",
+										"Armed__c": false,
+										"Id": "a1318000000qt2uAAA"
+									}
+								}],
+								"objectName": "Hardware_Checklist__c",
+								"fields": [{
+									"type": "STRING",
+									"name": "Old__c",
+									"label": "Old",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "New__c",
+									"label": "New",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Offset__c",
+									"label": "Offset",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Dead_Band__c",
+									"label": "Dead Band",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Wire_Troubles__c",
+									"label": "#Wire Troubles",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Activations__c",
+									"label": "#Activations",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Zero__c",
+									"label": "Zero",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Pset__c",
+									"label": "Pset",
+									"isEditable": true
+								}]
+							}],
+							"data": {
+								"RecordType": {
+									"Name": "Beta Eexd",
+									"Id": "012180000000d3FAAQ",
+									"attributes": {
+										"url": "/services/data/v46.0/sobjects/RecordType/012180000000d3FAAQ",
+										"type": "RecordType"
+									}
+								},
+								"RecordTypeId": "012180000000d3FAAQ",
+								"Customer_Tag_No__c": "OT 212.2",
+								"Name": "93630385",
+								"Id": "a1218000003Qr7NAAS"
+							}
+						}, {
+							"relatedSections": [{
+								"title": "Hardware Checklists",
+								"records": [{
+									"relatedSections": null,
+									"data": {
+										"Work_Order__c": "0WO18000000842wGAA",
+										"Remarks__c": false,
+										"Power_Off__c": false,
+										"Initiator_Connected__c": false,
+										"Fike_Tag_No__c": "a1218000003Qr7R",
+										"Fail__c": false,
+										"External_Id__c": "EX-48753",
+										"Disarmed__c": false,
+										"Customer_Tag_No__c": "DS 212",
+										"Asset_C__c": "a1218000003Qr7RAAS",
+										"Armed__c": false,
+										"Id": "a1318000000qt2vAAA"
+									}
+								}],
+								"objectName": "Hardware_Checklist__c",
+								"fields": [{
+									"type": "STRING",
+									"name": "Old__c",
+									"label": "Old",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "New__c",
+									"label": "New",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Offset__c",
+									"label": "Offset",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Dead_Band__c",
+									"label": "Dead Band",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Wire_Troubles__c",
+									"label": "#Wire Troubles",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Activations__c",
+									"label": "#Activations",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Zero__c",
+									"label": "Zero",
+									"isEditable": true
+								}, {
+									"type": "STRING",
+									"name": "Pset__c",
+									"label": "Pset",
+									"isEditable": true
+								}]
+							}],
+							"data": {
+								"RecordType": {
+									"Name": "Beta Eexd",
+									"Id": "012180000000d3FAAQ",
+									"attributes": {
+										"url": "/services/data/v46.0/sobjects/RecordType/012180000000d3FAAQ",
+										"type": "RecordType"
+									}
+								},
+								"RecordTypeId": "012180000000d3FAAQ",
+								"Customer_Tag_No__c": "DS 212",
+								"Name": "a1218000003Qr7R",
+								"Id": "a1218000003Qr7RAAS"
+							}
+						}],
+						"objectName": "Asset_c__c",
+						"fields": [{
+							"type": "STRING",
+							"name": "Name",
+							"label": "Fike Tag Number",
+							"isEditable": true
+						}, {
+							"type": "PICKLIST",
+							"name": "Equipment_Type__c",
+							"label": "Equipment Type",
+							"isEditable": true
+						}, {
+							"type": "STRING",
+							"name": "Serial__c",
+							"label": "Serial #",
+							"isEditable": true
+						}, {
+							"type": "STRING",
+							"name": "Customer_Tag_No__c",
+							"label": "Customer Tag No",
+							"isEditable": true
+						}, {
+							"type": "STRING",
+							"name": "Required__c",
+							"label": "Required",
+							"isEditable": true
+						}, {
+							"type": "PICKLIST",
+							"name": "Size1__c",
+							"label": "Size",
+							"isEditable": true
+						}]
+					}],
+					"data": {
+						"Name": "01nesle0203",
+						"Id": "a1118000000II2OAAW"
+					}
+				}, {
+					"relatedSections": [{
+						"title": "Assets",
+						"records": [{
+							"relatedSections": null,
+							"data": {
+								"RecordType": {
+									"Name": "Beta Eexd",
+									"Id": "012180000000d3FAAQ",
+									"attributes": {
+										"url": "/services/data/v46.0/sobjects/RecordType/012180000000d3FAAQ",
+										"type": "RecordType"
+									}
+								},
+								"RecordTypeId": "012180000000d3FAAQ",
+								"Customer_Tag_No__c": "RC 211",
+								"Equipment_Type__c": "Beta Eexd",
+								"Name": "72558401",
+								"Id": "a1218000003VKD6AAO"
+							}
+						}, {
+							"relatedSections": null,
+							"data": {
+								"RecordType": {
+									"Name": "Beta Eexd",
+									"Id": "012180000000d3FAAQ",
+									"attributes": {
+										"url": "/services/data/v46.0/sobjects/RecordType/012180000000d3FAAQ",
+										"type": "RecordType"
+									}
+								},
+								"RecordTypeId": "012180000000d3FAAQ",
+								"Customer_Tag_No__c": "OT 211.1",
+								"Equipment_Type__c": "Beta Eexd",
+								"Name": "93630531",
+								"Id": "a1218000003VKD7AAO"
+							}
+						}, {
+							"relatedSections": null,
+							"data": {
+								"RecordType": {
+									"Name": "Beta Eexd",
+									"Id": "012180000000d3FAAQ",
+									"attributes": {
+										"url": "/services/data/v46.0/sobjects/RecordType/012180000000d3FAAQ",
+										"type": "RecordType"
+									}
+								},
+								"RecordTypeId": "012180000000d3FAAQ",
+								"Customer_Tag_No__c": "DS 211",
+								"Equipment_Type__c": "Beta Eexd",
+								"Name": "a1218000003VKD8",
+								"Id": "a1218000003VKD8AAO"
+							}
+						}, {
+							"relatedSections": null,
+							"data": {
+								"RecordType": {
+									"Name": "Beta Eexd",
+									"Id": "012180000000d3FAAQ",
+									"attributes": {
+										"url": "/services/data/v46.0/sobjects/RecordType/012180000000d3FAAQ",
+										"type": "RecordType"
+									}
+								},
+								"RecordTypeId": "012180000000d3FAAQ",
+								"Customer_Tag_No__c": "OT 211.2",
+								"Equipment_Type__c": "Beta Eexd",
+								"Name": "93630364",
+								"Id": "a1218000003VKD9AAO"
+							}
+						}, {
+							"relatedSections": null,
+							"data": {
+								"RecordType": {
+									"Name": "Beta Eexd",
+									"Id": "012180000000d3FAAQ",
+									"attributes": {
+										"url": "/services/data/v46.0/sobjects/RecordType/012180000000d3FAAQ",
+										"type": "RecordType"
+									}
+								},
+								"RecordTypeId": "012180000000d3FAAQ",
+								"Customer_Tag_No__c": "SRD 211.1",
+								"Equipment_Type__c": "Beta Eexd",
+								"Name": "0736002-21",
+								"Id": "a1218000003VKDAAA4"
+							}
+						}, {
+							"relatedSections": null,
+							"data": {
+								"RecordType": {
+									"Name": "Beta Eexd",
+									"Id": "012180000000d3FAAQ",
+									"attributes": {
+										"url": "/services/data/v46.0/sobjects/RecordType/012180000000d3FAAQ",
+										"type": "RecordType"
+									}
+								},
+								"RecordTypeId": "012180000000d3FAAQ",
+								"Customer_Tag_No__c": "AM 21",
+								"Equipment_Type__c": "Beta Eexd",
+								"Name": "73601405",
+								"Id": "a1218000003VKDBAA4"
+							}
+						}, {
+							"relatedSections": null,
+							"data": {
+								"RecordType": {
+									"Name": "Beta Eexd",
+									"Id": "012180000000d3FAAQ",
+									"attributes": {
+										"url": "/services/data/v46.0/sobjects/RecordType/012180000000d3FAAQ",
+										"type": "RecordType"
+									}
+								},
+								"RecordTypeId": "012180000000d3FAAQ",
+								"Customer_Tag_No__c": "PSU 21",
+								"Equipment_Type__c": "Beta Eexd",
+								"Name": "71892247",
+								"Id": "a1218000003VKDCAA4"
+							}
+						}, {
+							"relatedSections": null,
+							"data": {
+								"RecordType": {
+									"Name": "Beta Eexd",
+									"Id": "012180000000d3FAAQ",
+									"attributes": {
+										"url": "/services/data/v46.0/sobjects/RecordType/012180000000d3FAAQ",
+										"type": "RecordType"
+									}
+								},
+								"RecordTypeId": "012180000000d3FAAQ",
+								"Customer_Tag_No__c": "EPC 211",
+								"Equipment_Type__c": "Beta Eexd",
+								"Name": "73103422",
+								"Id": "a1218000003VKDDAA4"
+							}
+						}],
+						"objectName": "Asset_c__c",
+						"fields": [{
+							"type": "STRING",
+							"name": "Name",
+							"label": "Fike Tag Number",
+							"isEditable": true
+						}, {
+							"type": "PICKLIST",
+							"name": "Equipment_Type__c",
+							"label": "Equipment Type",
+							"isEditable": true
+						}, {
+							"type": "STRING",
+							"name": "Serial__c",
+							"label": "Serial #",
+							"isEditable": true
+						}, {
+							"type": "STRING",
+							"name": "Customer_Tag_No__c",
+							"label": "Customer Tag No",
+							"isEditable": true
+						}, {
+							"type": "STRING",
+							"name": "Required__c",
+							"label": "Required",
+							"isEditable": true
+						}, {
+							"type": "PICKLIST",
+							"name": "Size1__c",
+							"label": "Size",
+							"isEditable": true
+						}]
+					}],
+					"data": {
+						"Name": "01nesle0201",
+						"Id": "a1118000000t6ShAAI"
+					}
+				}, {
+					"relatedSections": [{
+						"title": "Assets",
+						"records": [{
+							"relatedSections": null,
+							"data": {
+								"RecordType": {
+									"Name": "Beta Eexd",
+									"Id": "012180000000d3FAAQ",
+									"attributes": {
+										"url": "/services/data/v46.0/sobjects/RecordType/012180000000d3FAAQ",
+										"type": "RecordType"
+									}
+								},
+								"RecordTypeId": "012180000000d3FAAQ",
+								"Customer_Tag_No__c": "OT 213.2",
+								"Equipment_Type__c": "Beta Eexd",
+								"Name": "93630487",
+								"Id": "a1218000003VKDEAA4"
+							}
+						}, {
+							"relatedSections": null,
+							"data": {
+								"RecordType": {
+									"Name": "Beta Eexd",
+									"Id": "012180000000d3FAAQ",
+									"attributes": {
+										"url": "/services/data/v46.0/sobjects/RecordType/012180000000d3FAAQ",
+										"type": "RecordType"
+									}
+								},
+								"RecordTypeId": "012180000000d3FAAQ",
+								"Customer_Tag_No__c": "AM 21",
+								"Equipment_Type__c": "Beta Eexd",
+								"Name": "73601405",
+								"Id": "a1218000003VKDBAA4"
+							}
+						}, {
+							"relatedSections": null,
+							"data": {
+								"RecordType": {
+									"Name": "Beta Eexd",
+									"Id": "012180000000d3FAAQ",
+									"attributes": {
+										"url": "/services/data/v46.0/sobjects/RecordType/012180000000d3FAAQ",
+										"type": "RecordType"
+									}
+								},
+								"RecordTypeId": "012180000000d3FAAQ",
+								"Customer_Tag_No__c": "RC 211",
+								"Equipment_Type__c": "Beta Eexd",
+								"Name": "72558401",
+								"Id": "a1218000003VKD6AAO"
+							}
+						}, {
+							"relatedSections": null,
+							"data": {
+								"RecordType": {
+									"Name": "Beta Eexd",
+									"Id": "012180000000d3FAAQ",
+									"attributes": {
+										"url": "/services/data/v46.0/sobjects/RecordType/012180000000d3FAAQ",
+										"type": "RecordType"
+									}
+								},
+								"RecordTypeId": "012180000000d3FAAQ",
+								"Customer_Tag_No__c": "SRD 213.1",
+								"Equipment_Type__c": "Beta Eexd",
+								"Name": "0736002-13",
+								"Id": "a1218000003VKDFAA4"
+							}
+						}, {
+							"relatedSections": null,
+							"data": {
+								"RecordType": {
+									"Name": "Beta Eexd",
+									"Id": "012180000000d3FAAQ",
+									"attributes": {
+										"url": "/services/data/v46.0/sobjects/RecordType/012180000000d3FAAQ",
+										"type": "RecordType"
+									}
+								},
+								"RecordTypeId": "012180000000d3FAAQ",
+								"Customer_Tag_No__c": "EPC 213",
+								"Equipment_Type__c": "Beta Eexd",
+								"Name": "73103424",
+								"Id": "a1218000003VKDGAA4"
+							}
+						}, {
+							"relatedSections": null,
+							"data": {
+								"RecordType": {
+									"Name": "Beta Eexd",
+									"Id": "012180000000d3FAAQ",
+									"attributes": {
+										"url": "/services/data/v46.0/sobjects/RecordType/012180000000d3FAAQ",
+										"type": "RecordType"
+									}
+								},
+								"RecordTypeId": "012180000000d3FAAQ",
+								"Customer_Tag_No__c": "DS 213",
+								"Equipment_Type__c": "Beta Eexd",
+								"Name": "a1218000003VKDH",
+								"Id": "a1218000003VKDHAA4"
+							}
+						}, {
+							"relatedSections": null,
+							"data": {
+								"RecordType": {
+									"Name": "Beta Eexd",
+									"Id": "012180000000d3FAAQ",
+									"attributes": {
+										"url": "/services/data/v46.0/sobjects/RecordType/012180000000d3FAAQ",
+										"type": "RecordType"
+									}
+								},
+								"RecordTypeId": "012180000000d3FAAQ",
+								"Customer_Tag_No__c": "OT 213.1",
+								"Equipment_Type__c": "Beta Eexd",
+								"Name": "93630348",
+								"Id": "a1218000003VKDIAA4"
+							}
+						}, {
+							"relatedSections": null,
+							"data": {
+								"RecordType": {
+									"Name": "Beta Eexd",
+									"Id": "012180000000d3FAAQ",
+									"attributes": {
+										"url": "/services/data/v46.0/sobjects/RecordType/012180000000d3FAAQ",
+										"type": "RecordType"
+									}
+								},
+								"RecordTypeId": "012180000000d3FAAQ",
+								"Customer_Tag_No__c": "PSU 21",
+								"Equipment_Type__c": "Beta Eexd",
+								"Name": "71892247",
+								"Id": "a1218000003VKDCAA4"
+							}
+						}],
+						"objectName": "Asset_c__c",
+						"fields": [{
+							"type": "STRING",
+							"name": "Name",
+							"label": "Fike Tag Number",
+							"isEditable": true
+						}, {
+							"type": "PICKLIST",
+							"name": "Equipment_Type__c",
+							"label": "Equipment Type",
+							"isEditable": true
+						}, {
+							"type": "STRING",
+							"name": "Serial__c",
+							"label": "Serial #",
+							"isEditable": true
+						}, {
+							"type": "STRING",
+							"name": "Customer_Tag_No__c",
+							"label": "Customer Tag No",
+							"isEditable": true
+						}, {
+							"type": "STRING",
+							"name": "Required__c",
+							"label": "Required",
+							"isEditable": true
+						}, {
+							"type": "PICKLIST",
+							"name": "Size1__c",
+							"label": "Size",
+							"isEditable": true
+						}]
+					}],
+					"data": {
+						"Name": "01nesle0202",
+						"Id": "a1118000000t6SiAAI"
+					}
+				}, {
+					"relatedSections": [{
+						"title": "Assets",
+						"records": [{
+							"relatedSections": null,
+							"data": {
+								"RecordType": {
+									"Name": "Beta Eexd",
+									"Id": "012180000000d3FAAQ",
+									"attributes": {
+										"url": "/services/data/v46.0/sobjects/RecordType/012180000000d3FAAQ",
+										"type": "RecordType"
+									}
+								},
+								"RecordTypeId": "012180000000d3FAAQ",
+								"Customer_Tag_No__c": "PSU 21",
+								"Equipment_Type__c": "Beta Eexd",
+								"Name": "71892247",
+								"Id": "a1218000003VKDCAA4"
+							}
+						}, {
+							"relatedSections": null,
+							"data": {
+								"RecordType": {
+									"Name": "Beta Eexd",
+									"Id": "012180000000d3FAAQ",
+									"attributes": {
+										"url": "/services/data/v46.0/sobjects/RecordType/012180000000d3FAAQ",
+										"type": "RecordType"
+									}
+								},
+								"RecordTypeId": "012180000000d3FAAQ",
+								"Customer_Tag_No__c": "AM 21",
+								"Equipment_Type__c": "Beta Eexd",
+								"Name": "73601405",
+								"Id": "a1218000003VKDBAA4"
+							}
+						}, {
+							"relatedSections": null,
+							"data": {
+								"RecordType": {
+									"Name": "Beta Eexd",
+									"Id": "012180000000d3FAAQ",
+									"attributes": {
+										"url": "/services/data/v46.0/sobjects/RecordType/012180000000d3FAAQ",
+										"type": "RecordType"
+									}
+								},
+								"RecordTypeId": "012180000000d3FAAQ",
+								"Customer_Tag_No__c": "EPC 212",
+								"Equipment_Type__c": "Beta Eexd",
+								"Name": "73103423",
+								"Id": "a1218000003VKDJAA4"
+							}
+						}, {
+							"relatedSections": null,
+							"data": {
+								"RecordType": {
+									"Name": "Beta Eexd",
+									"Id": "012180000000d3FAAQ",
+									"attributes": {
+										"url": "/services/data/v46.0/sobjects/RecordType/012180000000d3FAAQ",
+										"type": "RecordType"
+									}
+								},
+								"RecordTypeId": "012180000000d3FAAQ",
+								"Customer_Tag_No__c": "OT 212.2",
+								"Equipment_Type__c": "Beta Eexd",
+								"Name": "93630385",
+								"Id": "a1218000003VKDKAA4"
+							}
+						}, {
+							"relatedSections": null,
+							"data": {
+								"RecordType": {
+									"Name": "Beta Eexd",
+									"Id": "012180000000d3FAAQ",
+									"attributes": {
+										"url": "/services/data/v46.0/sobjects/RecordType/012180000000d3FAAQ",
+										"type": "RecordType"
+									}
+								},
+								"RecordTypeId": "012180000000d3FAAQ",
+								"Customer_Tag_No__c": "OT 212.1",
+								"Equipment_Type__c": "Beta Eexd",
+								"Name": "93630372",
+								"Id": "a1218000003VKDLAA4"
+							}
+						}, {
+							"relatedSections": null,
+							"data": {
+								"RecordType": {
+									"Name": "Beta Eexd",
+									"Id": "012180000000d3FAAQ",
+									"attributes": {
+										"url": "/services/data/v46.0/sobjects/RecordType/012180000000d3FAAQ",
+										"type": "RecordType"
+									}
+								},
+								"RecordTypeId": "012180000000d3FAAQ",
+								"Customer_Tag_No__c": "SRD 212.1",
+								"Equipment_Type__c": "Beta Eexd",
+								"Name": "0736002-1",
+								"Id": "a1218000003VKDMAA4"
+							}
+						}, {
+							"relatedSections": null,
+							"data": {
+								"RecordType": {
+									"Name": "Beta Eexd",
+									"Id": "012180000000d3FAAQ",
+									"attributes": {
+										"url": "/services/data/v46.0/sobjects/RecordType/012180000000d3FAAQ",
+										"type": "RecordType"
+									}
+								},
+								"RecordTypeId": "012180000000d3FAAQ",
+								"Customer_Tag_No__c": "RC 211",
+								"Equipment_Type__c": "Beta Eexd",
+								"Name": "72558401",
+								"Id": "a1218000003VKD6AAO"
+							}
+						}, {
+							"relatedSections": null,
+							"data": {
+								"RecordType": {
+									"Name": "Beta Eexd",
+									"Id": "012180000000d3FAAQ",
+									"attributes": {
+										"url": "/services/data/v46.0/sobjects/RecordType/012180000000d3FAAQ",
+										"type": "RecordType"
+									}
+								},
+								"RecordTypeId": "012180000000d3FAAQ",
+								"Customer_Tag_No__c": "DS 212",
+								"Equipment_Type__c": "Beta Eexd",
+								"Name": "a1218000003VKDN",
+								"Id": "a1218000003VKDNAA4"
+							}
+						}],
+						"objectName": "Asset_c__c",
+						"fields": [{
+							"type": "STRING",
+							"name": "Name",
+							"label": "Fike Tag Number",
+							"isEditable": true
+						}, {
+							"type": "PICKLIST",
+							"name": "Equipment_Type__c",
+							"label": "Equipment Type",
+							"isEditable": true
+						}, {
+							"type": "STRING",
+							"name": "Serial__c",
+							"label": "Serial #",
+							"isEditable": true
+						}, {
+							"type": "STRING",
+							"name": "Customer_Tag_No__c",
+							"label": "Customer Tag No",
+							"isEditable": true
+						}, {
+							"type": "STRING",
+							"name": "Required__c",
+							"label": "Required",
+							"isEditable": true
+						}, {
+							"type": "PICKLIST",
+							"name": "Size1__c",
+							"label": "Size",
+							"isEditable": true
+						}]
+					}],
+					"data": {
+						"Name": "01nesle0203",
+						"Id": "a1118000000t6SjAAI"
+					}
+				}, {
+					"relatedSections": [{
+						"title": "Assets",
+						"records": [{
+							"relatedSections": null,
+							"data": {
+								"RecordType": {
+									"Name": "Beta Eexd",
+									"Id": "012180000000d3FAAQ",
+									"attributes": {
+										"url": "/services/data/v46.0/sobjects/RecordType/012180000000d3FAAQ",
+										"type": "RecordType"
+									}
+								},
+								"RecordTypeId": "012180000000d3FAAQ",
+								"Customer_Tag_No__c": "PSU 11",
+								"Equipment_Type__c": "Beta Eexd",
+								"Name": "44864037",
+								"Id": "a1218000003VKCfAAO"
+							}
+						}, {
+							"relatedSections": null,
+							"data": {
+								"RecordType": {
+									"Name": "Beta Eexd",
+									"Id": "012180000000d3FAAQ",
+									"attributes": {
+										"url": "/services/data/v46.0/sobjects/RecordType/012180000000d3FAAQ",
+										"type": "RecordType"
+									}
+								},
+								"RecordTypeId": "012180000000d3FAAQ",
+								"Customer_Tag_No__c": "AM 11",
+								"Equipment_Type__c": "Beta Eexd",
+								"Name": "72351212",
+								"Id": "a1218000003VKCgAAO"
+							}
+						}, {
+							"relatedSections": null,
+							"data": {
+								"RecordType": {
+									"Name": "Beta Eexd",
+									"Id": "012180000000d3FAAQ",
+									"attributes": {
+										"url": "/services/data/v46.0/sobjects/RecordType/012180000000d3FAAQ",
+										"type": "RecordType"
+									}
+								},
+								"RecordTypeId": "012180000000d3FAAQ",
+								"Customer_Tag_No__c": "EPC 113",
+								"Equipment_Type__c": "Beta Eexd",
+								"Name": "73103427",
+								"Id": "a1218000003VKChAAO"
+							}
+						}, {
+							"relatedSections": null,
+							"data": {
+								"RecordType": {
+									"Name": "Beta Eexd",
+									"Id": "012180000000d3FAAQ",
+									"attributes": {
+										"url": "/services/data/v46.0/sobjects/RecordType/012180000000d3FAAQ",
+										"type": "RecordType"
+									}
+								},
+								"RecordTypeId": "012180000000d3FAAQ",
+								"Customer_Tag_No__c": "DS 113",
+								"Equipment_Type__c": "Beta Eexd",
+								"Name": "a1218000003VKCi",
+								"Id": "a1218000003VKCiAAO"
+							}
+						}, {
+							"relatedSections": null,
+							"data": {
+								"RecordType": {
+									"Name": "Beta Eexd",
+									"Id": "012180000000d3FAAQ",
+									"attributes": {
+										"url": "/services/data/v46.0/sobjects/RecordType/012180000000d3FAAQ",
+										"type": "RecordType"
+									}
+								},
+								"RecordTypeId": "012180000000d3FAAQ",
+								"Customer_Tag_No__c": "FQ II SQ 113.2",
+								"Equipment_Type__c": "Beta Eexd",
+								"Name": "0756303-02",
+								"Id": "a1218000003VKCjAAO"
+							}
+						}, {
+							"relatedSections": null,
+							"data": {
+								"RecordType": {
+									"Name": "Beta Eexd",
+									"Id": "012180000000d3FAAQ",
+									"attributes": {
+										"url": "/services/data/v46.0/sobjects/RecordType/012180000000d3FAAQ",
+										"type": "RecordType"
+									}
+								},
+								"RecordTypeId": "012180000000d3FAAQ",
+								"Customer_Tag_No__c": "RC 111",
+								"Equipment_Type__c": "Beta Eexd",
+								"Name": "72558402",
+								"Id": "a1218000003VKCkAAO"
+							}
+						}, {
+							"relatedSections": null,
+							"data": {
+								"RecordType": {
+									"Name": "Beta Eexd",
+									"Id": "012180000000d3FAAQ",
+									"attributes": {
+										"url": "/services/data/v46.0/sobjects/RecordType/012180000000d3FAAQ",
+										"type": "RecordType"
+									}
+								},
+								"RecordTypeId": "012180000000d3FAAQ",
+								"Customer_Tag_No__c": "FQ II SQ 113.1",
+								"Equipment_Type__c": "Beta Eexd",
+								"Name": "0756303-1",
+								"Id": "a1218000003VKClAAO"
+							}
+						}, {
+							"relatedSections": null,
+							"data": {
+								"RecordType": {
+									"Name": "Beta Eexd",
+									"Id": "012180000000d3FAAQ",
+									"attributes": {
+										"url": "/services/data/v46.0/sobjects/RecordType/012180000000d3FAAQ",
+										"type": "RecordType"
+									}
+								},
+								"RecordTypeId": "012180000000d3FAAQ",
+								"Customer_Tag_No__c": "CV-S-RI2 113.2",
+								"Equipment_Type__c": "Beta Eexd",
+								"Name": "a1218000003VKCm",
+								"Id": "a1218000003VKCmAAO"
+							}
+						}, {
+							"relatedSections": null,
+							"data": {
+								"RecordType": {
+									"Name": "Beta Eexd",
+									"Id": "012180000000d3FAAQ",
+									"attributes": {
+										"url": "/services/data/v46.0/sobjects/RecordType/012180000000d3FAAQ",
+										"type": "RecordType"
+									}
+								},
+								"RecordTypeId": "012180000000d3FAAQ",
+								"Customer_Tag_No__c": "CV-S RI2 113.1",
+								"Equipment_Type__c": "Beta Eexd",
+								"Name": "0756290",
+								"Id": "a1218000003VKCnAAO"
+							}
+						}, {
+							"relatedSections": null,
+							"data": {
+								"RecordType": {
+									"Name": "Beta Eexd",
+									"Id": "012180000000d3FAAQ",
+									"attributes": {
+										"url": "/services/data/v46.0/sobjects/RecordType/012180000000d3FAAQ",
+										"type": "RecordType"
+									}
+								},
+								"RecordTypeId": "012180000000d3FAAQ",
+								"Customer_Tag_No__c": "SRD 113.1",
+								"Equipment_Type__c": "Beta Eexd",
+								"Name": "0736002-09",
+								"Id": "a1218000003VKCoAAO"
+							}
+						}, {
+							"relatedSections": null,
+							"data": {
+								"RecordType": {
+									"Name": "Beta Eexd",
+									"Id": "012180000000d3FAAQ",
+									"attributes": {
+										"url": "/services/data/v46.0/sobjects/RecordType/012180000000d3FAAQ",
+										"type": "RecordType"
+									}
+								},
+								"RecordTypeId": "012180000000d3FAAQ",
+								"Customer_Tag_No__c": "OT 113.1",
+								"Equipment_Type__c": "Beta Eexd",
+								"Name": "93630356",
+								"Id": "a1218000003VKCpAAO"
+							}
+						}],
+						"objectName": "Asset_c__c",
+						"fields": [{
+							"type": "STRING",
+							"name": "Name",
+							"label": "Fike Tag Number",
+							"isEditable": true
+						}, {
+							"type": "PICKLIST",
+							"name": "Equipment_Type__c",
+							"label": "Equipment Type",
+							"isEditable": true
+						}, {
+							"type": "STRING",
+							"name": "Serial__c",
+							"label": "Serial #",
+							"isEditable": true
+						}, {
+							"type": "STRING",
+							"name": "Customer_Tag_No__c",
+							"label": "Customer Tag No",
+							"isEditable": true
+						}, {
+							"type": "STRING",
+							"name": "Required__c",
+							"label": "Required",
+							"isEditable": true
+						}, {
+							"type": "PICKLIST",
+							"name": "Size1__c",
+							"label": "Size",
+							"isEditable": true
+						}]
+					}],
+					"data": {
+						"Name": "01nesle0102",
+						"Id": "a1118000000t6SkAAI"
+					}
+				}, {
+					"relatedSections": [{
+						"title": "Assets",
+						"records": [{
+							"relatedSections": null,
+							"data": {
+								"RecordType": {
+									"Name": "Beta Eexd",
+									"Id": "012180000000d3FAAQ",
+									"attributes": {
+										"url": "/services/data/v46.0/sobjects/RecordType/012180000000d3FAAQ",
+										"type": "RecordType"
+									}
+								},
+								"RecordTypeId": "012180000000d3FAAQ",
+								"Customer_Tag_No__c": "CV-S-Ri2 112.1",
+								"Equipment_Type__c": "Beta Eexd",
+								"Name": "0756313",
+								"Id": "a1218000003VKCqAAO"
+							}
+						}, {
+							"relatedSections": null,
+							"data": {
+								"RecordType": {
+									"Name": "Beta Eexd",
+									"Id": "012180000000d3FAAQ",
+									"attributes": {
+										"url": "/services/data/v46.0/sobjects/RecordType/012180000000d3FAAQ",
+										"type": "RecordType"
+									}
+								},
+								"RecordTypeId": "012180000000d3FAAQ",
+								"Customer_Tag_No__c": "PSU 11",
+								"Equipment_Type__c": "Beta Eexd",
+								"Name": "44864037",
+								"Id": "a1218000003VKCfAAO"
+							}
+						}, {
+							"relatedSections": null,
+							"data": {
+								"RecordType": {
+									"Name": "Beta Eexd",
+									"Id": "012180000000d3FAAQ",
+									"attributes": {
+										"url": "/services/data/v46.0/sobjects/RecordType/012180000000d3FAAQ",
+										"type": "RecordType"
+									}
+								},
+								"RecordTypeId": "012180000000d3FAAQ",
+								"Customer_Tag_No__c": "DS 112",
+								"Equipment_Type__c": "Beta Eexd",
+								"Name": "a1218000003VKCr",
+								"Id": "a1218000003VKCrAAO"
+							}
+						}, {
+							"relatedSections": null,
+							"data": {
+								"RecordType": {
+									"Name": "Beta Eexd",
+									"Id": "012180000000d3FAAQ",
+									"attributes": {
+										"url": "/services/data/v46.0/sobjects/RecordType/012180000000d3FAAQ",
+										"type": "RecordType"
+									}
+								},
+								"RecordTypeId": "012180000000d3FAAQ",
+								"Customer_Tag_No__c": "FQ II SQ 112.1",
+								"Equipment_Type__c": "Beta Eexd",
+								"Name": "0756314",
+								"Id": "a1218000003VKCsAAO"
+							}
+						}, {
+							"relatedSections": null,
+							"data": {
+								"RecordType": {
+									"Name": "Beta Eexd",
+									"Id": "012180000000d3FAAQ",
+									"attributes": {
+										"url": "/services/data/v46.0/sobjects/RecordType/012180000000d3FAAQ",
+										"type": "RecordType"
+									}
+								},
+								"RecordTypeId": "012180000000d3FAAQ",
+								"Customer_Tag_No__c": "EPC 112",
+								"Equipment_Type__c": "Beta Eexd",
+								"Name": "73103426",
+								"Id": "a1218000003VKCtAAO"
+							}
+						}, {
+							"relatedSections": null,
+							"data": {
+								"RecordType": {
+									"Name": "Beta Eexd",
+									"Id": "012180000000d3FAAQ",
+									"attributes": {
+										"url": "/services/data/v46.0/sobjects/RecordType/012180000000d3FAAQ",
+										"type": "RecordType"
+									}
+								},
+								"RecordTypeId": "012180000000d3FAAQ",
+								"Customer_Tag_No__c": "SRD 112.4",
+								"Equipment_Type__c": "Beta Eexd",
+								"Name": "0736002-03",
+								"Id": "a1218000003VKCuAAO"
+							}
+						}, {
+							"relatedSections": null,
+							"data": {
+								"RecordType": {
+									"Name": "Beta Eexd",
+									"Id": "012180000000d3FAAQ",
+									"attributes": {
+										"url": "/services/data/v46.0/sobjects/RecordType/012180000000d3FAAQ",
+										"type": "RecordType"
+									}
+								},
+								"RecordTypeId": "012180000000d3FAAQ",
+								"Customer_Tag_No__c": "SRD 112.2",
+								"Equipment_Type__c": "Beta Eexd",
+								"Name": "0736002-04",
+								"Id": "a1218000003VKCvAAO"
+							}
+						}, {
+							"relatedSections": null,
+							"data": {
+								"RecordType": {
+									"Name": "Beta Eexd",
+									"Id": "012180000000d3FAAQ",
+									"attributes": {
+										"url": "/services/data/v46.0/sobjects/RecordType/012180000000d3FAAQ",
+										"type": "RecordType"
+									}
+								},
+								"RecordTypeId": "012180000000d3FAAQ",
+								"Customer_Tag_No__c": "AM 11",
+								"Equipment_Type__c": "Beta Eexd",
+								"Name": "72351212",
+								"Id": "a1218000003VKCgAAO"
+							}
+						}, {
+							"relatedSections": null,
+							"data": {
+								"RecordType": {
+									"Name": "Beta Eexd",
+									"Id": "012180000000d3FAAQ",
+									"attributes": {
+										"url": "/services/data/v46.0/sobjects/RecordType/012180000000d3FAAQ",
+										"type": "RecordType"
+									}
+								},
+								"RecordTypeId": "012180000000d3FAAQ",
+								"Customer_Tag_No__c": "RC 111",
+								"Equipment_Type__c": "Beta Eexd",
+								"Name": "72558402",
+								"Id": "a1218000003VKCkAAO"
+							}
+						}, {
+							"relatedSections": null,
+							"data": {
+								"RecordType": {
+									"Name": "Beta Eexd",
+									"Id": "012180000000d3FAAQ",
+									"attributes": {
+										"url": "/services/data/v46.0/sobjects/RecordType/012180000000d3FAAQ",
+										"type": "RecordType"
+									}
+								},
+								"RecordTypeId": "012180000000d3FAAQ",
+								"Customer_Tag_No__c": "SRD 112.1",
+								"Equipment_Type__c": "Beta Eexd",
+								"Name": "0736002-06",
+								"Id": "a1218000003VKCwAAO"
+							}
+						}, {
+							"relatedSections": null,
+							"data": {
+								"RecordType": {
+									"Name": "Beta Eexd",
+									"Id": "012180000000d3FAAQ",
+									"attributes": {
+										"url": "/services/data/v46.0/sobjects/RecordType/012180000000d3FAAQ",
+										"type": "RecordType"
+									}
+								},
+								"RecordTypeId": "012180000000d3FAAQ",
+								"Customer_Tag_No__c": "OT 112.1",
+								"Equipment_Type__c": "Beta Eexd",
+								"Name": "93630380",
+								"Id": "a1218000003VKCxAAO"
+							}
+						}],
+						"objectName": "Asset_c__c",
+						"fields": [{
+							"type": "STRING",
+							"name": "Name",
+							"label": "Fike Tag Number",
+							"isEditable": true
+						}, {
+							"type": "PICKLIST",
+							"name": "Equipment_Type__c",
+							"label": "Equipment Type",
+							"isEditable": true
+						}, {
+							"type": "STRING",
+							"name": "Serial__c",
+							"label": "Serial #",
+							"isEditable": true
+						}, {
+							"type": "STRING",
+							"name": "Customer_Tag_No__c",
+							"label": "Customer Tag No",
+							"isEditable": true
+						}, {
+							"type": "STRING",
+							"name": "Required__c",
+							"label": "Required",
+							"isEditable": true
+						}, {
+							"type": "PICKLIST",
+							"name": "Size1__c",
+							"label": "Size",
+							"isEditable": true
+						}]
+					}],
+					"data": {
+						"Name": "01nesle0103",
+						"Id": "a1118000000t6SlAAI"
+					}
+				}, {
+					"relatedSections": [{
+						"title": "Assets",
+						"records": [{
+							"relatedSections": null,
+							"data": {
+								"RecordType": {
+									"Name": "Beta Eexd",
+									"Id": "012180000000d3FAAQ",
+									"attributes": {
+										"url": "/services/data/v46.0/sobjects/RecordType/012180000000d3FAAQ",
+										"type": "RecordType"
+									}
+								},
+								"RecordTypeId": "012180000000d3FAAQ",
+								"Customer_Tag_No__c": "SRD 111.1",
+								"Equipment_Type__c": "Beta Eexd",
+								"Name": "0736002-02",
+								"Id": "a1218000003VKCyAAO"
+							}
+						}, {
+							"relatedSections": null,
+							"data": {
+								"RecordType": {
+									"Name": "Beta Eexd",
+									"Id": "012180000000d3FAAQ",
+									"attributes": {
+										"url": "/services/data/v46.0/sobjects/RecordType/012180000000d3FAAQ",
+										"type": "RecordType"
+									}
+								},
+								"RecordTypeId": "012180000000d3FAAQ",
+								"Customer_Tag_No__c": "PSU 11",
+								"Equipment_Type__c": "Beta Eexd",
+								"Name": "44864037",
+								"Id": "a1218000003VKCfAAO"
+							}
+						}, {
+							"relatedSections": null,
+							"data": {
+								"RecordType": {
+									"Name": "Beta Eexd",
+									"Id": "012180000000d3FAAQ",
+									"attributes": {
+										"url": "/services/data/v46.0/sobjects/RecordType/012180000000d3FAAQ",
+										"type": "RecordType"
+									}
+								},
+								"RecordTypeId": "012180000000d3FAAQ",
+								"Customer_Tag_No__c": "EPC 111",
+								"Equipment_Type__c": "Beta Eexd",
+								"Name": "73103425",
+								"Id": "a1218000003VKCzAAO"
+							}
+						}, {
+							"relatedSections": null,
+							"data": {
+								"RecordType": {
+									"Name": "Beta Eexd",
+									"Id": "012180000000d3FAAQ",
+									"attributes": {
+										"url": "/services/data/v46.0/sobjects/RecordType/012180000000d3FAAQ",
+										"type": "RecordType"
+									}
+								},
+								"RecordTypeId": "012180000000d3FAAQ",
+								"Customer_Tag_No__c": "AM 11",
+								"Equipment_Type__c": "Beta Eexd",
+								"Name": "72351212",
+								"Id": "a1218000003VKCgAAO"
+							}
+						}, {
+							"relatedSections": null,
+							"data": {
+								"RecordType": {
+									"Name": "Beta Eexd",
+									"Id": "012180000000d3FAAQ",
+									"attributes": {
+										"url": "/services/data/v46.0/sobjects/RecordType/012180000000d3FAAQ",
+										"type": "RecordType"
+									}
+								},
+								"RecordTypeId": "012180000000d3FAAQ",
+								"Customer_Tag_No__c": "CV-S-RI2 111.1",
+								"Equipment_Type__c": "Beta Eexd",
+								"Name": "0756302",
+								"Id": "a1218000003VKD0AAO"
+							}
+						}, {
+							"relatedSections": null,
+							"data": {
+								"RecordType": {
+									"Name": "Beta Eexd",
+									"Id": "012180000000d3FAAQ",
+									"attributes": {
+										"url": "/services/data/v46.0/sobjects/RecordType/012180000000d3FAAQ",
+										"type": "RecordType"
+									}
+								},
+								"RecordTypeId": "012180000000d3FAAQ",
+								"Customer_Tag_No__c": "RC 111",
+								"Equipment_Type__c": "Beta Eexd",
+								"Name": "72558402",
+								"Id": "a1218000003VKCkAAO"
+							}
+						}, {
+							"relatedSections": null,
+							"data": {
+								"RecordType": {
+									"Name": "Beta Eexd",
+									"Id": "012180000000d3FAAQ",
+									"attributes": {
+										"url": "/services/data/v46.0/sobjects/RecordType/012180000000d3FAAQ",
+										"type": "RecordType"
+									}
+								},
+								"RecordTypeId": "012180000000d3FAAQ",
+								"Customer_Tag_No__c": "FQ II SQ 111.2",
+								"Equipment_Type__c": "Beta Eexd",
+								"Name": "0756291-02",
+								"Id": "a1218000003VKD1AAO"
+							}
+						}, {
+							"relatedSections": null,
+							"data": {
+								"RecordType": {
+									"Name": "Beta Eexd",
+									"Id": "012180000000d3FAAQ",
+									"attributes": {
+										"url": "/services/data/v46.0/sobjects/RecordType/012180000000d3FAAQ",
+										"type": "RecordType"
+									}
+								},
+								"RecordTypeId": "012180000000d3FAAQ",
+								"Customer_Tag_No__c": "FQ II SQ 111.1",
+								"Equipment_Type__c": "Beta Eexd",
+								"Name": "0756291-01",
+								"Id": "a1218000003VKD2AAO"
+							}
+						}, {
+							"relatedSections": null,
+							"data": {
+								"RecordType": {
+									"Name": "Beta Eexd",
+									"Id": "012180000000d3FAAQ",
+									"attributes": {
+										"url": "/services/data/v46.0/sobjects/RecordType/012180000000d3FAAQ",
+										"type": "RecordType"
+									}
+								},
+								"RecordTypeId": "012180000000d3FAAQ",
+								"Customer_Tag_No__c": "CV-S-RI2 111.2",
+								"Equipment_Type__c": "Beta Eexd",
+								"Name": "a1218000003VKD3",
+								"Id": "a1218000003VKD3AAO"
+							}
+						}, {
+							"relatedSections": null,
+							"data": {
+								"RecordType": {
+									"Name": "Beta Eexd",
+									"Id": "012180000000d3FAAQ",
+									"attributes": {
+										"url": "/services/data/v46.0/sobjects/RecordType/012180000000d3FAAQ",
+										"type": "RecordType"
+									}
+								},
+								"RecordTypeId": "012180000000d3FAAQ",
+								"Customer_Tag_No__c": "OT 111.1",
+								"Equipment_Type__c": "Beta Eexd",
+								"Name": "93630377",
+								"Id": "a1218000003VKD4AAO"
+							}
+						}, {
+							"relatedSections": null,
+							"data": {
+								"RecordType": {
+									"Name": "Beta Eexd",
+									"Id": "012180000000d3FAAQ",
+									"attributes": {
+										"url": "/services/data/v46.0/sobjects/RecordType/012180000000d3FAAQ",
+										"type": "RecordType"
+									}
+								},
+								"RecordTypeId": "012180000000d3FAAQ",
+								"Customer_Tag_No__c": "DS 111",
+								"Equipment_Type__c": "Beta Eexd",
+								"Name": "a1218000003VKD5",
+								"Id": "a1218000003VKD5AAO"
+							}
+						}],
+						"objectName": "Asset_c__c",
+						"fields": [{
+							"type": "STRING",
+							"name": "Name",
+							"label": "Fike Tag Number",
+							"isEditable": true
+						}, {
+							"type": "PICKLIST",
+							"name": "Equipment_Type__c",
+							"label": "Equipment Type",
+							"isEditable": true
+						}, {
+							"type": "STRING",
+							"name": "Serial__c",
+							"label": "Serial #",
+							"isEditable": true
+						}, {
+							"type": "STRING",
+							"name": "Customer_Tag_No__c",
+							"label": "Customer Tag No",
+							"isEditable": true
+						}, {
+							"type": "STRING",
+							"name": "Required__c",
+							"label": "Required",
+							"isEditable": true
+						}, {
+							"type": "PICKLIST",
+							"name": "Size1__c",
+							"label": "Size",
+							"isEditable": true
+						}]
+					}],
+					"data": {
+						"Name": "01nesle0104",
+						"Id": "a1118000000t6SmAAI"
+					}
+				}],
+				"objectName": "Zone__c",
+				"fields": [{
+					"type": "ID",
+					"name": "Id",
+					"label": "Record ID",
+					"isEditable": false
+				}, {
+					"type": "STRING",
+					"name": "Name",
+					"label": "Zone Name",
+					"isEditable": true
+				}]
+			}],
+			"data": {
+				"Owner": {
+					"Name": "Mayank Srivastava",
+					"Id": "00518000003YNrYAAW",
+					"attributes": {
+						"url": "/services/data/v46.0/sobjects/User/00518000003YNrYAAW",
+						"type": "Name"
+					}
+				},
+				"Contact": {
+					"Name": "Melissa OToole",
+					"Id": "0031800000ZKPBwAAP",
+					"attributes": {
+						"url": "/services/data/v46.0/sobjects/Contact/0031800000ZKPBwAAP",
+						"type": "Contact"
+					}
+				},
+				"OwnerId": "00518000003YNrYAAW",
+				"ContactId": "0031800000ZKPBwAAP",
+				"Site_Address__c": "LA PENILLA DE CAYON\nLA PENILLA DE CAYON\nSPAIN\n39650",
+				"Service_WO_Approved__c": "No",
+				"WorkOrderNumber": "00000366",
+				"Id": "0WO18000000842wGAA"
+			}
+		}],
+		"objectName": "WorkOrder",
+		"fields": [{
+			"type": "STRING",
+			"name": "Owner.Name",
+			"label": "Name",
+			"isEditable": true
+		}, {
+			"type": "STRING",
+			"name": "Owner.Name",
+			"label": "Full Name",
+			"isEditable": false
+		}, {
+			"type": "STRING",
+			"name": "WorkOrderNumber",
+			"label": "Service Work Order Number",
+			"isEditable": false
+		}, {
+			"type": "STRING",
+			"name": "Contact.Name",
+			"label": "Full Name",
+			"isEditable": false
+		}, {
+			"type": "TEXTAREA",
+			"name": "Description",
+			"label": "Description",
+			"isEditable": true
+		}, {
+			"type": "STRING",
+			"name": "Subject",
+			"label": "Subject",
+			"isEditable": true
+		}, {
+			"type": "STRING",
+			"name": "WorkType.Name",
+			"label": "Work Type Name",
+			"isEditable": true
+		}, {
+			"type": "STRING",
+			"name": "Site_Address__c",
+			"label": "Site Address",
+			"isEditable": false
+		}, {
+			"type": "PICKLIST",
+			"name": "Service_WO_Approved__c",
+			"label": "Service WO Approved?",
+			"isEditable": true
+		}]
+	}]
+}

@@ -1,0 +1,1725 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+
+	<meta charset="utf-8">
+	<title>Fike Field Service</title>
+
+	<link rel = "shortcut icon" href = "/img/favicon.png" >
+	<link rel = "stylesheet" href = "https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" >
+	<link rel = "stylesheet" href = "/css/common.css" >
+	<link rel = "stylesheet" href = "/css/print.min.css	"  >
+	<link rel = "stylesheet" href = "style.css" >
+	<link rel="stylesheet" href="https://unpkg.com/vue-select@3.0.0/dist/vue-select.css">
+   <style>
+	   .changeFieldClass input,.changeFieldClass textarea,.changeFieldClass select,.changeFieldClassDiv,.changeFieldClass .vs__dropdown-toggle{
+		   background-color:yellow
+	   }
+	   .medium_reoprt .changeFieldClassDiv,.short_reoprt .changeFieldClassDiv{
+			background-color:transparent !important;
+		}
+	   
+	   .EngineerHours th{
+			word-break: break-word !important;
+			white-space: pre-wrap !important;
+	   }
+	   .EngineerHours .SEARCH{
+		   width:180px !important;
+	   }
+	   .box-textarea textarea{
+			font-size: 20px !important;
+	   }
+    .spinnerOverLay{
+		background: none repeat scroll 0 0 black;
+		position: fixed;
+		display: block;
+		opacity: 0.5;
+		z-index: 1000001; 
+		left: 0;
+		top: 0;
+		height: 100%;
+		width: 100%;
+		
+	}
+	.spinnerText{
+		color: white;
+		top: calc(50% + 120px);
+		left: 48%;
+		position: fixed;
+		z-index: 1000094;
+	}
+	.spinner {
+			
+			position: fixed;
+			z-index: 1000011; 
+			top:50%;
+			left:48%;
+			border: 16px solid #f3f3f3;
+			border-radius: 50%;
+			border-top: 16px solid #3498db;
+			width: 100px;
+			height: 100px;
+			-webkit-animation: spin 2s linear infinite; /* Safari */
+			animation: spin 2s linear infinite;
+			
+		  }
+		  
+		  /* Safari */
+		  @-webkit-keyframes spin {
+			0% { -webkit-transform: rotate(0deg); }
+			100% { -webkit-transform: rotate(360deg); }
+		  }
+		  
+		  @keyframes spin {
+			0% { transform: rotate(0deg); }
+			100% { transform: rotate(360deg); }
+		  }
+   </style>
+   <style type="text/css" media="print">
+ 
+
+		@page {
+			
+		} 
+
+		body {
+			width:100%;
+			height:100%;
+			zoom: 80% ;
+			border:0px solid black;
+			margin:0px;
+			
+		}
+
+		
+		
+	</style>
+	<style>
+		.tooltip{
+			background-color: black;
+			color: white;
+			font-size: 9px;
+			font-weight: bolder;
+			text-transform: lowercase;
+			border-radius: 13px;
+			padding: 1px 5px 1px 6px;
+		}
+		[data-title]:hover:after {
+			opacity: 1;
+			transition: all 0.1s ease 0.5s;
+			visibility: visible;
+		}
+		[data-title]:after {
+			content: attr(data-title);
+			background-color: #00FF00;
+			color: #111;
+			font-size: 150%;
+			position: absolute;
+			padding: 1px 5px 2px 5px;
+			bottom: -1.6em;
+			left: 100%;
+			white-space: nowrap;
+			box-shadow: 1px 1px 3px #222222;
+			opacity: 0;
+			border: 1px solid #111111;
+			z-index: 99999;
+			visibility: hidden;
+		}
+		[data-title] {
+			position: relative;
+		}
+	</style>
+</head>
+
+<body>
+	
+	<div id = "root">
+		
+
+		<div class="chart-wrapper"> 
+			<div class="close-chart" @click="close_chart"></div>
+			<div class = "button"  style="float:right;margin-right: 5px" v-on:click = "chartView = 'Table'" >Data Table</div>
+			<div class = "button" style="float:right;margin-right: 5px" v-on:click = "chartView = 'Chart'" >Stacked Chart</div>
+			
+			<div class="chart-table"  v-bind:style="{ 'height': 'calc(100vh - 115px)','padding-top':'50px','overflow': 'auto','width':'100%', display : (chartView === 'Table'?'block':'none')}" v-if = "chartView === 'Table'" >
+				<table style="table-layout: auto;">
+
+					<tr>
+						<th >Name</th>
+						<th >Last Modified Date</th>
+						<th v-for = "field in chartTable.columns" v-text = "field" ></th>
+					</tr>
+
+					<tr v-for = "item  in chartTable.data"  >
+
+						<td style="white-space: normal;" v-text = "item.Name" ></td>
+						<td style="white-space: normal;"  >{{item.lastModifiedDate | formatDate}}</td>
+						<td style="white-space: normal;" v-for = "field in chartTable.columns" >
+
+							<div>{{item.Data[field]}}</div>
+
+						</td>
+
+					</tr>
+
+				</table>
+			</div>
+			<canvas id="densityChart" width="600"  height="400"  v-bind:style="{ height : '400px' ,width : '600px' ,display : (chartView === 'Chart'?'block':'none')}"  ></canvas>
+		
+		</div>
+		<div class = "header flex_center"  v-if = "SFViewModel">
+			<div style="position:fixed;top:10px;right:1%;color:white"> 1.0.56</div>
+			<div class = "header-top online" v-if = "network_info.online" >
+				
+				Network: Online [&nbsp;<span style="color:yellow">{{SFViewModel.toUpperCase()}}</span>&nbsp;] {{(salesforceOrgType!='' && salesforceOrgType!=undefined)?'['+salesforceOrgType+']':''}}
+			</div>
+
+			<div class = "header-top offline" v-if = "!network_info.online" >
+				Network: Offline [&nbsp;<span style="color:yellow">{{SFViewModel.toUpperCase()}}</span>&nbsp;] {{(salesforceOrgType!='' && salesforceOrgType!=undefined)?'['+salesforceOrgType+']':''}}
+			</div>
+
+			<div class = "header-body" >
+
+				<div class = "header-body-headline" >
+					<img src = "/img/logo_big.jpg" style="width: 200px;" >
+				</div>
+
+				<div class = "header-body-tabs" v-if = "active_page_name === 'record_details' && report_model" >
+					<div class = "header-body-tab" v-text = "'All Work Orders'" v-on:click = "onActivePageChange( 'main' );" ></div>
+					<div class = "header-body-tab selected">Service Work Order {{ get_field_display_value( report_model.WorkOrder[0], 'WorkOrderNumber' ) }}</div>
+				</div>
+
+				 <div class = "flex_grower" ></div>
+
+				<div class = "button" v-on:click = "button_click( 'log_out' )" v-if = "user_info.logged_in && SFViewModel=='EP' " >Log Out</div>
+				<div class = "button" v-on:click = "button_click( 'log_in' )" v-if = "!user_info.logged_in  && SFViewModel=='EP' ">Log In</div>
+				<div class = "button button_brand" v-on:click = "button_click( 'switchMode' )" >Switch to {{ SFViewModel=='Fire'?'EP':'Fire'}} Mode</div>
+				<!--div class = "button " v-on:click = "button_click( 'resetMode' )" >Reset Mode</div-->
+
+			</div>
+
+		</div>
+		<div class="chart-wrapper" v-if = "!SFViewModel" style="display:block;padding: 40px;box-shadow: 0px 0px 0px #eee">
+			<div align="center" style="font-size:22px"><h4>Please choose between the following options:</h4></div>
+			<div align="center">
+				<div class = "button button_brand" v-on:click = "button_click( 'View_YES' )" style="width: 35%;margin: 10px;display: inline-block;font-size: 16px;height: 40px;padding-top: 5px;">Explosion Protection</div>
+				<div class = "button button_brand" v-on:click = "button_click( 'View_NO' )"  style="width: 35%;margin: 10px;display: inline-block;font-size: 16px;height: 40px;padding-top: 5px;">Fire Protection</div>
+	
+			</div>
+		</div>
+		<div class = "page_container" >
+
+			<img class = "background_image" src = "/img/lightning_blue_background.png" >
+
+			<div class = "page main" v-bind:class = "{ active: active_page_name === 'main' }" v-if = "SFViewModel">
+
+				<div class = "card" >
+
+					<div class = "card-header" >
+
+						<div class = "card-header-line_1">
+
+							<div class = "card-header-icon" style = "background-color: #50E3C2">
+								<img src = "/img/work_order_120.png" >
+							</div>
+
+							<div class = "card-header-titles" data-html2canvas-ignore="true">
+
+								<div class = "card-header-subtitle" >
+									Service Work Orders
+								</div>
+
+								<div class = "card-header-title" >
+									All Service Work Orders
+								</div>
+
+							</div>
+
+						</div>
+
+						<div class = "card-header-line_2" >
+
+							<div class = "button" v-on:click = "button_click( 'update_records' )" v-if = "SFViewModel=='EP' ">
+								Sync edited data with Salesforce
+							</div>
+
+							<div class = "button" v-on:click = "button_click( 'remove_synced_records' )"  v-if = "SFViewModel=='EP' ">
+								Remove all synchronized records
+							</div>
+							<div class = "button"  v-on:click = "button_click( 'export_records' )"  v-if = "SFViewModel=='EP' " >Export All</div>
+							<input type="file" name="uploadfile" id="uploadfile" style="display:none;" @change="loadTextFromFile"/>
+							<label class = "button" for="uploadfile"  v-if = "SFViewModel=='EP' ">Import</label>
+							<input type="file" name="uploadfileEP" id="uploadfileEP" style="display:none;" @change="loadEPTextFromFile"/>
+							<div style="width:100%" align="right"><label style="width:max-content" class = "button" for="uploadfileEP"  v-if = "SFViewModel=='Fire' ">Import Fire SWO</label></div>
+
+						</div>
+
+					</div>
+
+					<div class = "card-body" v-if = "reports_array"  >
+
+						<table class = "main-table" >
+							<colgroup>
+
+								<col span="1" style="width: 2%;">
+
+								<col span="1" style="width: 7%;">
+								<col span="1" style="width: 20%;">
+								<col span="1" style="width: 10%;">
+								<col span="1" style="width: 10%;">
+								<col span="1" style="width: 10%;">
+
+								<col span="1" style="width: 8%;">
+								<col span="1" style="width: 18%;"  v-if = "SFViewModel=='EP' ">
+								<col span="1" style="width: 5%;"  v-if = "SFViewModel=='EP' ">
+								<col span="1" style="width: 5%;">
+								<col span="1" style="width: 4%;">
+
+							</colgroup>
+							<thead>
+							<tr>
+
+								<th></th>
+
+								<th>Account</th>
+								<th>Subject</th>
+								<th>Work Type</th>
+								<th>Order Number</th>
+								<th>Status</th>
+
+								<th>Edited</th>
+								<th  v-if = "SFViewModel=='EP' ">Sync Status</th>
+								<th  v-if = "SFViewModel=='EP' ">Force Sync</th>
+								<th>Export</th>
+								<th>Remove</th>
+								
+							</tr>
+							</thead>
+							<tbody>
+							<tr v-for = "report_model in reports_array" v-on:click = "show_record_details( report_model )" >
+
+								<!--<td v-text = "record_model.index" ></td>-->
+								<td >
+									<!-- <div class = "ico-remove element-to-hide" v-on:click.stop = "remove_work_order( report_model )" ></div> -->
+								</td>
+
+								<td v-text = "get_field_display_value( report_model.WorkOrder[0], 'AccountId' )" ></td>
+								<td v-text = "get_field_display_value( report_model.WorkOrder[0], 'Subject' )" ></td>
+								<!-- <td v-text = "get_field_display_value( report_model.WorkOrder[0], 'Account' )" ></td> -->
+								<td v-text = "get_field_display_value( report_model.WorkOrder[0], 'WorkTypeId' )" ></td>
+								<td v-text = "get_field_display_value( report_model.WorkOrder[0], 'WorkOrderNumber' )" ></td>
+								<td v-text = "get_field_display_value( report_model.WorkOrder[0], 'Status' )" ></td>
+
+								<td>
+									<div v-if = "report_model.status_data.edited_status === 'edited'" class = "record_cell_edited" >edited</div>
+									<div v-if = "report_model.status_data.edited_status === 'edited_and_synced'" class = "record_cell_not_edited">edited and synced</div>
+									<div v-if = "report_model.status_data.edited_status === 'not_edited'" class = "record_cell_not_edited">not edited</div>
+								</td>
+
+								<td class = "sync_status_cell"  v-if = "SFViewModel=='EP' ">
+
+									<div>
+
+										<div v-if = "report_model.status_data.sync_status.name === 'no_info' " >
+											Not Synced
+										</div>
+
+										<div v-if = "report_model.status_data.sync_status.name === 'progress' " >
+
+											<div class="sk-fading-circle">
+												<div class="sk-circle1 sk-circle"></div>
+												<div class="sk-circle2 sk-circle"></div>
+												<div class="sk-circle3 sk-circle"></div>
+												<div class="sk-circle4 sk-circle"></div>
+												<div class="sk-circle5 sk-circle"></div>
+												<div class="sk-circle6 sk-circle"></div>
+												<div class="sk-circle7 sk-circle"></div>
+												<div class="sk-circle8 sk-circle"></div>
+												<div class="sk-circle9 sk-circle"></div>
+												<div class="sk-circle10 sk-circle"></div>
+												<div class="sk-circle11 sk-circle"></div>
+												<div class="sk-circle12 sk-circle"></div>
+											</div>
+
+											Synchronizing...
+
+										</div>
+
+										<div v-if = "report_model.status_data.sync_status.name === 'success' " style = "color: #027e46" >
+											<img src = "/img/success.svg" >
+											Success
+										</div>
+
+										<div v-if = "report_model.status_data.sync_status.name === 'error' " style = "color: #c23934" >
+											<img src = "/img/error.svg" >
+											<div v-bind:title = "report_model.status_data.sync_status.details" v-text = "report_model.status_data.sync_status.details" ></div>
+										</div>
+
+									</div>
+
+								</td>
+
+								<td  v-if = "SFViewModel=='EP' ">
+									
+									<div class = "inline_button" v-if = "report_model.status_data.sync_status.name !== 'progress' " v-on:click.stop = "force_sync_click( report_model )" >
+										Force Sync
+									</div>
+									<div class = "inline_button" style="color:gray" v-if = "report_model.status_data.sync_status.name === 'progress' " v-on:click.stop = "return;">
+										Force Sync
+									</div>
+								</td>
+								<td>
+									<div class = "inline_button" v-on:click.stop = "export_record( report_model )" >
+										Export
+									</div>
+								</td>
+								<td>
+									<div class = "ico-remove" v-on:click.stop = "delete_record( report_model )" >
+									</div>
+								</td>
+
+							</tr>
+							</tbody>
+						</table>
+
+					</div>
+
+					<div class = "card-body" v-if = "reports_array.length === 0" >
+
+						<div class = "card-message" >
+
+							No records have been saved yet
+
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+			<div class = "page record_details" id="record_details"  v-if = "active_page_name === 'record_details'"   v-bind:class = "{ active: active_page_name === 'record_details' }">
+
+				<div class = "page_header_card element-to-hide" v-if = "report_model" data-html2canvas-ignore="true">
+
+					<div class = "card-header-line_1">
+
+						<div class = "card-header-icon" style = "background-color: #6b92dc" data-html2canvas-ignore="true">
+							<img v-bind:src = "api_name_to_icon_url( 'WorkOrder' )" >
+						</div>
+
+						<div class = "card-header-titles">
+
+							<div class = "card-header-subtitle" v-text = "'Service Work Order'" >
+							</div>
+
+							<div class = "card-header-title" >{{ get_field_display_value( report_model.WorkOrder[0], 'WorkOrderNumber' ) }}</div>
+
+						</div>
+
+					</div>
+
+				</div>
+
+				<div class = "card" v-if = "report_model" style="position: relative;" id="record_details_card" v-bind:class = "{ isEditMode: record_details_mode === 'edit' }">
+
+					<div class = "card-tabs element-to-hide" data-html2canvas-ignore="true">
+						<div v-if="report_model" class = "card-tab" v-on:click = "card_tab_click( 'report' )"  v-bind:class = "{ active: record_active_tab_name === 'report' }" >Field Service Manager</div>
+						<div v-if="report_model" class = "card-tab" v-on:click = "card_tab_click( 'attachment' )"  v-bind:class = "{ active: record_active_tab_name === 'attachment' }" >Attachments</div>
+						<div class = "flex_grower" ></div>
+						<div class="top-report-buttons">
+							<div class="button o3" v-on:click = "button_click('save_report')" v-if = "record_active_tab_name === 'report' && record_details_mode === 'edit'">End Editing</div>
+							<!-- <div class="button o3" v-on:click = "button_click('cancel_edit')" v-if = "record_active_tab_name === 'report' && record_details_mode === 'edit'">Cancel</div> -->
+							<div class = "button o1" v-on:click = "button_click( 'edit_report' )" v-if = "record_active_tab_name === 'report' && record_details_mode === 'read'" >Start Editing</div>
+						</div>
+					</div>
+
+					<div class = "card-body" v-if = "record_active_tab_name === 'report'" >
+
+						<div id="reportPage" class = "record_container report_page" >
+
+							<div class="report-header element-to-print pdf-unbreakable" style="display: none;">
+								<div class="report-title-logo element-to-print" style = "display: none;">
+									<div style = "display: flex; justify-content: flex-end;" >
+										<img src = "/img/logo_big.jpg" style="width: 266px;    height: 54px;" >
+									</div>
+								</div>
+							</div>
+
+							<div class = "pdf-unbreakable" >
+								<div class="generate_report element-to-hide" align="right"  v-if = "record_active_tab_name === 'report' && record_details_mode === 'read'" >
+									<label class="dropdown switch">
+										<input 
+										type="checkbox" 
+										style="display: inline-block;"
+										v-model="printWorkingHoursOnly " 
+										class="field_item-input field_item-checkbox ocean4" />
+										<span class="slider round"></span>
+										
+									</label>
+									<span style="display: inline-block;font-size:14px;"> <b>Print Working Hours Only</b></span>
+									<label class="dropdown switch">
+											<input 
+											type="checkbox" 
+											style="display: inline-block;"
+											v-model="allZoneDifferentPage" 
+											class="field_item-input field_item-checkbox ocean4" />
+											<span class="slider round"></span>
+											
+											
+									</label>	
+									<span style="display: inline-block;font-size:14px;"> <b>All Zones on a Different Page </b></span>
+									<div class="dropdown">
+										<button @click="export_report_to_pdf_short_report" class="button button_brand" >Generate Short report</button>
+										<div id="myDropdown" class="dropdown-content">
+											<!--<a href="#home">Home</a>-->
+											<div class="button" v-on:click = "export_report_to_pdf_short_report">Save to PDF</div>
+										</div>
+									</div>
+									<div class="dropdown">
+										<button @click="export_report_to_pdf_medium_report(true)" class="button button_detail">Generate Medium report</button>
+										<div id="myDropdown" class="dropdown-content">
+											<!--<a href="#home">Home</a>-->
+											<div class="button" v-on:click = "export_report_to_pdf_medium_report(true)">Save to PDF</div>
+										</div>
+									</div>
+									<div class="dropdown">
+										<button @click="export_report_to_pdf_medium_report(false)" class="button button_success">Generate Full report</button>
+										<div id="myDropdown" class="dropdown-content">
+											<!--<a href="#home">Home</a>-->
+											<div class="button" v-on:click = "export_report_to_pdf_medium_report(false)">Save to PDF</div>
+										</div>
+									</div>
+
+								
+								</div>
+								<div class = "section_heading" >
+									<!--<svg class = "section_heading-chevron" viewBox="0 0 24 24"><path d="M22 8.2l-9.5 9.6c-.3.2-.7.2-1 0L2 8.2c-.2-.3-.2-.7 0-1l1-1c.3-.3.8-.3 1.1 0l7.4 7.5c.3.3.7.3 1 0l7.4-7.5c.3-.2.8-.2 1.1 0l1 1c.2.3.2.7 0 1z"></path></svg>-->
+									<b>Key Information</b>
+								</div>
+
+								<div class="section_body">
+
+									<div class="work_order_wrapper">
+										<div class="work_order_data">
+											<div class="field_item" v-for="field in filtered_field_for_work_order(report_model.WorkOrder[0])">
+												<div v-text="field.label" class="field_item-label"></div>
+												<editable-field
+																:style="field.type === 'TEXTAREA' || field.name === 'Subject' ? 'width: 65%;' : ''"
+																:field-model="field"
+																:active-record-model="null"
+																:mode="record_details_mode"
+																@c-change="push_changed_field"
+												></editable-field>
+											</div>
+										</div>
+										<!--
+										<div class="generate_report element-to-hide">
+											
+											<div class="dropdown">
+												<button @click="export_report_to_pdf_short_report" class="button">Generate Short report</button>
+												<div id="myDropdown" class="dropdown-content">
+												
+													<div class="button" v-on:click = "export_report_to_pdf_short_report">Save to PDF</div>
+												</div>
+											</div>
+											<br/>
+											<br/>
+											<div class="dropdown">
+												<button @click="export_report_to_pdf_medium_report(true)" class="button">Generate Medium report</button>
+												<div id="myDropdown" class="dropdown-content">
+												
+													<div class="button" v-on:click = "export_report_to_pdf_medium_report(true)">Save to PDF</div>
+												</div>
+											</div>
+											<br/>
+											<br/>
+											<div class="dropdown">
+												<button @click="export_report_to_pdf_medium_report(false)" class="button">Generate Full report</button>
+												<div id="myDropdown" class="dropdown-content">
+													
+													<div class="button" v-on:click = "export_report_to_pdf_medium_report(false)">Save to PDF</div>
+												</div>
+											</div>
+
+											<br/>
+											<br/>
+											<div class="dropdown">
+													<input 
+													type="checkbox" 
+													style="display: inline-block;"
+													v-model="printWorkingHoursOnly " 
+													class="field_item-input field_item-checkbox ocean4" /><span style="display: inline-block;"> <b>Print Working Hours Only</b></span>
+
+												
+											</div>
+											<br/>
+											<br/>
+											<div class="dropdown">
+													<input 
+													type="checkbox" 
+													style="display: inline-block;"
+													v-model="allZoneDifferentPage" 
+													class="field_item-input field_item-checkbox ocean4" /><span style="display: inline-block;"> <b>All Zones on a Different Page </b></span>
+
+												
+											</div>
+										</div>
+									-->
+									</div>
+								</div>
+
+							</div>
+<!-- 
+								<div class = "pdf-unbreakable" style = "background-color: green; height: 90px; margin-top: 10px" ></div> -->
+
+							<div class = "pdf-unbreakable" >
+
+								<div class = "section_heading"><b>Zone Status</b></div>
+								<div class="info_table">
+									<table class="report-table formatDataType formatHeader" style="table-layout: auto;">
+										<tr>
+											<th v-for="cell, cellIndex in report_model.Work_Order_Zone__c[0]" v-if="cellIndex != 'Id'">
+												{{ cell.label }}
+												<span :title = "cell.helpText" class="tooltip" v-if="cell.helpText!=null" >i</span>
+											</th>
+										</tr>
+										<tr v-for="cell, cellIndex in report_model.Work_Order_Zone__c">
+											<td v-for="row, rowIndex in cell" v-if="rowIndex != 'Id'">
+												<editable-field
+																:field-model="row"
+																:active-record-model="null"
+																:mode="record_details_mode"
+																@c-change="push_changed_field"
+												></editable-field>
+											</td>
+										</tr>
+									</table>
+								</div>
+
+							</div>
+
+							<div class = "pdf-unbreakable" >
+
+								<div class = "section_heading"><b>Short Report (Free Text approx 3000 characters)</b></div>
+								<div class = "field_item box-textarea">
+									<editable-field
+													style="width: 100%;font-size: 20px !important;"
+													:field-model="get_field_by_name (report_model.WorkOrder[0], 'Short_Report__c' )"
+													:active-record-model="null"
+													:mode="record_details_mode"
+													@c-change="push_changed_field"
+									></editable-field>
+								</div>
+
+							</div>
+
+							<div class = "pdf-unbreakable" >
+
+								<div class="section_heading "><b>Engineers Hours</b></div>
+								<table class="report-table pdf-unbreakable formatDataType formatHeader EngineerHours" >
+									<tr style="border-bottom: none;">
+										<th rowspan="2" class="element-to-hide iconWidth">
+											<div class="ico-add" @click="add_item_to_materials_and_eng(report_model, report_model.Service_Time_Entry__c[0], 'Service_Time_Entry__c')"></div>
+										</th>
+										<th v-for="cell, cellIndex in generate_titles_for_engineers_table(report_model.Service_Time_Entry__c[0],false).payload"
+												v-if="cellIndex != 'Id'"
+												:rowspan="cell.rowspan"
+												:colspan="cell.colspan"
+												:class="cell.class"
+										>{{ cell.title }}</th>
+									</tr>
+									<tr>
+										<th v-for="cell in generate_titles_for_engineers_table(report_model.Service_Time_Entry__c[0],false).payload2" :class="cell.class" >{{ cell.title }}</th>
+									</tr>
+									<tr v-for="cell, cellIndex in report_model.Service_Time_Entry__c" v-if="cellIndex != 'Id'" v-bind:style = "[ cellIndex == '0' ? { borderTop: '1px solid rgb( 221, 219, 218 )' } : {} ]" >
+										<td class="element-to-hide">
+											<div class="ico-remove" @click="remove_item(report_model.Service_Time_Entry__c, cell.Id, cellIndex)"></div>
+										</td>
+										<td v-for="row, rowIndex in cell" v-if="rowIndex != 'Id'">
+											<editable-field
+												:field-model="row"
+												:active-record-model="null"
+												:mode="record_details_mode"
+												@c-change="push_changed_field"
+											></editable-field>
+										</td>
+									</tr>
+								</table>
+
+							</div>
+
+							<!-- <div class = "pdf_expander" ></div> -->
+
+							<div class = "section_heading"><b>Materials</b></div>
+							<table class="report-table pdf-unbreakable formatDataType formatHeader">
+								<tr>
+									<th class="element-to-hide iconWidth">
+										<div class="ico-add" @click="add_item_to_materials_and_eng(report_model, report_model.ProductItem[0], 'ProductItem')"></div>
+									</th>
+									<th v-for="cell, cellIndex in filtered_field_for_materials(report_model.ProductItem[0])" :class="cell.type"   v-if="cellIndex != 'Id'">{{ cell.label }}</th>
+								</tr>
+								<tr v-for="cell, cellIndex in report_model.ProductItem">
+									<td class="element-to-hide">
+										<div class="ico-remove" @click="remove_item(report_model.ProductItem, cell.Id, cellIndex)"></div>
+									</td>
+									<td v-for="row, rowIndex in filtered_field_for_materials(cell)" v-if="rowIndex != 'Id'" >
+										<editable-field
+														:field-model="row"
+														:active-record-model="null"
+														:mode="record_details_mode"
+														@c-change="push_changed_field"
+										></editable-field>
+									</td>
+								</tr>
+							</table>
+							<div class = "section_heading"><b>Hardware Checklist by Zone & Asset</b></div>
+
+							<div>
+
+								<div class = "section_2" v-for = "zone in report_model.zone_model.zone_arr" >
+
+									<div class = "section_2-head accent" v-on:click = "zone.expanded = !zone.expanded" >
+										<img v-if = "!zone.expanded" src = "/img/chevron-right.svg" >
+										<img v-if = "zone.expanded" src = "/img/chevron-down.svg" >
+									
+										<span v-text = "zone.zone_data.Process_PUP__r.Name" v-if = "zone.zone_data!=null && zone.zone_data.Process_PUP__c!=null" ></span>
+										<span v-if = "zone.zone_data!=null && zone.zone_data.Process_PUP__c!=null" > -> </span>
+										<span v-text = "zone.zone_data.Name" ></span>
+										<div class = "section_2-button_container" >
+											<div class = "button element-to-hide" @click.stop = "new_all_HC_button_click( report_model.zone_model, zone )" >Create Hardware Checklist for All Assets</div>
+										</div>
+										<div class = "section_2-button_container" >
+											<div class = "button element-to-hide" @click.stop = "new_asset_button_click( report_model.zone_model, zone )" >New Asset</div>
+										</div>
+									</div>
+									<div class = "section_2-body" v-bind:class = "{ expanded: zone.expanded }" >
+
+										
+										<div v-for = "asset in zone.asset_arr " class = "section_2 pdf-unbreakable" >
+
+											<div class = "section_2-head" v-on:click = "asset.expanded = !asset.expanded" v-bind:class="true?zone.zone_data.Id+'_'+ (asset.table_data!=null?asset.table_data.record_id_arr[ 0 ]:''):zone.zone_data.Id+'_'+ (asset.table_data!=null?asset.table_data.record_id_arr[ 0 ]:'')">
+												<img v-if = "!asset.expanded" src = "/img/chevron-right.svg" >
+												<img v-if = "asset.expanded" src = "/img/chevron-down.svg" >
+												Assets
+												
+												<span style = "margin-left: 8px" v-text = "get_asset_name( report_model.zone_model, asset )" ></span>
+											</div>
+											<div class = "section_2-body" v-bind:class = "{ expanded: asset.expanded }" >
+												<div
+													class = "element-to-print"
+													style = "display: none;"
+													is = "info_table"
+													table_type = "div"
+													v-if = "asset.table_data"
+													v-bind:zone = "zone"
+													v-bind:parent = "asset"
+													v-bind:table_data = "asset.table_data"
+													v-bind:record_hash = "report_model.zone_model.record_hash"
+													v-bind:mode = "record_details_mode"
+													v-bind:dependent_options = "report_model.dependentOptionsForEquipmentType"
+													v-bind:enable_chart = "false"
+													v-bind:enable_delete = "asset.table_data!=null && asset.table_data.record_id_arr.length>0 && Number.isInteger(asset.table_data.record_id_arr[0])"
+													v-on:record_change = "handle_record_change"
+													v-on:remove_request = "handle_remove_request"
+												></div>
+
+												<div
+													class = "element-to-hide"
+													is = "info_table"
+													table_type = "table"
+													v-if = "asset.table_data"
+													v-bind:zone = "zone"
+													v-bind:parent = "asset"
+													v-bind:table_data = "asset.table_data"
+													v-bind:record_hash = "report_model.zone_model.record_hash"
+													v-bind:mode = "record_details_mode"
+													v-bind:dependent_options = "report_model.dependentOptionsForEquipmentType"
+													v-bind:enable_chart = "true"
+													v-bind:enable_delete = "asset.table_data!=null && asset.table_data.record_id_arr.length>0 && Number.isInteger(asset.table_data.record_id_arr[0])"
+													v-on:record_change = "handle_record_change"
+													v-on:remove_request = "handle_remove_request"
+													v-on:handle_chart = "handle_chart"
+												></div>
+												<div v-for = "hardware_checklist in asset.hardware_checklist_arr" >
+													
+													<div class = "section_2-head" v-on:click = "hardware_checklist.expanded = !hardware_checklist.expanded" >
+														<!--<img v-if = "!hardware_checklist.expanded" src = "/img/chevron-right.svg" >
+														<img v-if = "hardware_checklist.expanded" src = "/img/chevron-down.svg" >-->
+														<div class = "" v-if = "hardware_checklist.table_data==null || hardware_checklist.table_data.record_id_arr.length==0" >
+															<div class = "ico-add" v-on:click = "new_HC_button_click( report_model.zone_model, zone, asset, hardware_checklist )" ></div>
+														</div>
+														&nbsp;Hardware Checklist
+													</div>
+
+													<div class = "section_2-body expanded" > <!-- v-bind:class = "{ expanded: hardware_checklist.expanded }" > -->
+														<!--<div class = "section_2-button_container" v-if = "hardware_checklist.table_data==null || hardware_checklist.table_data.record_id_arr.length==0" >
+															<div class = "button element-to-hide" v-on:click = "new_HC_button_click( report_model.zone_model, zone, asset, hardware_checklist )" >New Hardware Checklist</div>
+														</div>-->
+														<div
+															is = "info_table"
+															table_type = "table"
+															v-if = "hardware_checklist.table_data"
+															v-bind:zone = "zone"
+															v-bind:parent = "hardware_checklist"
+															v-bind:table_data = "hardware_checklist.table_data"
+															v-bind:record_hash = "report_model.zone_model.record_hash"
+															v-bind:mode = "record_details_mode" 
+															v-bind:dependent_options = "report_model.dependentOptionsForEquipmentType"
+															v-bind:enable_chart = "false"
+															v-bind:enable_delete = "hardware_checklist.table_data!=null && hardware_checklist.table_data.record_id_arr.length>0 && Number.isInteger(hardware_checklist.table_data.record_id_arr[0])"
+															v-on:record_change = "handle_record_change"
+															v-on:remove_request = "handle_remove_request"
+															
+														></div>
+
+														
+
+													</div>
+													<div v-for = "sub_asset in hardware_checklist.sub_asset_arr"  class="hide-sub-assets">
+
+														<div class = "section_2-head" v-on:click = "sub_asset.expanded = !sub_asset.expanded" >
+															<img v-if = "!sub_asset.expanded" src = "/img/chevron-right.svg" >
+															<img v-if = "sub_asset.expanded" src = "/img/chevron-down.svg" >
+															&nbsp;
+															<div class = ""  >
+																<div class = "ico-add" @click.stop = "new_sub_asset_button_click( report_model.zone_model, zone, asset, sub_asset )" ></div>
+															</div>
+															&nbsp;
+															Sub Assets
+															
+														</div>
+														<div class = "section_2-body" v-bind:class = "{ expanded: sub_asset.expanded }" >
+
+															<!-- <div class = "section_2-button_container" >
+																<div style="height:28px !important" class = "button element-to-hide" v-on:click = "new_sub_asset_button_click( report_model.zone_model, zone, asset, sub_asset )" >New Sub Asset</div>
+															</div> -->
+
+															<div
+																is = "info_table"
+																table_type = "table"
+																v-if = "sub_asset.table_data"
+																v-bind:zone = "zone"
+																v-bind:parent = "sub_asset"
+																v-bind:table_data = "sub_asset.table_data"
+																v-bind:record_hash = "report_model.zone_model.record_hash"
+																v-bind:mode = "record_details_mode"
+																v-bind:dependent_options = "report_model.dependentOptionsForEquipmentType"
+																v-bind:enable_chart = "false"
+																v-on:record_change = "handle_record_change"
+																v-on:remove_request = "handle_remove_request"
+																v-bind:enable_delete = "true"
+															></div>
+
+														</div>
+
+													</div>
+
+												</div>
+												<div v-if = "SFViewModel=='EP' ">
+													<div v-if = "record_details_mode != 'read'" style="display: flex;margin-top:5px;">
+														<div class="_button_container" style="width: 50%;">
+															<span style="vertical-align: top;">Comments :  
+																<br/>
+																<span style="vertical-align: top;" class = "button element-to-hide" v-on:click = "newAssetComment( get_asset_Id( report_model.zone_model, asset ), asset )" >Add Comment</span>
+															</span>
+															<select size="8" class="field_item-input field_item-picklist searchfield oceanselect" v-model="asset.selectedComments" multiple="true" style="width: 80%;margin-left: 1%;"  >
+																<option v-if="AssetComment.Equipment_Type__c == get_recordtype_name( report_model.zone_model, asset )" v-bind:value="AssetComment" v-for="AssetComment in report_model.AssetComments">{{ AssetComment.Comments_Report_English__c==null?AssetComment.Description_Screen__c:AssetComment.Comments_Report_English__c }}</option>
+															</select>
+															
+														</div>
+														<div v-if="report_model.selectedAssetComment!=undefined" style="width: 50%;">
+															<div  v-for = "comment in report_model.selectedAssetComment[get_asset_Id( report_model.zone_model, asset )]" class="tile_section">
+																<div class="tile_info">
+																	<div class="tile_info_detail" v-bind:title="comment.Comments_Report_English__c==null?comment.Description_Screen__c:comment.Comments_Report_English__c">{{ comment.Comments_Report_English__c==null?comment.Description_Screen__c:comment.Comments_Report_English__c }}</div>
+																	
+																	<div class="tile_button" v-on:click = "deleteComment( get_asset_Id( report_model.zone_model, asset ), comment.Id )"> X </div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div v-if = "record_details_mode == 'read'">
+														<div v-if="report_model.selectedAssetComment!=undefined" style="width: 50%;">
+															<div  v-for = "comment in report_model.selectedAssetComment[get_asset_Id( report_model.zone_model, asset )]" class="tile_section">
+																<div class="tile_info">
+																	<div class="tile_info_detail" v-bind:title="comment.Comments_Report_English__c==null?comment.Description_Screen__c:comment.Comments_Report_English__c">{{ comment.Comments_Report_English__c==null?comment.Description_Screen__c:comment.Comments_Report_English__c }}</div>
+																	
+																	<div class="tile_button" v-on:click = "deleteComment( get_asset_Id( report_model.zone_model, asset ), comment.Id )"> X </div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+
+											</div>
+
+										</div>
+
+									</div>
+
+								</div>
+
+							</div>
+
+							<br>
+							<!--<div class = "pdf-unbreakable" style="width: 75%; position: relative;margin-left: 12%;">
+								<table style="width: 40%; float: left">
+									<tr>
+										<th>Customer</th>
+										<th>Signature</th>
+									</tr>
+									<tr style = "height: 60px" >
+										<td>
+											<editable-field
+															:field-model="get_field_by_name (report_model.WorkOrder[0], 'ContactId' )"
+															:active-record-model="null"
+															:mode="record_details_mode"
+															@c-change="push_changed_field"
+											></editable-field>
+										</td>
+										<td></td>
+									</tr>
+								</table>
+
+								<table style="width: 40%; float: right">
+									<tr>
+										<th>Fike Engineer</th>
+										<th>Signature</th>
+									</tr>
+									<tr style = "height: 60px" >
+										<td>
+											<editable-field
+															:field-model="get_field_by_name (report_model.WorkOrder[0], 'OwnerId' )"
+															:active-record-model="null"
+															:mode="record_details_mode"
+															@c-change="push_changed_field"
+											></editable-field>
+										</td>
+										<td></td>
+									</tr>
+								</table>
+							</div>-->
+							<div class = "pdf-unbreakable" style="width: 100%; position: relative;">
+									<table style="width: 50%;float:left">
+										<tr><th>Date/Signature of Customer:</th><td>
+												<input 
+												type="date" 
+												style="display: inline-block;max-width:300px"
+												v-model="customerDate" 
+												class="field_item-input field_item-text_input ocean3 date-field" />
+													
+										</td></tr>
+										<tr style = "height: 60px"><th>&nbsp;</th>
+											<td>
+												
+											</td>
+										</tr>
+										<tr><th>Customer Name</th><td>
+											<editable-field
+												:field-model="get_field_by_name (report_model.WorkOrder[0], 'ContactId' )"
+												:active-record-model="null"
+												:mode="record_details_mode"
+												@c-change="push_changed_field"
+											></editable-field></td>
+										</tr>
+										<tr><th>Phone</th><td>
+											<input 
+											type="text" 
+											style="display: inline-block;max-width:300px"
+											v-model="customerPhone" 
+											class="field_item-input field_item-text_input ocean3 date-field" />
+												
+										</td>
+										</td></tr>
+										
+										
+									</table>
+	
+									<table style="width: 50%;float:right">
+										<tr><th>Date/Signature of Engineer:</th><td>
+												<input 
+												type="date" 
+												style="display: inline-block;max-width:300px"
+												v-model="engineerDate" 
+												class="field_item-input field_item-text_input ocean3 date-field" />
+
+										</td></tr>
+										<tr style = "height: 60px"><th>&nbsp;</th>
+											<td>
+												
+											</td>
+										</tr>
+										<tr><th>{{report_model.WORecordType=='Fire_Protection'?'Technician':'Engineer Name'}}</th><td>
+											<editable-field
+												:field-model="get_field_by_name (report_model.WorkOrder[0], report_model.WORecordType=='Fire_Protection'?'EngineerName__c':'OwnerId' )"
+												:active-record-model="null"
+												:mode="record_details_mode"
+												@c-change="push_changed_field"
+											></editable-field></td>
+										</tr>
+										<tr><th>Phone</th><td>
+												<input 
+												type="text" 
+												style="display: inline-block;max-width:300px"
+												v-model="engineerPhone" 
+												class="field_item-input field_item-text_input ocean3 date-field" />
+										</td>
+										</td></tr>
+									</table>
+								</div>
+
+							<div class="report-button" data-html2canvas-ignore="true">
+								<!--<div class="button" v-on:click = "export_report_to_pdf">Save to PDF</div>
+								<div class="button" v-on:click = "()=>{button_click('save_report');save_report();}" v-if = "record_active_tab_name === 'report' && record_details_mode === 'edit'">Save</div>
+								<div class="button" v-on:click = "()=>{save_report_changes();}" v-if = "record_active_tab_name === 'report' && record_details_mode === 'read'">Save</div>
+								<div class = "button" v-on:click = "button_click( 'edit_report' )" v-if = "record_active_tab_name === 'report' && record_details_mode === 'read'" >Edit</div>
+								-->
+
+								<div class="button o3" v-on:click = "button_click('save_report')" v-if = "record_active_tab_name === 'report' && record_details_mode === 'edit'">End Editing</div>
+								<!-- <div class="button o3" v-on:click = "button_click('cancel_edit')" v-if = "record_active_tab_name === 'report' && record_details_mode === 'edit'">Cancel</div> -->
+								<div class = "button o1" v-on:click = "button_click( 'edit_report' )" v-if = "record_active_tab_name === 'report' && record_details_mode === 'read'" >Start Editing</div>
+
+							</div>
+
+
+						</div>
+						
+						
+
+						<!-- start short pdf-->
+						<div id="shortPDF" class="port short_reoprt" style="display: none;" >
+							<div class="report-header element-to-print pdf-unbreakable" style="display: none;">
+									<span style="font-size:40px;float:left;"><img src = "/img/fike-logo.png" style="width: 175px;    height: 70px;" ></span>
+									
+									<div class="report-title-logo element-to-print" style = "display: none;">
+										<div style = "display: flex; justify-content: flex-end;" >
+											<img src = "/img/logo_big.jpg" style="width: 264px;    height: 57px;" >
+										</div>
+									</div> 
+							</div>
+							
+							<div class = "record_container report_page" >
+					
+								<div class = "pdf-unbreakable" >
+					
+									<div class = "section_heading" >
+										<!--<svg class = "section_heading-chevron" viewBox="0 0 24 24"><path d="M22 8.2l-9.5 9.6c-.3.2-.7.2-1 0L2 8.2c-.2-.3-.2-.7 0-1l1-1c.3-.3.8-.3 1.1 0l7.4 7.5c.3.3.7.3 1 0l7.4-7.5c.3-.2.8-.2 1.1 0l1 1c.2.3.2.7 0 1z"></path></svg>-->
+										<b>General Service Work Order Information: {{(shortReport.WorkOrderNumber!=null && shortReport.WorkOrderNumber.value!=null)?shortReport.WorkOrderNumber.value:''}}</b>
+									</div>
+					
+									<div class="section_body" v-if="shortReport.WOSeciton!=null">
+					
+										<div class="work_order_wrapper"> 
+											<div class="work_order_data">
+												<div class="field_item" v-for="field in shortReport.WOSeciton  ">
+													<div v-text="field.label" class="field_item-label"></div>
+													<editable-field
+																	:style="field.type === 'TEXTAREA' || field.name === 'Subject' ? 'width: 65%;' : ''"
+																	:field-model="field"
+																	:active-record-model="null"
+																	:mode="record_details_mode"
+																	@c-change="push_changed_field"
+													></editable-field>
+												</div>
+												
+											</div>
+											
+										</div>
+									</div>
+					
+								</div>
+							</div>
+							<br/>
+							<div class = "pdf-unbreakable" v-if="shortReport.WOZoneSeciton!=null" >
+
+								<div class = "section_heading"><b>Zone Status</b></div>
+								<div class="section_body pdfZoneStatus">
+								<table class="report-table formatDataType formatHeader" style="table-layout: auto;">
+									<tr>
+										<th v-bind:class="cell.type" v-for="cell, cellIndex in shortReport.WOZoneSeciton[0].rowData" v-if="cellIndex != 'Id'" :style="{ width : (cell.label=='Next Service Due Date'?'120px':'auto') }" >{{ cell.label }}</th>
+									</tr>
+									<tr v-for="cell, cellIndex in shortReport.WOZoneSeciton"  >
+										
+										<td v-for="row, rowIndex in cell.rowData" v-if="rowIndex != 'Id'" v-bind:class="{ redCell : (row.name!='Process__c' && cell.hasFailedStatus==true)}">
+											<template v-if="cellIndex!=0 && row.name=='Process__c' && shortReport.WOZoneSeciton[cellIndex-1].rowData[rowIndex].value ==row.value">
+												
+											</template>
+											<template v-else>
+												<editable-field
+																:field-model="row"
+																:active-record-model="null"
+																:mode="record_details_mode"
+																@c-change="push_changed_field"
+												></editable-field>
+											</template>
+										</td>
+									</tr>
+								</table>
+								<br/>
+								<div class = "pdf-unbreakable"  v-if="get_field_by_name (shortReport.WorkOrder, 'Short_Report__c' )" >
+
+										<div class = "section_heading"><b>Short Report</b></div>
+										<div class = "field_item box-textarea">
+											<editable-field
+															style="width: 100%;font-size: 20px !important;"
+															:field-model="get_field_by_name (shortReport.WorkOrder, 'Short_Report__c' )"
+															:active-record-model="null"
+															:mode="record_details_mode"
+															@c-change="push_changed_field"
+											></editable-field>
+										</div>
+		
+								</div>
+								</div>
+							</div>
+							<br/>
+							<div class = "pdf-unbreakable" v-if="shortReport.ServiceTimeEntry!=null" >
+	
+								<div class="section_heading"><b>Engineers Hours</b></div>
+								<div class="section_body">
+								<table class="report-table pdf-unbreakable formatDataType formatHeader" >
+									<tr style="border-bottom: none;">
+										<th v-for="cell, cellIndex in generate_titles_for_engineers_table(shortReport.ServiceTimeEntry[0],printWorkingHoursOnly).payload"
+												v-if="cellIndex != 'Id' && cell.title!='Change Order' && cell.title!='OverNight' " 
+												:rowspan="cell.rowspan"
+												:colspan="cell.colspan"
+												:class="cell.class"
+										>{{ cell.title}}</th>
+										<th v-for="cell, cellIndex in generate_titles_for_engineers_table(shortReport.ServiceTimeEntry[0],printWorkingHoursOnly).payload"
+												v-if=" (cell.title=='Change Order' ||  cell.title=='OverNight')"
+												:rowspan="cell.rowspan"
+												:colspan="cell.colspan"
+												:class="cell.class"
+										>{{ cell.title }}</th>
+									</tr>
+									<tr>
+										<th v-for="cell in generate_titles_for_engineers_table(shortReport.ServiceTimeEntry[0],printWorkingHoursOnly).payload2"  :class="cell.class">{{ cell.title }}</th>
+									</tr>
+									<tr v-for="cell, cellIndex in shortReport.ServiceTimeEntry" v-if="cellIndex != 'Id'" v-bind:style = "[ cellIndex == '0' ? { borderTop: '1px solid rgb( 221, 219, 218 )' } : {} ]" >
+										<td v-for="row, rowIndex in cell" v-if="rowIndex != 'Id' && row.name!='Change_Order__c' && row.name!='OverNight__c' ">
+											<div align="center" v-if="((printWorkingHoursOnly && (row.name=='Start_Travel__c' || row.name=='End_Travel__c')))"><span >Fixed</span></div>
+											<editable-field
+												:field-model="row"
+												:active-record-model="null"
+												:mode="record_details_mode"
+												@c-change="push_changed_field"
+												v-if="(!(printWorkingHoursOnly && (row.name=='Start_Travel__c' || row.name=='End_Travel__c')))"
+											></editable-field>
+										</td>
+										<td v-for="row, rowIndex in cell" v-if="rowIndex != 'Id'  && (row.name=='Change_Order__c' || row.name=='OverNight__c') ">
+												<editable-field
+													:field-model="row"
+													:active-record-model="null"
+													:mode="record_details_mode"
+													@c-change="push_changed_field"
+												></editable-field>
+											</td>
+									</tr>
+									
+								</table>
+								</div>
+							</div>
+								<!-- <div class = "pdf_expander" ></div> -->
+							<br/>
+							<div class = "section_heading"><b>Materials</b></div>
+							<div class="section_body">
+							<table class="report-table pdf-unbreakable formatDataType formatHeader" v-if="shortReport.MaterialSeciton!=null">
+								<tr>
+									<th v-for="cell, cellIndex in filtered_field_for_materials(shortReport.MaterialSeciton[0])" :class="cell.type" v-bind:style = "[ cell.type=='BOOLEAN' ? { width: '65px' } : ((cell.label=='Part Number' || cell.label=='Quantity'  ) ? { width: '90px' } : ((cell.label=='Engineer'  ) ? { width: '110px' } : {})) ]" v-if="cellIndex != 'Id' && cell.name!='Change_Order__c'">{{ cell.label }}</th>
+									<th v-for="cell, cellIndex in filtered_field_for_materials(shortReport.MaterialSeciton[0])" :class="cell.type" v-bind:style = "[ cell.type=='BOOLEAN' ? { width: '80px' } : ((cell.label=='Part Number' || cell.label=='Quantity'  ) ? { width: '90px' } : ((cell.label=='Engineer'  ) ? { width: '110px' } : {})) ]" v-if="cell.name=='Change_Order__c'">{{ cell.label }}</th>
+								</tr>
+								<tr v-for="cell, cellIndex in shortReport.MaterialSeciton">
+									<td v-for="row, rowIndex in filtered_field_for_materials(cell)" v-if="rowIndex != 'Id' && row.name!='Change_Order__c'">
+										<editable-field
+														:field-model="row"
+														:active-record-model="null"
+														:mode="record_details_mode"
+														@c-change="push_changed_field"
+										></editable-field>
+									</td>
+									<td v-for="row, rowIndex in filtered_field_for_materials(cell)" v-if="row.name=='Change_Order__c'">
+											<editable-field
+															:field-model="row"
+															:active-record-model="null"
+															:mode="record_details_mode"
+															@c-change="push_changed_field"
+											></editable-field>
+										</td>
+								</tr>
+							</table>
+							</div>
+							<br/>
+							<br/>
+							<br/>
+							<div id="signature" class="signature"   >
+								<div class = "pdf-unbreakable" style="width: 100%; position: relative;">
+									<div style="width:48%;display:inline-block">
+										<table style="width: 100%;">
+											<tr><th>Date/Signature of Customer:</th><td>{{customerDate | formatDate}}</td></tr>
+											<tr style = "height: 60px !important"><th>&nbsp;</th>
+												<td>
+													
+												</td>
+											</tr>
+											<tr><th>Customer Name</th><td>
+												<editable-field
+													:field-model="get_field_by_name (report_model.WorkOrder[0], 'ContactId' )"
+													:active-record-model="null"
+													:mode="record_details_mode"
+													@c-change="push_changed_field"
+												></editable-field></td>
+											</tr>
+											<tr><th>Phone</th><td>
+												{{ customerPhone | formatPhone}}
+											</td>
+											</td></tr>
+										</table>
+									</div>
+									<div style="width:48%;display:inline-block">
+										<table style="width: 100%;">
+											<tr><th>Date/Signature of Engineer:</th><td>{{engineerDate | formatDate}}</td></tr>
+											<tr style = "height: 60px !important"><th>&nbsp;</th>
+												<td>
+													
+												</td>
+											</tr>
+											<tr><th>{{report_model.WORecordType=='Fire_Protection'?'Technician':'Engineer Name'}}</th><td>
+												
+												<editable-field
+													:field-model="get_field_by_name (report_model.WorkOrder[0], report_model.WORecordType=='Fire_Protection'?'EngineerName__c':'OwnerId'  )"
+													:active-record-model="null"
+													:mode="record_details_mode"
+													@c-change="push_changed_field"
+												></editable-field>
+												
+											</td>
+											</tr>
+											<tr><th>Phone</th><td>
+													{{ engineerPhone | formatPhone}}
+											</td>
+											</td></tr>
+										</table>
+									</div>
+								</div>
+								<br/>
+								<div class = "pdf-unbreakable " style="width: 100%;">
+									<div align="center" class="becuaseSoMuch">BECAUSE SO MUCH IS AT STAKE</div>
+								</div>
+							</div>
+						</div>
+						<!-- end short pdf-->
+						<!-- start Medium pdf-->
+						
+						<div id="mediumPDF" style="display: none;">
+							<div class="after" style="padding-top: 10px;"></div>
+					
+							<div class="section_2" v-bind:class = "{ after:allZoneDifferentPage}" v-for="zone in mediumReport.ZoneDetails">
+								<div class="medium_reoprt">
+									<div class="zone">
+										<table>
+											<tr>
+												<td rowspan="2" style="width:25%">
+													<span class="processName">{{zone.data.Process__c}}</span>
+												</td>
+												<td style="width:10%">
+													<span></span>
+												</td>
+												<td rowspan="2" style="width:25%">
+													<span class="zoneDetail">{{zone.data.Name}}</span>
+												</td>
+												<td style="width:10%">
+													<span><b>Zone Status</b></span>
+												</td>
+												<td style="width:10%">
+													<span><b>Service Status</b></span>
+												</td>
+												<td style="width:10%">
+													<span><b>System Status</b></span>
+												</td>
+												<td style="width:10%">
+													<span><b>Remarks</b></span>
+												</td>
+											</tr>
+											<tr>
+							
+												<td>
+													<span></span>
+												</td>
+							
+												<td>
+													<span><b>{{zone.data.Zone_Status__c}}</b></span>
+												</td>
+												<td>
+													<span><b>{{zone.data.Service_Status__c}}</b></span>
+												</td>
+												<td>
+													<span><b>{{zone.data.System_Status__c}}</b></span>
+												</td>
+												<td>
+													<span><b>{{zone.data.Remarks__c}}</b></span>
+												</td>
+											</tr>
+										</table>
+							
+									</div>
+									<div class="assets">
+										<div v-for="record in zone.asset_HC_arr" style="page-break-inside:avoid; page-break-before:auto ">
+											<table class="assetTable" >
+												<tr>
+													<th v-for="(field, index) in record.data" v-bind:style="{width : (index<5?'100px':'')}" v-bind:class = "{ BlueColor : field.isZoneField }">{{field.label}}</th>
+												</tr>
+												<tr>
+													<td v-for="field in record.data">{{field.value}}</td>
+												</tr>
+								
+											</table>
+											<div v-for="sub_asset in mediumReport.assetWiseSubAsset[record.assetId]" style="padding-left:100px">
+													<div
+													is = "info_table"
+													table_type = "table"
+													v-if = "sub_asset.table_data"
+													v-bind:zone = "zone"
+													v-bind:parent = "sub_asset"
+													v-bind:table_data = "sub_asset.table_data"
+													v-bind:record_hash = "report_model.zone_model.record_hash"
+													v-bind:mode = "record_details_mode"
+													v-bind:dependent_options = "report_model.dependentOptionsForEquipmentType"
+													v-bind:enable_chart = "false"
+													v-on:record_change = "handle_record_change"
+													v-on:remove_request = "handle_remove_request"
+													v-bind:enable_delete = "false"
+													v-bind:check_class ="true"
+													v-bind:report_type ="report_type"
+												></div>
+											</div>
+											<div style="padding-left:100px"  v-if="report_model.selectedAssetComment!=undefined" >
+												<div v-for = "comment in report_model.selectedAssetComment[record.assetId]" >
+													<div  >{{ comment.Description_Screen__c }}</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- end Medium pdf-->
+					</div>
+
+					<div class = "card-body" v-if = "record_active_tab_name === 'attachment'" >
+
+
+							<div class = "mini_table-header" >
+
+								<div class = "mini_table-header-icon" style = "background-color: #6b92dc" >
+									<img src = "/img/custom62_120.png" >
+								</div>
+
+								<div class = "mini_table-header-title" >
+									Files
+								</div>
+
+							</div>
+
+							<div class = "mini_table-body" >
+
+								<div style = "display: flex; flex-direction: column; margin: 16px;" >
+
+									<div v-for = "file_model in report_model.files" style = "display: flex;" >
+										<div v-text = "file_model.name" ></div>
+										<div v-on:click = "remove_file_record( report_model, file_model )" style="cursor: pointer; margin-left: 8px; color: rgba( 0, 0, 0, 0.6 )" >remove</div>
+									</div>
+
+									<input multiple class = "" type = "file" style = "margin: 24px;" v-on:change = "file_input_change" >
+									<div class = "button" v-on:click = "save_files_for_future_upload()" >Save Offline</div>
+
+								</div>
+
+							</div>
+
+
+
+					</div>
+
+
+				</div>
+
+			</div>
+
+			<div id = "progress_overlay" >
+
+			</div>
+			
+		</div>
+
+		<div class = "modal-overlay" v-bind:class = "{ active: modal_dialog_model.active }" >
+
+			<div class = "modal-card" v-if = "modal_dialog_model.active_card_name === 'session_expired'" >
+
+				<div class = "modal-card-header" >
+					Your session has ended
+				</div>
+
+				<div class = "modal-card-body" >
+
+					<div class = "modal-card-text" >
+						We're sorry to report that something has happened to your session. Log in again, or return to the page to copy any unsaved text.
+					</div>
+
+				</div>
+
+				<div class = "modal-footer" >
+
+					<div class = "button" v-on:click = "button_click( 'modal_return_to_page' )" >Return to Page</div>
+					<div class = "primary_button" v-on:click = "button_click( 'log_in' )" >Log In</div>
+
+				</div>
+
+			</div>
+
+			<div class = "modal-card" v-if = "modal_dialog_model.active_card_name === 'logged_out'" >
+
+				<div class = "modal-card-header" >
+					You have been logged out
+				</div>
+
+				<div class = "modal-card-body" >
+
+					<div class = "modal-card-text" >
+						You have been logged out or your session is expired or invalid.
+					</div>
+
+				</div>
+
+				<div class = "modal-footer" >
+
+					<div class = "button" v-on:click = "button_click( 'modal_return_to_page' )" >Return to Page</div>
+					<div class = "primary_button" v-on:click = "button_click( 'log_in' )" >Log In</div>
+
+				</div>
+
+			</div>
+
+			<div class = "modal-card" v-if = "modal_dialog_model.active_card_name === 'logged_in'" >
+
+				<div class = "modal-card-header green" >
+					You have been logged in
+				</div>
+
+				<div class = "modal-card-body" >
+
+					<div class = "modal-card-text" >
+						Congratulations! You have been logged in.
+					</div>
+
+				</div>
+
+				<div class = "modal-footer" >
+
+					<div class = "button" v-on:click = "button_click( 'modal_return_to_page' )" >Return to Page</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class = "loading-overlay" v-bind:class = "{ invisible: page_is_loaded, hidden: loading_overlay_is_hidden }" >
+
+			<div class="sk-fading-circle">
+				<div class="sk-circle1 sk-circle"></div>
+				<div class="sk-circle2 sk-circle"></div>
+				<div class="sk-circle3 sk-circle"></div>
+				<div class="sk-circle4 sk-circle"></div>
+				<div class="sk-circle5 sk-circle"></div>
+				<div class="sk-circle6 sk-circle"></div>
+				<div class="sk-circle7 sk-circle"></div>
+				<div class="sk-circle8 sk-circle"></div>
+				<div class="sk-circle9 sk-circle"></div>
+				<div class="sk-circle10 sk-circle"></div>
+				<div class="sk-circle11 sk-circle"></div>
+				<div class="sk-circle12 sk-circle"></div>
+			</div>
+
+		</div>
+		
+		<div class= "spinner" style="display: none;" >
+
+		</div>
+		<div class="spinnerOverLay"   style="display: none;" >
+				<div class="spinnerText"></div>
+		</div>
+		
+	</div>
+
+	<div id = "templates" >
+
+		<div class = "editable-field" >
+
+			<div v-if="fieldModel.showed == undefined || fieldModel.showed == 'true'" >
+
+				<div v-if="mode == 'edit' && fieldModel.isEditable" style = "position: relative;"  v-bind:align="fieldModel.type === 'BOOLEAN'?'center':''"  v-bind:class = "{ changeFieldClass: fieldModel.isChange }" >
+
+					<input
+						style="width: 100%;" 
+						type="text" 
+						v-if="fieldModel.type === 'STRING' || fieldModel.type === 'REFERENCE'" 
+						v-model="fieldModel.value" 
+						class="field_item-input field_item-text_input ocean7" 
+						@change="onChange" 
+						>
+					<textarea
+						style="width: 100%;" 
+						v-if="fieldModel.type === 'TEXTAREA'" 
+						v-model="fieldModel.value" 
+						class="field_item-input field_item-text_input ocean6" 
+						@change="onChange" 
+						>{{ fieldModel.value }}</textarea>
+					<input
+						style="width: 100%;" 
+						type="text" 
+						v-if="fieldModel.type === 'DOUBLE'" 
+						v-model="fieldModel.value" 
+						class="field_item-input field_item-text_input ocean5" 
+						@change="onChange" 
+						>
+					  <input 
+						type="checkbox" 
+						v-if="fieldModel.type === 'BOOLEAN'" 
+						v-model="fieldModel.value" 
+						class="field_item-input field_item-checkbox ocean4" 
+						@change="onChange" 
+						> 
+					<input
+						style="width: 100%;"
+						type="date" 
+						v-if="fieldModel.type === 'DATE'" 
+						v-model="fieldModel.value" 
+						class="field_item-input field_item-text_input ocean3 date-field" 
+						@change="onChange" 
+						> 
+					<input
+						style="width: 100%;"
+						type="time" 
+						v-if="fieldModel.type === 'TIME'" 
+						v-model="fieldModel.value" 
+						class="field_item-input field_item-text_input ocean2" 
+						@change="onChange" 
+					> 
+					<select
+						style="width: 100%; min-width: 150px;" 
+						v-if="fieldModel.type === 'PICKLIST'" 
+						v-model="fieldModel.value" 
+						class="field_item-input field_item-picklist searchfield oceanselect" 
+						@change="onChange" 
+					> 
+
+						<option v-for="option in fieldModel.options" :value="option.value" v-text="option.label" ></option> 
+
+					</select> 
+
+					<div v-if="fieldModel.type === 'SEARCH'">
+
+						<v-select :value = "fieldModel.value" :options = "fieldModel.options" v-on:input = "handle_input" ></v-select>
+
+					</div>
+
+					<span v-if = "fieldModel.isRequired" style = "    color: red;
+						position: absolute;
+						top: -8px;
+						left: -8px;
+						font-size: 15px;" >*</span>
+
+				</div>
+
+			</div>
+
+			<div :class = "[fieldModel.type!=''?fieldModel.type:fieldModel.type , fieldModel.name=='Break_Time__c'?'alignCenter':'',fieldModel.isChange?'changeFieldClassDiv':'']"  v-if="fieldModel.type !== 'TEXTAREA' && ( mode == 'read' || !( fieldModel.isEditable ) )" >{{ toString(fieldModel, fieldModel.value) }}</div>
+			<div  :class = "[fieldModel.type!=''?fieldModel.type:fieldModel.type , fieldModel.name=='Break_Time__c'?'alignCenter':'',fieldModel.isChange?'changeFieldClassDiv':'']"  v-if="fieldModel.type === 'TEXTAREA' && ( mode == 'read' || !( fieldModel.isEditable ) )" style= "white-space: pre-line;">{{ toString(fieldModel, fieldModel.value) }}</div>
+
+		</div>
+
+		<div class = "editable_field_2" >
+
+			<div v-if = "mode == 'edit'" v-bind:class = "{ changeFieldClass: field['isChange_'+record.Id] }" v-bind:align="field.type === 'BOOLEAN'?'center':''">
+
+				<input
+					style="width: 100%;" 
+					type="text" 
+					v-if="field.type === 'STRING' || field.type === 'REFERENCE'" 
+					v-model="value" 
+					class="field_item-input field_item-text_input ocean7" 
+					@change="handle_change" 
+					>
+				<textarea
+					style="width: 100%;" 
+					v-if="field.type === 'TEXTAREA'" 
+					v-model="value" 
+					class="field_item-input field_item-text_input ocean6" 
+					@change="handle_change" 
+					>{{ value }}</textarea>
+				<input
+					style="width: 100%;" 
+					type="text" 
+					v-if="field.type === 'DOUBLE'" 
+					v-model="value" 
+					class="field_item-input field_item-text_input ocean5" 
+					@change="handle_change" 
+					>
+				  <input 
+					type="checkbox" 
+					v-if="field.type === 'BOOLEAN'" 
+					v-model="value" 
+					class="field_item-input field_item-checkbox ocean4" 
+					@change="handle_change" 
+					> 
+				<input
+					style="width: 100%;"
+					type="date" 
+					v-if="field.type === 'DATE'" 
+					v-model="value" 
+					class="field_item-input field_item-text_input ocean3 date-field" 
+					@change="handle_change" 
+					> 
+				<input
+					style="width: 100%;"
+					type="time" 
+					v-if="field.type === 'TIME'" 
+					v-model="value" 
+					class="field_item-input field_item-text_input ocean2" 
+					@change="handle_change" 
+				> 
+				<select
+					style="width: 100%; min-width: 150px;" 
+					v-if="field.type === 'PICKLIST'" 
+					v-model="value" 
+					class="field_item-input field_item-picklist searchfield oceanselect" 
+					@change="handle_change" 
+				> 
+
+					<option v-for="option in options" :value="option.value" v-text="option.label" ></option> 
+
+				</select> 
+
+				<div v-if="field.type === 'SEARCH'">
+
+					<v-select :value = "value" :options = "options" v-on:input = "handle_input" ></v-select>
+
+				</div>
+
+			</div>
+
+			<!--<div v-if = "mode == 'read'" v-text = "value" ></div>-->
+			<div :class = "[field.type!=''?field.type:'',field['isChange_'+record.Id]?'changeFieldClassDiv':'']"  v-if = "mode == 'read'"  >{{ toString(field, value)}}</div>
+
+		</div>
+		<div class = "info_table" >
+
+			<table v-if = "table_type === 'table'">
+
+				<tr  v-if = "table_data.record_id_arr.length>0" > 
+					<th v-if = "enable_delete" ></th>
+					<th v-if = "enable_chart" ></th>
+					<th v-for = "field in table_data.fields" :class="field.type" :key="field.name" >
+						<span v-text = "field.label"></span>&nbsp;
+						<span :title = "field.helpText" class="tooltip" v-if="field.helpText!=null" >i</span>
+					</th>
+				</tr>
+
+				<tr v-for = "record_id in table_data.record_id_arr" v-if = "record_exists( record_id )" :class = "className(record_id)"  >
+
+					<td v-if = "enable_delete && Number.isInteger(record_id)" >
+
+						<div class = "ico-remove element-to-hide" v-on:click = "handle_remove( parent, record_id )" ></div>
+
+					</td>
+					<td v-if = "enable_delete && !Number.isInteger(record_id)" >
+						<div></div>
+					</td>
+
+					<td v-if = "enable_chart" >
+
+						<div class = "ico-draw-chart element-to-hide" v-on:click = "handle_chart( record_id )"></div>
+
+					</td>
+
+					<td v-for = "field in table_data.fields" :key="field.name">
+
+						<div
+							is = "editable_field_2"
+							v-bind:field = "field"
+							v-bind:table_data = "table_data"
+							v-bind:record = "get_record( record_id )"
+							v-bind:mode = "mode"
+							v-bind:parent = "parent"
+							v-bind:dependent_options = "dependent_options"
+							v-on:record_change = "handle_record_change"
+						></div>
+
+					</td>
+
+				</tr>
+
+			</table>
+
+			<div v-if = "table_type === 'div'"style = "
+					display: flex;
+    				flex-wrap: wrap;" >
+
+				<div v-for = "field in table_data.fields" style = "
+					min-width: 200px;
+					height: 60px;
+					display: flex;
+					flex-direction: column;
+					" :key="field.name">
+
+					<div class = "th" v-text = "field.label" style = "height: 30px;" ></div>
+					<div class = "td" style="height: 30px;" >
+
+						<div
+							is = "editable_field_2"
+							v-bind:field = "field"
+							v-bind:table_data = "table_data"
+							v-bind:record = "get_record( table_data.record_id_arr )"
+							v-bind:mode = "mode"
+							v-bind:parent = "parent"
+							v-bind:dependent_options = "dependent_options"
+							v-on:record_change = "handle_record_change"
+						></div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+	
+
+	<div id = "scripts" hidden >
+
+		<script src = "/lib/jquery.min.js" ></script>
+		<script src = "/lib/vue.min.js" ></script>
+		<script src = "/lib/webx.js" ></script>
+		<script src = "/lib/velocity.min.js" ></script>
+		<script src = "/lib/html2pdf.bundle.min.js"></script>
+		<script src = "/lib/html2canvas.min.js"></script>
+		<script src = "/lib/jspdf.debug.js"></script>
+		<script src = "/lib/chart.min.js"></script>
+		<script src = "/lib/moment.min.js"></script>
+		<script src = "/lib/vue-select.js"></script>
+		<script src = "/lib/print.min.js"></script>
+		<script src = "/lib/FileSaver.min.js"></script>
+		<script src="/js/accordion.js"></script>
+
+		<script src = "main.js" ></script>
+
+	</div>
+	
+
+	
+</body>
+
+</html>

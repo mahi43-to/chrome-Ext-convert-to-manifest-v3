@@ -1,0 +1,53 @@
+{
+	"manifest_version": 3,
+	"name": "FIKE® FIELD SERVICE Powered by VLR™",
+	"version": "1.0.56",
+	"key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAlkqXs8d6vDP0U9zrZNehIRS+0I8trDkx2yCRzKIZxEtvDXLOAnUuTdRhxJ+xKQrNfyhpVEdzMkDLoXbiJp9UeUue18d9X/DKxLSwLE/H8fgSWCiLFKjFJ7VqoIzRf0YahOIp8o4pr7kHbTXBw9xWal/JOT5P4/saF6vWV4THu4zj1V4478TWDg0Hg8ymtzSzN+/DtZ2vPKFg58Skkn8oTSfmNVWr0lPRUwUSj0eQ11rlEljzlaJhbVRwllfqwdkPESge1hGqX+BCg9Mc32Imzakyr3+YVJU9+4iZXRIfW/Ac2YEwkKrVb3B4UxfWv0WjvBckNUt/xBggjxao8fIcfwIDAQAB",
+	"version_name": "1.0.56",
+	"description": "Browser extension for editing Salesforce records offline",
+	"icons": {
+		"16": "/img/favicon.png",
+		"128": "/img/logo.png"
+	},
+	"action": {
+		"default_icon": "/img/favicon.png"
+	},
+	
+	"background": {
+		"service_worker": "background.js"
+	},
+	"host_permissions": [
+		"https://fike--partial.lightning.force.com/*",
+		"https://*.force.com/*",
+		"https://*.salesforce.com/*"
+	],
+	"content_scripts": [
+		{
+			"matches": ["<all_urls>"],
+			"js": ["contentScript.js"]
+		}
+	],
+	"permissions": [
+		"identity",
+		"storage",
+		"unlimitedStorage",
+		"contextMenus",
+		"notifications",
+		"activeTab", 
+		"scripting", 
+		"tabs"
+	],
+	"web_accessible_resources": [
+		{
+			"resources": [
+				"/config.json"
+			],
+			"matches": [
+				"<all_urls>"
+			]
+		}
+	],
+	"content_security_policy": {
+		"extension_pages": "script-src 'self'; object-src 'self';"
+	}
+}
